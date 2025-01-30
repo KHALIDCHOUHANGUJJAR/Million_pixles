@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+body {
+  background-color: #111111;
+  color: antiquewhite;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.selected-flag {
+  background: #272727 !important;
+  border-right: none !important ;
+}
+.flag-dropdown {
+  background-color: #272727 !important;
+  border-right: black !important;
+  border: 1px solid #4b5563 !important;
+}
+.country-list {
+  background-color: #272727 !important;
+}
+
+.country {
+  background-color: #8d8f92 !important;
+}
