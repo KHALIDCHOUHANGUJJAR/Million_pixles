@@ -4,6 +4,7 @@ import { FaCircle, FaCircleQuestion } from "react-icons/fa6";
 import { BiCollapseHorizontal } from "react-icons/bi";
 import Button from "../Components/Button";
 import { Link } from "react-router";
+import toast from "react-hot-toast";
 
 export const SelectPixels = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -11,7 +12,6 @@ export const SelectPixels = () => {
   const handleClick = () => {
     setIsCollapsed(!isCollapsed);
   };
-  
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -85,33 +85,60 @@ export const SelectPixels = () => {
       endY = startY;
     };
 
+    let toastShown = false;
+
     const draw = (e) => {
       if (!isDrawing) return;
-
+    
       const rect = canvas.getBoundingClientRect();
       endX = e.clientX - rect.left;
       endY = e.clientY - rect.top;
-
+    
       endX = Math.floor(endX / 20) * 20;
       endY = Math.floor(endY / 20) * 20;
-
+    
+      const restrictedX = canvas.width * 0.6;
+      const restrictedY = canvas.height * 0.3;
+      const restrictedWidth = 200;
+      const restrictedHeight = 150;
+    
+      if (
+        startX < restrictedX + restrictedWidth &&
+        startX + Math.abs(endX - startX) > restrictedX &&
+        startY < restrictedY + restrictedHeight &&
+        startY + Math.abs(endY - startY) > restrictedY
+      ) {
+        if (!toastShown) {
+          toast.error(
+            "The selected area is restricted. Please select a smaller area."
+          );
+          toastShown = true; 
+        }
+        return;
+      }
+    
+      if (toastShown) {
+        toastShown = false;
+      }
+    
       drawGrid();
-
+    
       const width = Math.abs(endX - startX);
       const height = Math.abs(endY - startY);
-
+    
       if (width > 1000 || height > 1000) {
         return;
       }
-
+    
       ctx.fillStyle = "rgba(241, 113, 61, 0.3)";
       ctx.fillRect(startX, startY, width, height);
       ctx.strokeStyle = "#EBFA171A";
       ctx.lineWidth = 2;
       ctx.strokeRect(startX, startY, width, height);
-
+    
       updatePixelDetails(width, height, startX, startY);
     };
+    
 
     const stopDrawing = () => {
       isDrawing = false;
