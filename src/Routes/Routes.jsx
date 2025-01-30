@@ -6,6 +6,7 @@ import Home from "../Pages/Home";
 import MyPixels from "../Pages/MyPixels";
 import Layout from "../Pages/Layout";
 import { SelectPixels } from "../Pages/SelectPixles";
+import ReviewOrder from "../Pages/ReviewOrder";
 export const myRoutes = [
   {
     path: "/",
@@ -40,5 +41,9 @@ export const myRoutes = [
   {
     path: "/pixels",
     element: <SelectPixels />,
+  },
+  {
+    path: "/review",
+    element: <ReviewOrder />,
   },
 ];

@@ -23,6 +23,7 @@ function AppContent() {
         location.pathname !== "/singup" &&
         location.pathname !== "/create" && 
         location.pathname !== "/pixels" && 
+        location.pathname !== "/review" && 
        
         location.pathname !== "/create2" &&
         <Sidebar />}
