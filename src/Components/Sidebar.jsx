@@ -63,7 +63,7 @@ function Sidebar() {
               to="/support"
               className={({ isActive }) =>
                 `flex items-center py-2 px-6   w-full hover:bg-gray-700 ${
-                  isActive ? "bg-[#B55A37] text-[#FFFFFF]" : ""
+                  isActive ? "bg-[#B55A37] rounded-2xl text-[#FFFFFF]" : ""
                 } text-lg font-semibold`
               }
             >
