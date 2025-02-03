@@ -15,18 +15,16 @@ function AppContent() {
   const location = useLocation();
 
   return (
-
     <div className="flex">
-          <Toaster />
+      <Toaster />
 
       {location.pathname !== "/login" &&
         location.pathname !== "/singup" &&
-        location.pathname !== "/create" && 
-        location.pathname !== "/pixels" && 
-        location.pathname !== "/review" && 
-       
-        location.pathname !== "/create2" &&
-        <Sidebar />}
+        location.pathname !== "/create" &&
+        location.pathname !== "/pixels" &&
+        location.pathname !== "/review" &&
+        location.pathname !== "/payment" &&
+        location.pathname !== "/create2" && <Sidebar />}
       <Routes>
         {myRoutes.map((item, index) => (
           <Route key={index} path={item.path} element={item.element} />

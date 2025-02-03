@@ -161,10 +161,10 @@ export const SelectPixels = () => {
   }, []);
 
   return (
-    <div className="flex w-full h-screen">
+    <div className="flex md:flex-row flex-col w-full h-screen">
       <div
         className={`h-screen ${
-          isCollapsed ? "w-[90%]  " : "w-[70%] bg-[#F1713D]"
+          isCollapsed ? "w-[90%]  " : " md:w-[70%] w-[100%] bg-[#F1713D]"
         }  flex flex-col transition-all`}
       >
         <div
@@ -172,7 +172,7 @@ export const SelectPixels = () => {
             isCollapsed ? "hidden" : "block"
           }`}
         >
-          <div className="w-[4vw] h-[8vh] bg-white rounded-full"></div>
+          <div className=" md:w-[4vw] md:h-[8vh] w-[15vw] h-[8vh] bg-white rounded-full"></div>
         </div>
 
         <div className="flex flex-col flex-grow items-center justify-start p-2">

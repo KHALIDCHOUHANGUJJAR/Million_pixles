@@ -12,7 +12,7 @@ export default function ReviewOrder() {
   return (
     <div className="flex flex-col w-full md:flex-row min-h-screen">
       <div className="w-full md:w-[60%] bg-[#272727] p-6 min-h-screen">
-        <div className="p-2 w-[60%]">
+        <div className="p-2 md:w-[60%]">
           <h1 className="text-white text-2xl font-semibold pb-4 border-b ">
             Review Your Order
           </h1>
@@ -56,14 +56,14 @@ export default function ReviewOrder() {
         <div className="flex justify-between items-center mb-8">
           <div className="flex items-start justify-center w-full">
             <div className="flex items-center flex-col justify-between">
-              <div className="flex items-center justify-center p-3 w-4 h-4 rounded-full border-2   text-center">
+              <div className="flex items-center justify-center md:p-3 p-4 w-4 h-4 rounded-full border-2   text-center">
                 1
               </div>
               <h1 className="font-semibold">Buy Pixel</h1>
             </div>
             <div className="w-[8vw] border-1 border-white/20 "></div>
             <div className="flex items-center flex-col justify-between">
-              <div className="flex items-center justify-center p-3 w-4 h-4 rounded-full border-2 bg-black border-black   text-center">
+              <div className="flex items-center justify-center md:p-3 p-4 w-4 h-4 rounded-full border-2 bg-black border-black   text-center">
                 2
               </div>
               <h1 className="font-semibold text-black">Confirm Order</h1>
@@ -71,7 +71,7 @@ export default function ReviewOrder() {
             <div className="w-[8vw] border-1 border-white/20 "></div>
 
             <div className="flex items-center  flex-col justify-between">
-              <div className="flex items-center justify-center p-3 w-4 h-4 rounded-full border-2  border-white text-center">
+              <div className="flex items-center justify-center md:p-3 p-4 w-4 h-4 rounded-full border-2  border-white text-center">
                 3
               </div>
               <h1 className="font-semibold">Payment</h1>
@@ -80,7 +80,7 @@ export default function ReviewOrder() {
         </div>
 
         <div
-          className={`bg-white rounded-lg p-6 w-[23vw] shadow-lg ${
+          className={`bg-white rounded-lg p-6 md:w-[23vw] shadow-lg ${
             isNext && "hidden"
           } transform transition-all duration-100000 ease-in-out`}
         >

@@ -7,6 +7,7 @@ import MyPixels from "../Pages/MyPixels";
 import Layout from "../Pages/Layout";
 import { SelectPixels } from "../Pages/SelectPixles";
 import ReviewOrder from "../Pages/ReviewOrder";
+import Payment from "../Pages/Payment";
 export const myRoutes = [
   {
     path: "/",
@@ -45,5 +46,9 @@ export const myRoutes = [
   {
     path: "/review",
     element: <ReviewOrder />,
+  },
+  {
+    path: "/payment",
+    element: <Payment />,
   },
 ];
