@@ -1,8 +1,9 @@
+import { useNavigate } from "react-router";
 import Created from "../Components/Created";
 
 export const Congratulation = () => {
   const isShow = false;
-
+  const navigate = useNavigate();
   return (
     <Created
       heading="Your Pixels Have Been Purchased!"
@@ -20,6 +21,7 @@ export const Congratulation = () => {
       }
       paragraph2="You’re now part of the Wall of Internet. Your blocks are live!"
       isShow={isShow}
+      handleClick={() => navigate("/navigate")}
     />
   );
 };

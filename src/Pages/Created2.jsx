@@ -1,6 +1,7 @@
 import Created from "../Components/Created";
 
 function Created2() {
+
   return (
     <div>
       <Created

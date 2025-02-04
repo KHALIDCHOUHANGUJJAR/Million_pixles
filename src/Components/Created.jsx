@@ -1,11 +1,12 @@
 /* eslint-disable react/prop-types */
 import "react-phone-input-2/lib/style.css";
 import Button from "./Button";
-import { useLocation } from "react-router";
+import { useLocation, useNavigate } from "react-router";
 import { createImage } from "../Utils/Images";
 
 const Created = ({ heading, subHeading, paragraph, isShow, paragraph2 }) => {
   const location = useLocation();
+  let naivgate = useNavigate();
 
   return (
     <div className="flex justify-center items-center w-full h-screen">
@@ -45,6 +46,13 @@ const Created = ({ heading, subHeading, paragraph, isShow, paragraph2 }) => {
                     ? "Buy"
                     : "View Dashboard"
                 }
+                handleClick={() =>
+                  location.pathname === "/create"
+                    ? naivgate("/create2")
+                    : location.pathname === "/create2"
+                    ? naivgate("/pixels")
+                    : naivgate("/dashboard")
+                }
               />
             </div>
           </div>
@@ -55,7 +63,7 @@ const Created = ({ heading, subHeading, paragraph, isShow, paragraph2 }) => {
             </h1>
             <p className="text-center font-Poppins ">
               Claim your space in the digital landscape! Wall of Internet lets
-              you buy, own, and customize pixels  on the most interactive online
+              you buy, own, and customize pixels on the most interactive online
               canvas. Showcase your creativity, promote your brand, or leave
               your mark forever—one pixel at a time!
             </p>

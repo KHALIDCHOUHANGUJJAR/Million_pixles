@@ -1,18 +1,19 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { sIngupImage } from "../../../Utils/Images";
 import { useForm } from "react-hook-form";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
-function singup() {
+function Singup() {
+  let naivgate = useNavigate();
   const {
     register,
     handleSubmit,
     watch,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = () => naivgate("/create");
 
   console.log(watch("example"));
   return (
@@ -213,4 +214,4 @@ function singup() {
   );
 }
 
-export default singup;
+export default Singup;

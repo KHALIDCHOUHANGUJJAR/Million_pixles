@@ -4,7 +4,7 @@ import { Outlet } from 'react-router'
 function Layout() {
   return (
     <div className="flex bg-[#111111]" >
-      {/* <Sidebar /> */}
+      <Sidebar />
       <Outlet className=" bg-[#000000]" />
     </div>
   )

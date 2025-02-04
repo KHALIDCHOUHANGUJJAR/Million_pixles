@@ -14,13 +14,13 @@ import NotFound from "../Pages/Error";
 export const myRoutes = [
   {
     path: "/",
+    element: <Landing />,
+  },
+  {
+    path: "/dashboard",
     element: <Layout />,
   },
  
-  {
-    path: "/landing",
-    element: <Landing />,
-  },
  
   {
     path: "/create",
@@ -35,7 +35,7 @@ export const myRoutes = [
     element: <MyPixels />,
   },
   {
-    path: "/Home",
+    path: "/home",
     element: <Home />,
   },
 

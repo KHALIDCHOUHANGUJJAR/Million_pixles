@@ -3,10 +3,11 @@ import { IoIosInformationCircleOutline } from "react-icons/io";
 import { FaCircle, FaCircleQuestion } from "react-icons/fa6";
 import { BiCollapseHorizontal } from "react-icons/bi";
 import Button from "../Components/Button";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import toast from "react-hot-toast";
 
 export const SelectPixels = () => {
+  const navigate = useNavigate()
   const [isCollapsed, setIsCollapsed] = useState(false);
   const canvasRef = useRef(null);
   const handleClick = () => {
@@ -268,7 +269,7 @@ export const SelectPixels = () => {
               <span className="font-bold">Price Per:</span>
               <span id="pricePerPixel">$0.00</span>
             </p>
-            <button className="w-full bg-[#F1713D] text-white font-bold py-2 mt-4 rounded-md hover:bg-[#d85c2b] transition">
+            <button onClick={()=>navigate('/payment')} className="w-full bg-[#F1713D] text-white font-bold py-2 mt-4 rounded-md hover:bg-[#d85c2b] transition">
               Confirm Selection
             </button>
           </div>

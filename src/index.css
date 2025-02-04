@@ -27,3 +27,35 @@ body {
 .country {
   background-color: #8d8f92 !important;
 }
+
+
+@keyframes moveClouds {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1000px 0;
+  }
+}
+
+.cloud-bg {
+  background: #1E130E;
+}
+
+.cloud-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/cloudy.png');
+  opacity: 0.1;
+  animation: moveClouds 30s linear infinite;
+  z-index: 1;
+}
+
+.cloud-bg > * {
+  position: relative;
+  z-index: 10;
+}

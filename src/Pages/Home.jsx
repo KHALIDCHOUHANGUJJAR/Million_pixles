@@ -6,6 +6,7 @@ import { RiQuestionnaireLine } from "react-icons/ri";
 import { RxArrowTopRight } from "react-icons/rx";
 import Canvas from "../Components/Canvas";
 import { leftbarText } from "../Utils/text";
+import { Layout } from "antd";
 
 const Home = () => {
   const [activeIndex, setActiveIndex] = useState(null);

@@ -1,16 +1,17 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { loginImage } from "../../../Utils/Images";
 import { useForm } from "react-hook-form";
 
 function Login() {
+  const naivgate = useNavigate()
   const {
     register,
     handleSubmit,
     watch,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = () => naivgate("/pixels");
 
   console.log(watch("example"));
   return (

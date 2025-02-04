@@ -1,8 +1,12 @@
 import { useForm } from "react-hook-form";
 import Button from "../Components/Button";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { useNavigate } from "react-router";
 
 export default function Payment() {
+
+const navigate = useNavigate()
+
   const {
     register,
     handleSubmit,
@@ -185,6 +189,7 @@ export default function Payment() {
               <div className="text-white flex items-center justify-between w-full  cursor-pointer bg-[#F1713D] px-6 p-2 rounded-xl">
                 <p>$1,672</p>
                 <Button
+                handleClick={()=>navigate("/cong")}
                   text={"Checkout"}
                   iconR={<FaArrowRightLong className="ml-6 text-2xl" />}
                 />
