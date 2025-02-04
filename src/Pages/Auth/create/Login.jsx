@@ -18,7 +18,9 @@ function Login() {
       <div className="  bg-[#272727] w-full md:w-[60%]   flex flex-col  p-6">
         <div className="flex items-center gap-2 p-0 md:p-4">
           <div className=" w-10 md:w-[3vw]  h-[6vh] rounded-full bg-white md:bg-amber-50"></div>
-          <p className="text-white ml-1 text-xl font-semibold">Wall Of Internet</p>
+          <p className="text-white ml-1 text-xl font-semibold">
+            Wall Of Internet
+          </p>
         </div>
         <div className="flex items-center h-full  justify-center">
           <div className="text-white  ">

@@ -24,7 +24,7 @@ function singup() {
           className="w-full h-full object-fill shadow-lg"
         />
       </div>
-      <div className="  bg-[#272727] w-full md:h-[95%] h-full md:w-[60%] flex flex-col  ">
+      <div className="   w-full md:h-[95%] h-full md:w-[60%] flex flex-col  ">
         <div className="flex items-center  justify-center">
           <div
             className="text-white md:w-[80%] w-[90%] 
@@ -200,7 +200,7 @@ function singup() {
                 </button>
                 <p className=" text-sm text-center flex items-center h-full font-semibold text-gray-200">
                   Already have an account?
-                  <Link to="/" className="text-[#F1713D] ml-1 underline">
+                  <Link to="/login" className="text-[#F1713D] ml-1 underline">
                     Login
                   </Link>
                 </p>

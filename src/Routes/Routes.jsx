@@ -8,12 +8,20 @@ import Layout from "../Pages/Layout";
 import { SelectPixels } from "../Pages/SelectPixles";
 import ReviewOrder from "../Pages/ReviewOrder";
 import Payment from "../Pages/Payment";
+import { Congratulation } from "../Pages/Congratulation";
+import Landing from "../Pages/Landing";
+import NotFound from "../Pages/Error";
 export const myRoutes = [
   {
     path: "/",
     element: <Layout />,
   },
-
+ 
+  {
+    path: "/landing",
+    element: <Landing />,
+  },
+ 
   {
     path: "/create",
     element: <Create />,
@@ -51,4 +59,13 @@ export const myRoutes = [
     path: "/payment",
     element: <Payment />,
   },
+  {
+    path: "/cong",
+    element: <Congratulation />,
+  },
+  {
+    path: "*",
+    element: <NotFound />,
+  }
+  
 ];

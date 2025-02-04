@@ -140,7 +140,7 @@ const Canvas = () => {
   }, []);
 
   return (
-    <div className="w-full h-[64vh] bg-[#3b3131] rounded overflow-hidden">
+    <div className="w-full xl:h-[64vh] 2xl:h-[67vh] bg-[#3b3131] rounded overflow-hidden">
       <canvas ref={canvasRef} className="w-full h-full  cursor-crosshair" />
     </div>
   );

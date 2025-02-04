@@ -18,13 +18,8 @@ function AppContent() {
     <div className="flex">
       <Toaster />
 
-      {location.pathname !== "/login" &&
-        location.pathname !== "/singup" &&
-        location.pathname !== "/create" &&
-        location.pathname !== "/pixels" &&
-        location.pathname !== "/review" &&
-        location.pathname !== "/payment" &&
-        location.pathname !== "/create2" && <Sidebar />}
+      {location.pathname === "/" &&
+      <Sidebar />}
       <Routes>
         {myRoutes.map((item, index) => (
           <Route key={index} path={item.path} element={item.element} />
