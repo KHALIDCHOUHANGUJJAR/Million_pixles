@@ -1,33 +1,27 @@
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { myRoutes } from "./Routes/Routes";
-import Sidebar from "./Components/Sidebar";
 import { Toaster } from "react-hot-toast";
+import { ContextProvider } from "./Context/Context";
 
 function App() {
   return (
+    <ContextProvider>
     <BrowserRouter>
-      <AppContent />
+      <div className="flex">
+        <Toaster />
+        <Routes>
+          {myRoutes.map((item, index) => (
+            <Route key={index} path={item.path} element={item.element}>
+              {item.children &&
+                item.children.map((child, i) => (
+                  <Route key={i} path={child.path} element={child.element} />
+                ))}
+            </Route>
+          ))}
+        </Routes>
+      </div>
     </BrowserRouter>
-  );
-}
-
-function AppContent() {
-  const location = useLocation();
-
-  return (
-    <div className="flex">
-      <Toaster />
-
-      {
-      location.pathname === "/dashboard"  &&
-      
-      <Sidebar />}
-      <Routes>
-        {myRoutes.map((item, index) => (
-          <Route key={index} path={item.path} element={item.element} />
-        ))}
-      </Routes>
-    </div>
+    </ContextProvider>
   );
 }
 

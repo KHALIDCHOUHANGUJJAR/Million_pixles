@@ -6,10 +6,10 @@ import { HomeOutlined, SearchOutlined } from "@ant-design/icons";
 
 function Sidebar() {
   return (
-    <div className="h-screen xl:w-[25%]   2xl:w-[25%] md:bg-[#272727] bg-[#171717] rounded-r-4xl  text-white p-3 flex flex-col">
-      <div className="flex flex-col p-2 justify-between h-full">
+    <div className="h-screen xl:w-[20%]  fixed z-10  2xl:w-[20%]  bg-[#171717] rounded-r-4xl  text-white  flex flex-col items-center">
+      <div className="flex flex-col p-3 justify-between w-[19vw] 2xl:w-[16vw] h-full">
         <div>
-          <h2 className="text-3xl font-semibold text-center py-1  border-gray-700">
+          <h2 className=" text-3xl 2xl:text-4xl mb-10  font-semibold text-center py-1  border-gray-700">
             <span className="text-orange-500">Wall</span>ofinternet
           </h2>
 
@@ -17,21 +17,24 @@ function Sidebar() {
             <input
               type="text"
               placeholder="Search"
-              className="relative w-full shadow-2xl  px-10 xl:py-2 2xl:py-4 border-2 bg-[#272727]  border-[#413e3e] rounded-3xl  focus:outline-none "
+              className="relative w-full shadow-2xl  px-10 2xl:px-15 2xl:text-2xl
+               xl:py-2 2xl:py-2 border-2 bg-[#272727]  border-[#413e3e] rounded-3xl  focus:outline-none "
             />
-            <SearchOutlined className="text-xl text-[#fffff] absolute xl:left-[2.5%] 2xl:left-[1.4%] " />
-            <button className="xl:p-3 2xl:p-4 rounded-full bg-[#272727] border-2 border-[#413e3e] ">
-              <MdOutlineMicNone className="text-xl text-[#fffff] " />
+            <SearchOutlined className="text-xl 2xl:text-2xl text-[#fffff] absolute xl:left-[10%] 2xl:left-[16%] " />
+            <button className="xl:p-3 2xl:p-3 rounded-full bg-[#272727] border-2 border-[#413e3e] ">
+              <MdOutlineMicNone className="text-xl 2xl:text-2xl text-[#fffff] " />
             </button>
           </div>
           <br />
-          <nav className="mt-2 bg-[#272727] text-[#777777] 
-          shadow-2xl border-2 border-[#413e3e] rounded-xl p-2
-           xl:py-3 2xl:py-4">
+          <nav
+            className="mt-2 bg-[#272727] text-[#777777] 
+          shadow-2xl border-2 border-[#413e3e] rounded-xl p-2 flex flex-col gap-1.5
+           xl:py-2 2xl:py-6"
+          >
             <NavLink
-              to="/Home"
+              to="/home"
               className={({ isActive }) =>
-                `flex items-center xl:py-2 2xl:py-3.5 px-6 hover:bg-gray-700 ${
+                `flex items-center xl:py-1.5 2xl:py-4.5 px-6 hover:bg-gray-700 ${
                   isActive ? "bg-[#B55A37] text-[#FFFFFF] rounded-2xl" : ""
                 } text-lg font-semibold`
               }
@@ -42,7 +45,7 @@ function Sidebar() {
             <NavLink
               to="/MyPixels"
               className={({ isActive }) =>
-                `flex items-center xl:py-2 2xl:py-3.5 px-6 hover:bg-gray-700 ${
+                `flex items-center xl:py-1.5 2xl:py-4.5 px-6 hover:bg-gray-700 ${
                   isActive ? "bg-[#B55A37]  text-[#FFFFFF] rounded-2xl" : ""
                 } text-lg font-semibold`
               }
@@ -53,7 +56,7 @@ function Sidebar() {
             <NavLink
               to="/buy-sell"
               className={({ isActive }) =>
-                `flex items-center xl:py-2 2xl:py-3.5 px-6 hover:bg-gray-700 ${
+                `flex items-center xl:py-1.5 2xl:py-4.5 px-6 hover:bg-gray-700 ${
                   isActive ? "bg-[#B55A37]  text-[#FFFFFF] rounded-2xl" : ""
                 } text-lg font-semibold`
               }
@@ -64,7 +67,7 @@ function Sidebar() {
             <NavLink
               to="/support"
               className={({ isActive }) =>
-                `flex items-center xl:py-2 2xl:py-3.5 px-6   w-full hover:bg-gray-700 ${
+                `flex items-center xl:py-1.5 2xl:py-4.5 px-6   w-full hover:bg-gray-700 ${
                   isActive ? "bg-[#B55A37] rounded-2xl text-[#FFFFFF]" : ""
                 } text-lg font-semibold`
               }
@@ -75,7 +78,7 @@ function Sidebar() {
             <NavLink
               to="/profile"
               className={({ isActive }) =>
-                `flex items-center xl:py-2 2xl:py-3.5 px-6 hover:bg-gray-700 ${
+                `flex items-center xl:py-1.5 2xl:py-5.5 px-6 hover:bg-gray-700 ${
                   isActive ? "bg-[#B55A37]  text-[#FFFFFF] rounded-2xl" : ""
                 } text-lg font-semibold`
               }
@@ -84,23 +87,29 @@ function Sidebar() {
             </NavLink>
           </nav>
 
-          <div className="mt-2  p-1 rounded-2xl bg-[#272727] border-2
-           border-[#413e3e] shadow-2xl text-[#777777] 2xl:py-4">
-            <div className="flex items-center gap-3 py-3 px-4   rounded-xl">
+          <div
+            className="mt-2 2xl:mt-6  p-1 2xl:p-2
+             rounded-2xl bg-[#272727] border-2
+           border-[#413e3e] shadow-2xl
+            text-[#777777] 2xl:py-6"
+          >
+            <div className="flex items-center gap-3 2xl:py-3 py-2 px-4   rounded-xl">
               <IoMdNotificationsOutline className="text-2xl" />
               <h1 className="text-lg font-bold">Notifications</h1>
             </div>
-            <div className="flex items-center gap-3 py-3 px-4 bg-[#272727] rounded-xl">
+            <div className="flex items-center gap-3 2xl:py-3 py-2 px-4 bg-[#272727] rounded-xl">
               <CiSettings className="text-2xl" />
               <h1 className="text-lg font-bold">Settings</h1>
             </div>
           </div>
         </div>
 
-        <div>
-          <button className="w-full flex items-center gap-1 shadow-2xl
+        <div className=" 2xl:mb-10">
+          <button
+            className="w-full flex items-center gap-1 shadow-2xl
            border-2 border-[#413e3e]  p-4 xl:py-3 2xl:py-4 bg-[#272727]
-            text-[#777777] font-black py-3 rounded-3xl">
+            text-[#777777] font-black py-3 rounded-3xl 2xl:rounded-4xl"
+          >
             <CiLogin className="text-2xl font-black " />
             Logout
           </button>

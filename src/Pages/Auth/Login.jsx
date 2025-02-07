@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 
-import { loginImage } from "../../../Utils/Images";
+import { loginImage } from "../../Utils/Images";
 import { useForm } from "react-hook-form";
 
 function Login() {

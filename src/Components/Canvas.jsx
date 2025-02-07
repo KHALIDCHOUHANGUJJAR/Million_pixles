@@ -41,7 +41,6 @@ const Canvas = () => {
 
       ctx.fillStyle = "#0000";
       ctx.fillRect(0, 9, canvas.width, canvas.height);
-
     };
 
     const updatePixelDetails = (width, height, x, y) => {
@@ -90,12 +89,10 @@ const Canvas = () => {
       const restrictedWidth = 200;
       const restrictedHeight = 150;
 
-      
-        startX < restrictedX + restrictedWidth &&
+      startX < restrictedX + restrictedWidth &&
         startX + Math.abs(endX - startX) > restrictedX &&
         startY < restrictedY + restrictedHeight &&
-        startY + Math.abs(endY - startY) > restrictedY
-     
+        startY + Math.abs(endY - startY) > restrictedY;
 
       if (toastShown) {
         toastShown = false;
@@ -140,8 +137,11 @@ const Canvas = () => {
   }, []);
 
   return (
-    <div className="w-full xl:h-[64vh] 2xl:h-[67vh] bg-[#3b3131] rounded overflow-hidden">
-      <canvas ref={canvasRef} className="w-full h-full  cursor-crosshair" />
+    <div
+      className=" flex items-center  justify-center  w-[100%] xl:h-[62.5vh]
+      2xl:h-[66vh] bg-[#171717] 2xl:p-3 p-2 rounded  2xl:rounded-2xl   overflow-hidden"
+    >
+      <canvas ref={canvasRef} className="w-full h-full  cursor-crosshair border-2 border-amber-700 " />
     </div>
   );
 };

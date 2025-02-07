@@ -1,4 +1,4 @@
-import Created from "../../Components/Created";
+import Created from "../Components/Created";
 
 export const Create = () => {
   const isShow = true;

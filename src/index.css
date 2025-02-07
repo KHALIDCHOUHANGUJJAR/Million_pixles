@@ -1,5 +1,9 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import "@fontsource/poppins";
+@import "@fontsource/poppins/700.css";
+@import "@fontsource/nunito-sans";
+@import "@fontsource/nunito-sans/600.css"; 
+@import "@fontsource/nunito-sans/700.css";
 
 body {
   background-color: #111111;
@@ -7,8 +11,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-
+  font-family: "Poppins", sans-serif;
 }
 
 .selected-flag {
@@ -28,7 +31,6 @@ body {
   background-color: #8d8f92 !important;
 }
 
-
 @keyframes moveClouds {
   0% {
     background-position: 0 0;
@@ -39,7 +41,7 @@ body {
 }
 
 .cloud-bg {
-  background: #1E130E;
+  background: #1e130e;
 }
 
 .cloud-bg::before {
@@ -49,7 +51,7 @@ body {
   left: 0;
   width: 200%;
   height: 100%;
-  background: url('https://www.transparenttextures.com/patterns/cloudy.png');
+  background: url("https://www.transparenttextures.com/patterns/cloudy.png");
   opacity: 0.1;
   animation: moveClouds 30s linear infinite;
   z-index: 1;
