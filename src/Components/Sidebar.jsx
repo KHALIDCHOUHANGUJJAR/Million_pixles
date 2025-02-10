@@ -7,27 +7,26 @@ import { HomeOutlined, SearchOutlined } from "@ant-design/icons";
 function Sidebar() {
   return (
     <div className="h-screen xl:w-[20%]  fixed z-10  2xl:w-[20%]  bg-[#171717] rounded-r-4xl  text-white  flex flex-col items-center">
-      <div className="flex flex-col p-3 justify-between w-[19vw] 2xl:w-[16vw] h-full">
+      <div className="flex flex-col p-3 justify-between w-[18vw] 2xl:w-[16vw] h-full">
         <div>
           <h2 className=" text-3xl 2xl:text-4xl mb-10  font-semibold text-center py-1  border-gray-700">
             <span className="text-orange-500">Wall</span>ofinternet
           </h2>
 
-          <div className="flex items-center gap-2  mt-4">
+          <div className="flex items-center gap-2  mt-4 mb-2">
             <input
               type="text"
               placeholder="Search"
               className="relative w-full shadow-2xl  px-10 2xl:px-15 2xl:text-2xl
                xl:py-2 2xl:py-2 border-2 bg-[#272727]  border-[#413e3e] rounded-3xl  focus:outline-none "
             />
-            <SearchOutlined className="text-xl 2xl:text-2xl text-[#fffff] absolute xl:left-[10%] 2xl:left-[16%] " />
+            <SearchOutlined className="text-xl 2xl:text-2xl text-[#fffff] absolute xl:left-[15%] 2xl:left-[16%] " />
             <button className="xl:p-3 2xl:p-3 rounded-full bg-[#272727] border-2 border-[#413e3e] ">
               <MdOutlineMicNone className="text-xl 2xl:text-2xl text-[#fffff] " />
             </button>
           </div>
-          <br />
           <nav
-            className="mt-2 bg-[#272727] text-[#777777] 
+            className=" bg-[#272727] text-[#777777] 
           shadow-2xl border-2 border-[#413e3e] rounded-xl p-2 flex flex-col gap-1.5
            xl:py-2 2xl:py-6"
           >

@@ -6,9 +6,9 @@ import { UseEditContext } from "../../Context/Context";
 import { leftbarText, pixelOrders } from "../../Utils/text";
 
 const MyPixels = () => {
-const {activeEditId,handleEdit} = UseEditContext()
+  const { activeEditId, handleEdit } = UseEditContext();
   return (
-    <div className="w-full   text-white p-4 sm:p-2">
+    <div className="w-full   text-white">
       <div className="w-full flex flex-col gap-2">
         <div className="w-full flex  justify-center flex-col gap-1.5 ">
           <h1 className="text-2xl 2xl:text-3xl font-semibold px-6 ">
@@ -19,12 +19,18 @@ const {activeEditId,handleEdit} = UseEditContext()
               activeEditId ? "hidden" : "block"
             }`}
           >
-            <div className="bg-[#171717] flex items-center justify-between p-1 2xl:p-3 w-[98%] rounded-full px-8 2xl:px-10 2xl:mb-4">
-              <h2 className="2xl:text-2xl flex items-center  font-semibold">
+            <div
+              className="bg-[#171717] flex items-center
+            border-2 border-[#353030] justify-between p-1 2xl:p-3 w-[98%] rounded-full px-8 2xl:px-10 2xl:mb-4"
+            >
+              <h2 className="2xl:text-2xl flex items-center  font-medium">
                 Here You Can <br /> Manage Your Pixels.
               </h2>
-              <div >
-                <div className="mt-1 2xl:mt-2 xl:space-y-1  flex items-center gap-1.5 2xl:gap-7 justify-between rounded-2xl 2xl:rounded-3xl ">
+              <div>
+                <div
+                  className="mt-1 2xl:mt-2 px-4 p flex items-center gap-1.5 2xl:gap-7 justify-between
+                 rounded-2xl 2xl:rounded-3xl "
+                >
                   {leftbarText.map((i, index) => {
                     if (index === 1) return null;
                     return (
@@ -32,15 +38,18 @@ const {activeEditId,handleEdit} = UseEditContext()
                         key={index}
                         className="flex items-center justify-between gap-5
                          border-2 border-[#4b4747] bg-[#272727]
-                          px-6 xl:py-1 2xl:py-4 rounded-3xl 2xl:rounded-full text-sm"
+                          px-3 xl:py-0.5 2xl:py-4 rounded-3xl 2xl:rounded-full text-sm"
                       >
                         <span className="xl:text-sm 2xl:text-2xl">
                           {index === 2 ? "Total Clicked" : i.textHeading}
                         </span>
-                        <div className="flex items-center xl:text-sm 2xl:text-2xl bg-[#333333] p-1 px-3 rounded-4xl gap-1 border-2 border-[#2C2C2C]">
+                        <div
+                          className="flex items-center xl:text-sm 2xl:text-2xl
+                         bg-[#333333] p-1 px-3 rounded-4xl gap-1 border-2 border-[#2C2C2C]"
+                        >
                           <span
                             className="bg-[#F1713D] 
-                          w-[3vw] flex text-center items-center  text-sm p-
+                          w-[3vw] flex justify-center text-sm p-
                            text-white  rounded-full"
                           >
                             {i.textSubHeading}
@@ -64,7 +73,7 @@ const {activeEditId,handleEdit} = UseEditContext()
           {pixelOrders.map((order) => (
             <div key={order.id}>
               <div
-                className={` rounded-xl p-0.5 2xl:p-5  flex flex-col justify-between sm:flex-row items-start sm:items-center ${
+                className={` rounded-xl p-0.5 2xl:p-5  px-4 flex flex-col justify-between sm:flex-row items-start sm:items-center ${
                   activeEditId === order.id ? "hidden" : "flex"
                 }`}
               >
@@ -79,8 +88,13 @@ const {activeEditId,handleEdit} = UseEditContext()
 
                   <div className="grid grid-cols-1 sm:grid-cols-3 w-full">
                     {order.dates.map((date, idx) => (
-                      <div key={idx} className="space-y-1 2xl:space-y-3 text-center">
-                        <h3 className="text-gray-400 font-medium 2xl:font-semibold">{date}</h3>
+                      <div
+                        key={idx}
+                        className="space-y-1 2xl:space-y-3 text-center"
+                      >
+                        <h3 className="text-gray-400 font-medium 2xl:font-semibold">
+                          {date}
+                        </h3>
                         <p className="text-sm 2xl:text-xl text-gray-500">
                           Position: {order.positions[idx]}
                         </p>
@@ -106,7 +120,7 @@ const {activeEditId,handleEdit} = UseEditContext()
                       <img
                         src="/Assets/Images/images.jpeg"
                         alt=""
-                        className="w-[50vw] h-32 rounded-2xl "
+                        className="w-[50vw] h-32 2xl:h-[23vh] rounded-2xl "
                       />
                     </div>
 
@@ -150,21 +164,21 @@ const {activeEditId,handleEdit} = UseEditContext()
                   <div className="flex flex-col w-full sm:w-1/1  justify-center space-y-4 relative">
                     <div>
                       <label className="text-white text-sm">Text</label>
-                      <AiOutlineEdit className="absolute left-[83%] top-[48%] text-2xl" />
+                      <AiOutlineEdit className="absolute left-[86%] top-[33%] 2xl:top-[38%] 2xl:text-3xl text-2xl" />
 
                       <input
                         type="text"
                         placeholder="Write here"
-                        className="w-full p-2 bg-[#272727] border border-gray-600 rounded-lg text-white"
+                        className="w-full p-2 2xl:p-4 bg-[#272727]  border border-gray-600 rounded-lg text-white"
                       />
                     </div>
                     <div className="w-full ">
                       <label className="text-white text-sm">URL 🔗</label>
-                      <AiOutlineEdit className="absolute left-[69%] top-[67%] text-2xl" />
+                      <AiOutlineEdit className=" absolute left-[86%] top-[68%] 2xl:top-[64%] text-2xl 2xl:text-3xl" />
                       <input
                         type="url"
                         placeholder="Write here"
-                        className="w-full p-2  bg-[#272727] border border-gray-600 rounded-lg text-white"
+                        className="w-full p-2 2xl:p-4 bg-[#272727] border border-gray-600 rounded-lg text-white"
                       />
                     </div>
                   </div>
@@ -189,7 +203,7 @@ const {activeEditId,handleEdit} = UseEditContext()
         </div>
 
         <div className={activeEditId ? "hidden" : "block"}>
-          <div className="bg-[#814127] w-[100%] px-6 p-2 2xl:p-5 2xl:rounded-3xl rounded-2xl ">
+          <div className="bg-[#814127] w-[100%] px-6 p-2 2xl:p-1 2xl:px-5 2xl:rounded-3xl rounded-2xl ">
             <div className="flex items-center justify-between w-full 2xl:text-2xl">
               <div className="flex items-center justify-center gap-1.5 ">
                 {" "}

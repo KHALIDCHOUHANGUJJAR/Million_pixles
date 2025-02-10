@@ -21,6 +21,51 @@ export const leftbarText = [
   },
 ];
 
+export const orders = [
+
+
+  {
+    dateTime: "4:AM Nov/06/20254",
+    orderId: "New App",
+    pixelCount: "Contacts",
+    orderPrice: "15 sec",
+    pixelPositions: "Book your next taxi.........",
+    status: "Terminated",
+  },
+  {
+    dateTime: "4:AM Nov/06/20254",
+    orderId: "New App",
+    pixelCount: "Contacts",
+    orderPrice: "1 minute",
+    pixelPositions: "Book your next taxi.........",
+    status: "Completed",
+  },
+  {
+    dateTime: "4:AM Nov/06/20254",
+    orderId: "New App",
+    pixelCount: "Contacts",
+    orderPrice: "1 minute",
+    pixelPositions: "Book your next taxi.........",
+    status: "Completed",
+  },
+  {
+    dateTime: "4:AM Nov/06/20254",
+    orderId: "New App",
+    pixelCount: "Contacts",
+    orderPrice: "1 minute",
+    pixelPositions: "Book your next taxi.........",
+    status: "Completed",
+  },
+  {
+    dateTime: "4:AM Nov/06/20254",
+    orderId: "New App",
+    pixelCount: "Contacts",
+    orderPrice: "1 minute",
+    pixelPositions: "Book your next taxi.........",
+    status: "Terminated",
+  },
+];
+
 export const pixelOrders = [
   {
     id: 1,

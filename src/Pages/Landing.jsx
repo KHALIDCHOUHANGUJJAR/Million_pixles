@@ -4,7 +4,7 @@ import Footer from "../Components/Footer";
 
 function Landing() {
   return (
-    <div className="flex flex-col min-h-screen w-full">
+    <div className="flex flex-col min-h-screen w-full ">
       <section className="h-screen">
         <img
           src="/Assets/Images/image 8.png"
@@ -12,7 +12,8 @@ function Landing() {
           className="w-full h-full object-cover"
         />
       </section>
-      <main className="flex flex-col items-center w-full">
+      <main className="flex flex-col items-center
+       w-full relative">
         <div className="w-full flex flex-col md:flex-row items-center justify-center p-4 md:p-8">
           <div className="w-full md:w-[80%] mb-8 md:mb-0">
             <h1 className="text-3xl md:text-[3vw] font-semibold tracking-wider md:tracking-[1vw] mb-4">
@@ -37,34 +38,41 @@ function Landing() {
               Creativity Lives Forever.
             </p>
           </div>
-
-          <div className="w-full md:w-full relative">
-        
-            <nav className="z-10 flex md:flex-col items-center md:items-end justify-between md:justify-start w-full md:h-full gap-4 md:gap-[3vh] text-base md:text-lg font-poppins md:mt-[18vh]">
+          <img
+            src="/Assets/Images/Oval.png"
+            alt="ovalimage"
+            className="absolute top-0 left-[70%] w-[30%] h-[37%]   "
+          />
+          <img
+            src="/Assets/Images/Oval (1).png"
+            alt="ovalimage"
+            className="absolute top-0 left-[80%] w-[20%] h-[37%]"
+          />
+          <div className=" w-full h-full ">
+            <nav className="relative z-10 flex flex-col md:items-end
+             items-center justify-center md:justify-start w-full md:h-full
+              gap-4 md:gap-[3vh] text-base md:text-lg font-poppins md:mt-[18vh]">
               <NavLink
                 to=""
-                className="flex items-center py-2 md:py-2 2xl:py-3.5 px-4 md:px-6 hover:underline underline-offset-4 font-semibold text-lg md:text-xl 2xl:text-3xl"
+                className="flex items-center py-2 md:py-2 2xl:py-3.5 px-4 md:px-6 hover:underline underline-offset-4 font-semibold text-lg md:text-xl 2xl:text-3xl text-white"
               >
                 Home
               </NavLink>
-
               <NavLink
                 to="/about"
-                className="flex items-center py-2 md:py-2 2xl:py-3.5 px-4 md:px-6 hover:underline underline-offset-4 font-semibold text-lg md:text-xl 2xl:text-3xl"
+                className="flex items-center py-2 md:py-2 2xl:py-3.5 px-4 md:px-6 hover:underline underline-offset-4 font-semibold text-lg md:text-xl 2xl:text-3xl text-white"
               >
                 About
               </NavLink>
-
               <NavLink
                 to="/contact"
-                className="flex items-center py-2 md:py-2 2xl:py-3.5 px-4 md:px-6 hover:underline underline-offset-4 font-semibold text-lg md:text-xl 2xl:text-3xl"
+                className="flex items-center py-2 md:py-2 2xl:py-3.5 px-4 md:px-6 hover:underline underline-offset-4 font-semibold text-lg md:text-xl 2xl:text-3xl text-white"
               >
                 Contact Us
               </NavLink>
-
               <NavLink
                 to="/login"
-                className="flex items-center py-2 md:py-2 2xl:py-3.5 px-4 md:px-6 hover:underline underline-offset-4 font-semibold text-lg md:text-xl 2xl:text-3xl"
+                className="flex items-center py-2 md:py-2 2xl:py-3.5 px-4 md:px-6 hover:underline underline-offset-4 font-semibold text-lg md:text-xl 2xl:text-3xl text-white"
               >
                 Login
               </NavLink>

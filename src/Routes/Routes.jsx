@@ -1,7 +1,6 @@
-import { Create } from "../Pages/Auth/Create";
-import Login from "../Pages/Auth/create/Login";
-import Singup from "../Pages/Auth/create/Singup";
-import Created2 from "../Pages/Created2";
+import { Create } from "../Pages/Create";
+import Login from "../Pages/Auth/Login";
+import Singup from "../Pages/Auth/Singup";
 import Layout from "../Pages/Layout";
 import { SelectPixels } from "../Pages/SelectPixles";
 import ReviewOrder from "../Pages/ReviewOrder";
@@ -11,6 +10,7 @@ import Landing from "../Pages/Landing";
 import NotFound from "../Pages/Error";
 import Home from "../Pages/Dashboard/Home";
 import MyPixels from "../Pages/Dashboard/MyPixels";
+import History from "../Pages/Dashboard/History";
 
 export const myRoutes = [
   {
@@ -33,6 +33,10 @@ export const myRoutes = [
         path: "MyPixels",
         element: <MyPixels />,
       },
+      {
+        path: "history",
+        element: <History />,
+      },
     ],
   },
 
@@ -40,10 +44,7 @@ export const myRoutes = [
     path: "create",
     element: <Create />,
   },
-  {
-    path: "create2",
-    element: <Created2 />,
-  },
+ 
 
   {
     path: "pixels",

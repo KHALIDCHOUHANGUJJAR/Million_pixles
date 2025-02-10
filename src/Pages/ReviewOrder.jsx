@@ -12,96 +12,113 @@ export default function ReviewOrder() {
   return (
     <div className="flex flex-col w-full md:flex-row min-h-screen">
       <div className="w-full md:w-[60%] bg-[#272727] p-6 min-h-screen">
-        <div className="p-2 md:w-[60%]">
-          <h1 className="text-white text-2xl font-semibold pb-4 border-b ">
+        <div className="p-2 2xl:p-4 md:w-[60%]  2xl:py-12 ">
+          <h1 className="text-white text-2xl 2xl:text-3xl  font-semibold pb-4 2xl:pb-6 border-b ">
             Review Your Order
           </h1>
 
-          <div className="mt-8 mb-10 text-white space-y-8">
-            <h2 className="text-xl ">Pixels Details</h2>
+          <div className="mt-8 2xl:mt-10  mb-10 text-white space-y-8 2xl:space-y-10">
+            <h2 className="text-xl 2xl:text-2xl ">Pixels Details</h2>
 
-            <div className="space-y6">
-              <div className="border-b pb-4 border-white/20">
-                <p className="text-gray-400 mb-1">Selected Block</p>
+            <div className="2xl:space-y-10">
+              <div className="border-b pb-4 2xl:pb-6  border-white/20">
+                <p className="text-gray-400 mb-1 2xl:mb-2 2xl:text-xl">
+                  Selected Block
+                </p>
                 <p>300 x 500</p>
               </div>
 
-              <div className="border-b pb-4 border-white/20">
-                <p className="text-gray-400 mb-1">Pixels Count</p>
+              <div className="border-b pb-4 2xl:pb-6  border-white/20">
+                <p className="text-gray-400 mb-1 2xl:mb-2 2xl:text-xl">
+                  Pixels Count
+                </p>
                 <p>2000 Pixels</p>
               </div>
 
-              <div className="border-b pb-4 border-white/20">
-                <p className="text-gray-400 mb-1">Pixels Location</p>
+              <div className="border-b pb-4 2xl:pb-6  border-white/20">
+                <p className="text-gray-400 mb-1 2xl:mb-2 2xl:text-xl">
+                  Pixels Location
+                </p>
                 <p>X: 157Px Y: 284Px</p>
               </div>
 
-              <div className="border-b pb-4 border-white/20">
-                <p className="text-gray-400 mb-1">Price Per Pixels</p>
+              <div className="border-b pb-4 2xl:pb-6  border-white/20">
+                <p className="text-gray-400 mb-1 2xl:mb-2 2xl:text-xl">
+                  Price Per Pixels
+                </p>
                 <p>$2</p>
               </div>
 
-              <div className="border-b pb-4 border-white/20">
-                <p className="text-gray-400 mb-1">Total Price</p>
+              <div className="border-b pb-4 2xl:pb-6  border-white/20">
+                <p className="text-gray-400 mb-1 2xl:mb-2 2xl:text-xl">
+                  Total Price
+                </p>
                 <p>$2000</p>
               </div>
             </div>
           </div>
 
-          <Button text={"Back"} handleClick={() => navigate("/pixels")} icon={<FaChevronLeft />} />
+          <Button
+            text={"Back"}
+            handleClick={() => navigate("/pixels")}
+            icon={<FaChevronLeft />}
+          />
         </div>
       </div>
 
       <div className="w-full flex flex-col items-center  md:w-[50%] bg-[#F1713D] p-6 min-h-screen">
-        <div className="flex justify-between items-center mb-8">
-          <div className="flex items-start justify-center w-full">
+        <div className="flex justify-between items-center mb-8 2xl:mb-16">
+          <div className="flex items-start justify-center w-full mt-4 2xl:mt-10  mb-2">
             <div className="flex items-center flex-col justify-between">
-              <div className="flex items-center justify-center md:p-3 p-4 w-4 h-4 rounded-full border-2   text-center">
+              <div className="flex items-center justify-center p-4 md:p-2 2xl:w-10   2xl:h-10 w-6   h-6 rounded-full border-2   text-center">
                 1
               </div>
-              <h1 className="font-semibold">Buy Pixel</h1>
+              <h1 className="text-sm font-semibold">Buy Pixel</h1>
             </div>
-            <div className="w-[8vw] border-1 border-white/20 "></div>
+            <div className="w-[8vw] border-1 2xl:border-2 border-white/20 "></div>
             <div className="flex items-center flex-col justify-between">
-              <div className="flex items-center justify-center md:p-3 p-4 w-4 h-4 rounded-full border-2 bg-black border-black   text-center">
+              <div className="flex items-center justify-center p-4 md:p-2 2xl:w-10  2xl:h-10 w-6   h-6 rounded-full border-2 bg-black border-black   text-center">
                 2
               </div>
-              <h1 className="font-semibold text-black">Confirm Order</h1>
+              <h1 className=" font-semibold text-black text-sm">
+                Confirm Order
+              </h1>
             </div>
-            <div className="w-[8vw] border-1 border-white/20 "></div>
-
-            <div className="flex items-center  flex-col justify-between">
-              <div className="flex items-center justify-center md:p-3 p-4 w-4 h-4 rounded-full border-2  border-white text-center">
+            <div className="w-[8vw] border-1 2xl:border-2 border-white/20 "></div>
+            <div className="flex items-center flex-col justify-between">
+              <div className="flex items-center justify-center p-4 md:p-2 2xl:w-10  2xl:h-10 w-6   h-6 rounded-full border-2   text-center">
                 3
               </div>
-              <h1 className="font-semibold">Payment</h1>
+              <h1 className="text-sm font-semibold">Payment</h1>
             </div>
           </div>
         </div>
 
         <div
-          className={`bg-white rounded-lg p-6 md:w-[23vw] shadow-lg ${
+          className={`bg-white rounded-lg p-6 2xl:p-8 md:w-[27vw] 2xl:w-[25vw] shadow-lg ${
             isNext && "hidden"
           } transform transition-all duration-100000 ease-in-out`}
         >
           <div className="mb-6">
-            <h3 className="text-xl text-black font-bold mb-4">Order Summary</h3>
+            <h3 className="text-xl 2xl:text-2xl text-black font-bold mb-4">
+              Order Summary
+            </h3>
 
-            <div className="space-y-2 mb-4  text-black">
-              <div className="flex border-b-2 border-black/25 pb-4 flex-col justify-between">
+            <div className="space-y-2 2xl:space-y-8 mb-4 2xl:mb-6  text-black">
+              <div className="flex border-b-2 2xl:text-xl 2xl:pb-6 2xl:mt-8 border-black/25 pb-4  flex-col justify-between">
                 <span>Pixel Price</span>
                 <span>$2.50 Per Pixel</span>
               </div>
-              <div className="flex flex-col justify-between border-b-2 border-black/25 pb-4">
+              <div className="flex flex-col 2xl:pb-6 2xl:mt-8 2xl:text-xl justify-between border-b-2 border-black/25 pb-4">
                 <span>Total Cost</span>
                 <span>100 Pixels x $2.50 = $250.00</span>
               </div>
 
-              <div className="flex flex-col justify-between border-b-2 border-black/25 pb-4">
+              <div className="flex flex-col 2xl:pb-6 2xl:mt-8 2xl:text-xl justify-between border-b-2 border-black/25 pb-4">
                 <span>Additional Fees</span>
                 <span>Tax: $5.00</span>
               </div>
-              <div className="flex flex-col justify-between  border-b-2 border-black/25 pb-4">
+              <div className="flex flex-col 2xl:pb-6 2xl:mt-8 2xl:text-xl justify-between  border-b-2 border-black/25 pb-4">
                 <span>Total Amount</span>
                 <span>$55.00</span>
               </div>
@@ -109,7 +126,8 @@ export default function ReviewOrder() {
 
             <button
               onClick={handleNext}
-              className="w-full mt-6 px-6 py-3 bg-[#F1713D] text-white rounded hover:bg-[#F1713D]/90 transition-colors"
+              className="w-full mt-6 px-6 2xl:px-10 py-3 2xl:py-5 2xl:text-2xl bg-[#F1713D]
+               text-white rounded-xl hover:bg-[#F1713D]/90 transition-colors"
             >
               Payment method
             </button>
@@ -121,7 +139,7 @@ export default function ReviewOrder() {
             !isNext && "hidden"
           } transform transition-all duration-500 ease-in-out`}
         >
-          <div className=" px-4 mb-4">
+          <div className=" px-4 mb-2 flex flex-col gap-1">
             <h2 className="text-[#F1713D] text-xl font-black ">
               Terms and Conditions
             </h2>
@@ -137,11 +155,10 @@ export default function ReviewOrder() {
           >
             {" "}
             <p className="text-md">
-               December 16, 2013{" "}
-              <br /> Welcome to www.lorem-ipsum.info. This site is provided as a
-              service to our visitors and may be used for informational purposes
-              only. Because the Terms and Conditions contain legal obligations,
-              please read them carefully. <br />{" "}
+              December 16, 2013 <br /> Welcome to www.lorem-ipsum.info. This
+              site is provided as a service to our visitors and may be used for
+              informational purposes only. Because the Terms and Conditions
+              contain legal obligations, please read them carefully. <br />{" "}
               <span className="font-semibold">1. YOUR AGREEMENT</span> <br /> By
               using this Site, you agree to be bound by, and to comply with,
               these Terms and Conditions. If you do not agree to these Terms and
@@ -173,10 +190,13 @@ export default function ReviewOrder() {
           </div>
           <div className="w-full flex items-center justify-end">
             <div className="flex items-center gap-10 p- justify-end px-3 p-3 w-full">
-              <button onClick={handleNext} className="text-[#F1713D]">
+              <button
+                onClick={handleNext}
+                className="text-[#F1713D] cursor-pointer"
+              >
                 Cancel
               </button>
-              <Button text={"Next"} />
+              <Button text={"Next"} handleClick={() => navigate("/payment")} />
             </div>
           </div>
         </div>
