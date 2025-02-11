@@ -299,7 +299,7 @@ export const SelectPixels = () => {
             </div>
           </div>
         ) : (
-          <p className="text-[0.875rem] 2xl:text-lg text-[#E2E2E2] text-center font-[Poppins]">
+          <p className="text-[0.875rem]  text-[#E2E2E2] text-center font-[Poppins]">
             Claim your space in the digital landscape! Wall of internet lets you
             buy, own, and customize pixels on the most interactive online
             canvas. Showcase your creativity, promote your brand, or leave your
@@ -310,7 +310,7 @@ export const SelectPixels = () => {
           className={` ${
             isCollapsed
               ? "  flex flex-col gap-2 "
-              : " flex justify-center gap-3 text-xs 2xl:text-lg text-[#E2E2E2] mt-4"
+              : " flex justify-center gap-3 text-xs 2xl:text-md text-[#E2E2E2] mt-4"
           }`}
         >
           <Link to={"#"} className="hover:text-gray-200 underline">

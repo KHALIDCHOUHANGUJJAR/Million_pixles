@@ -11,7 +11,7 @@ function Layout() {
 
       <div className="w-[100%] ml-[20%] flex flex-col">
         <Header />
-        <div className="flex-1 p-1">
+        <div className="flex-1  ">
           <Outlet />
         </div>
       </div>

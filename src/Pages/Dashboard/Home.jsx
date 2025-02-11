@@ -31,33 +31,33 @@ const Home = () => {
              border-2 border-[#252323] "
             >
               <h2
-                className="2xl:text-2xl flex items-center
-               xl:gap-5 2xl:gap-10 font-medium font-poppins "
+                className="2xl:text-xl flex items-center
+               xl:gap-5 2xl:gap-6 font-medium font-poppins "
               >
                 Here You Can <br /> Manage Your Pixels.
                 <RxArrowTopRight
                   className="text-xl rounded-full bg-[#272727]
-                 xl:w-10 xl:h-10 2xl:w-16 2xl:h-16 text-center "
+                 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12 text-center "
                 />
               </h2>
-              <div className=" 2xl:mt-4 xl:space-y-2 2xl:space-y-5">
+              <div className=" 2xl:mt-2  xl:space-y-2 2xl:space-y-5  ">
                 {leftbarText.map((i, index) => {
                   return (
                     <div
                       key={index}
                       className="flex items-center justify-between
                        border-2 border-[#4b4747] bg-[#272727]
-                        px-3  xl:py-0.5 2xl:py-2 rounded-3xl"
+                        px-3 2xl:px-4  xl:py-0.5 2xl:p-1 rounded-3xl  "
                     >
-                      <span className="xl:text-sm 2xl:text-2xl">
+                      <span className="xl:text-sm 2xl:text-md">
                         {i.textHeading}
                       </span>
                       <div
-                        className="flex items-center xl:text-sm 2xl:text-2xl bg-[#333333] p-1 px-1
+                        className="flex items-center xl:text-sm 2xl:text-md bg-[#333333] p-1 px-1
                        rounded-4xl gap-1 border-2 border-[#2C2C2C]"
                       >
                         <span
-                          className="bg-[#F1713D] flex items-stretch text-sm 2xl:p-1 px-2
+                          className="bg-[#F1713D] flex items-stretch text-sm  px-2
                           text-white  rounded-full"
                         >
                           {i.textSubHeading}
@@ -71,7 +71,7 @@ const Home = () => {
             </div>
           </div>
           <div className="flex  items-center justify-center">
-            <div className="bg-[#F1713D] text-white p-4 2xl:p-5 text-center w-[92%] rounded-lg 2xl:mt-10 mt-2   ">
+            <div className="bg-[#F1713D] text-white p-4  text-center w-[92%] rounded-lg 2xl:mt-5 mt-2   ">
               <h3 className="text-md font-poppins  font-semibold flex items-center gap-2 justify-center">
                 Here Is What You Can Do
                 <RiQuestionnaireLine className="text-xl " />{" "}

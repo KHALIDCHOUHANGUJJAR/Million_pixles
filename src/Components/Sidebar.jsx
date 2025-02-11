@@ -103,7 +103,7 @@ function Sidebar() {
           </div>
         </div>
 
-        <div className=" 2xl:mb-10">
+        <div className=" 2xl:mb-0">
           <button
             className="w-full flex items-center gap-1 shadow-2xl
            border-2 border-[#413e3e]  p-4 xl:py-3 2xl:py-4 bg-[#272727]

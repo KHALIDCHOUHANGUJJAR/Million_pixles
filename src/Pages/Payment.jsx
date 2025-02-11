@@ -16,7 +16,7 @@ export default function Payment() {
   return (
     <div className="flex flex-col  w-full md:flex-row min-h-screen">
       <div className="w-[100%] md:w-[60%] flex items-center md:justify-start justify-center bg-[#272727] p-6 min-h-screen">
-        <div className="p-2 2xl:p-4 md:w-[60%] w-[100%] 2xl:space-y-20">
+        <div className="p-2 2xl:p-4 md:w-[60%] w-[100%]">
           <h1 className="text-white text-xl md:text-2xl 2xl:text-3xl  font-semibold pb-4 2xl:pb-10  border-b border-[#D0CFCF] ">
             Payment Proceed
           </h1>
@@ -72,7 +72,7 @@ export default function Payment() {
       </div>
 
       <div className="w-full flex flex-col items-center  md:w-[50%] bg-[#F1713D] p-2 2xl:p-8  min-h-screen ">
-        <div className="flex justify-between items-center mb-4 2xl:mb-8 mt-4 2xl:mt-8">
+        <div className="flex justify-between items-center mb-4 mt-4 2xl:mt-8">
           <div className="flex items-start justify-center w-full">
             <div className="flex items-center flex-col justify-between">
               <div className="flex items-center justify-center p-6 md:p-2 2xl:p-4  w-4 h-4 rounded-full border-2   text-center">
@@ -99,11 +99,11 @@ export default function Payment() {
         </div>
 
         <div
-          className="md:bg-white bg-white rounded-[1.25rem] p-2 2xl:p-6 md:w-[60%] shadow-lg 
+          className="md:bg-white bg-white rounded-[1.25rem] p-2  md:w-[60%] shadow-lg 
              transform transition-all  duration-1000 ease-in-out"
         >
           <div className="p-2">
-            <h3 className="text-lg text-black font-bold mb-1 2xl:mb-2 2xl:text-2xl">
+            <h3 className="text-lg text-black font-bold mb-1 2xl:text-2xl">
               Card Details
             </h3>
             <div className="w-full ">
@@ -112,20 +112,20 @@ export default function Payment() {
                 <img
                   src="Assets/Images/Rectangle 9.png"
                   alt="masterCard"
-                  className="object-fill w-[6vw] 2xl:w-[8vw] "
+                  className="object-fill w-[6vw]  "
                 />
                 <img
                   src="Assets/Images/Rectangle 10.png"
                   alt="Visa"
-                  className="object-fill w-[6vw] 2xl:w-[8vw]"
+                  className="object-fill w-[6vw] "
                 />
                 <img
                   src="Assets/Images/Rectangle 11.png"
                   alt="RuPay"
-                  className="object-fill w-[6vw] 2xl:w-[8vw]"
+                  className="object-fill w-[6vw] "
                 />
                 <div className="px-3 border-2 border-black/5 rounded  flex items-center justify-center text-center">
-                  <h4 className="text-black w-[2vw] flex items-center h-[8vh] justify-center ">
+                  <h4 className="text-black w-[2vw] flex items-center h-[6vh] justify-center ">
                     See all
                   </h4>
                 </div>

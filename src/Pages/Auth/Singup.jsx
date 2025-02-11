@@ -44,7 +44,7 @@ function Singup() {
               className="h-full 2xl:space-y-10"
             >
               <div className="flex items-center  h-full justify-between ">
-                <div className=" w-[48%] 2xl:space-y-5">
+                <div className=" w-[48%] 2xl:space-y-2">
                   <label className="block text-gray-200 text-sm  2xl:text-xl">
                     Full Name
                   </label>
@@ -54,7 +54,7 @@ function Singup() {
                     })}
                     type="text"
                     className="w-full p-1.5 px-4
-                     text-gray-200 rounded-[0.75rem] 2xl:py-4 border border-gray-400/50 focus:outline-none focus:border-orange-500"
+                     text-gray-200 rounded-[0.75rem] 2xl:py-2 border border-gray-400/50 focus:outline-none focus:border-orange-500"
                   />
                   {errors.fullName && (
                     <p className="text-red-500 text-sm ">
@@ -62,7 +62,7 @@ function Singup() {
                     </p>
                   )}
                 </div>
-                <div className="mb-1 w-[48%] 2xl:space-y-5 ">
+                <div className="mb-1 w-[48%] 2xl:space-y-2 ">
                   <label className="block text-gray-200 text-sm 2xl:text-xl ">
                     User Name
                   </label>
@@ -71,7 +71,7 @@ function Singup() {
                       required: "Username is required",
                     })}
                     type="text"
-                    className="w-full p-1.5 px-4 2xl:py-4 text-gray-200 rounded-[0.75rem] border border-gray-400/50 focus:outline-none focus:border-orange-500"
+                    className="w-full p-1.5 px-4 2xl:py-2 text-gray-200 rounded-[0.75rem] border border-gray-400/50 focus:outline-none focus:border-orange-500"
                   />
                   {errors.username && (
                     <p className="text-red-500 text-sm mt-1">
@@ -80,14 +80,14 @@ function Singup() {
                   )}
                 </div>
               </div>
-              <div className="mb-4 2xl:space-y-5">
+              <div className="mb-4 2xl:space-y-2">
                 <label className="block text-gray-200 text-sm 2xl:text-xl  ">
                   Email Address
                 </label>
                 <input
                   {...register("email", { required: "Email is required" })}
                   type="email"
-                  className="w-full p-1.5 px-4 2xl:py-4 text-gray-200 rounded-[0.75rem] border border-gray-400/50 focus:outline-none focus:border-orange-500"
+                  className="w-full p-1.5 px-4 2xl:py-2 text-gray-200 rounded-[0.75rem] border border-gray-400/50 focus:outline-none focus:border-orange-500"
                 />
                 {errors.email && (
                   <p className="text-red-500 text-sm mt-1">
@@ -111,6 +111,7 @@ function Singup() {
                         background: "transparent",
                         color: "#fff",
                         borderColor: "#374151",
+                        borderRadius:"12px",
                       }}
                       containerStyle={{ width: "100%" }}
                     />
@@ -120,7 +121,7 @@ function Singup() {
                   <p className="text-red-500 text-sm">{errors.phone.message}</p>
                 )}
               </div>
-              <div className="space-y-2 mt-1 2xl:space-y-5">
+              <div className="space-y-2 mt-1 2xl:space-y-2">
                 <div className="flex items-center justify-between">
                   <label htmlFor="refer" className="text-gray-200 2xl:text-xl">
                     Refer
@@ -135,14 +136,14 @@ function Singup() {
                     required: "Password is required",
                   })}
                   type="password"
-                  className="w-full p-1.5 px-4 2xl:py-4 text-gray-200 rounded-[0.75rem] border border-gray-400/50
+                  className="w-full p-1.5 px-4 2xl:py-2 text-gray-200 rounded-[0.75rem] border border-gray-400/50
                    focus:outline-none focus:border-orange-500"
                 />
                 {errors.ref && (
                   <p className="text-red-500 text-sm">{errors.ref.message}</p>
                 )}
               </div>
-              <div className="mb-4  2xl:space-y-5">
+              <div className="mb-4  2xl:space-y-2">
                 <label className="block text-gray-200 text-sm 2xl:text-xl ">
                   Set Your Password
                 </label>
@@ -151,7 +152,7 @@ function Singup() {
                     required: "Password is required",
                   })}
                   type="password"
-                  className="w-full p-1.5 px-4 2xl:py-4 text-gray-200 rounded-[0.75rem] border border-gray-400/50
+                  className="w-full p-1.5 px-4 2xl:py-2 text-gray-200 rounded-[0.75rem] border border-gray-400/50
                    focus:outline-none focus:border-orange-500"
                 />
                 {errors.password && (
@@ -160,14 +161,14 @@ function Singup() {
                   </p>
                 )}
               </div>
-              <div className="p-3 2xl:p-4">
-                <p className="text-sm flex items-center md:flex-nowrap flex-wrap w-full text-gray-300 mb-4 2xl:text-xl">
+              <div className="p-3 2xl:p-1">
+                <p className="text-sm flex items-center md:flex-nowrap flex-wrap w-full text-gray-300  2xl:text-lg 2">
                   <input
                     type="checkbox"
                     {...register("terms", {
                       required: "You must agree to continue",
                     })}
-                    className="mr-2 w-5 h-5 2xl:py-4 accent-orange-500"
+                    className="mr-2 w-5 h-5 2xl:py-2 accent-orange-500"
                   />
                   By creating an account, you agree to our
                   <Link to="/terms" className=" underline ">
@@ -189,7 +190,7 @@ function Singup() {
                     {...register("terms", {
                       required: "You must agree to continue",
                     })}
-                    className="mr-2 w-8 h-8 2xl:py-4 accent-orange-500"
+                    className="mr-2 w-8 h-8 2xl:py-2 accent-orange-500"
                   />
                   By creating an account, i am also concenting to recive SMS{" "}
                   messages and email, including products, new features updates,{" "}
