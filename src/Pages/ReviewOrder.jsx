@@ -13,7 +13,7 @@ export default function ReviewOrder() {
     <div className="flex flex-col w-full md:flex-row min-h-screen">
       <div className="w-full md:w-[60%] bg-[#272727] p-6 min-h-screen">
         <div className="p-2 2xl:p-4 md:w-[60%]  2xl:py-12 ">
-          <h1 className="text-white text-2xl 2xl:text-3xl  font-semibold pb-4 2xl:pb-6 border-b ">
+          <h1 className="text-white text-[1.5rem] 2xl:text-3xl  font-semibold pb-4 2xl:pb-6 border-b border-[#D0CFCF] ">
             Review Your Order
           </h1>
 
@@ -127,7 +127,7 @@ export default function ReviewOrder() {
             <button
               onClick={handleNext}
               className="w-full mt-6 px-6 2xl:px-10 py-3 2xl:py-5 2xl:text-2xl bg-[#F1713D]
-               text-white rounded-xl hover:bg-[#F1713D]/90 transition-colors"
+               text-white rounded-[1rem] hover:bg-[#F1713D]/90 transition-colors"
             >
               Payment method
             </button>
@@ -135,7 +135,7 @@ export default function ReviewOrder() {
         </div>
 
         <div
-          className={`bg-white w-full p-1 rounded-lg  text-black ${
+          className={`bg-white w-full p-0.5 rounded-lg  text-black ${
             !isNext && "hidden"
           } transform transition-all duration-500 ease-in-out`}
         >
@@ -154,7 +154,7 @@ export default function ReviewOrder() {
             }}
           >
             {" "}
-            <p className="text-md">
+            <p className="text-[17px] font-medium leading-[150%] text-[#6B6B6B] font-['Roboto_Flex'] text-justify">
               December 16, 2013 <br /> Welcome to www.lorem-ipsum.info. This
               site is provided as a service to our visitors and may be used for
               informational purposes only. Because the Terms and Conditions
@@ -196,7 +196,12 @@ export default function ReviewOrder() {
               >
                 Cancel
               </button>
-              <Button text={"Next"} handleClick={() => navigate("/payment")} />
+              <button
+                onClick={() => navigate("/payment")}
+                className="flex w-[10rem] p-[1.3vh] justify-center items-center gap-[0.625rem] bg-[#F1713D] text-white rounded-[7.25px]"
+              >
+                Next
+              </button>
             </div>
           </div>
         </div>

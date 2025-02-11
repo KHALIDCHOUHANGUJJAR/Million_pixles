@@ -27,11 +27,12 @@ function Singup() {
           className="w-full h-full object-fill shadow-lg "
         />
       </div>
-      <div className="   w-full md:h-[95%] h-full md:w-[60%] flex flex-col absolute right-0   ">
+      <div className="   w-full md:h-[100%] h-full md:w-[60%] flex flex-col items-center justify-center absolute right-0   ">
         <div className="flex items-center  justify-center  ">
           <div
-            className="text-white md:w-[80%] w-[90%]  space-y-[]
-           border-2 border-slate-700  rounded-xl md:p-8 p-4 shadow-2xl  "
+            className="text-white md:w-[80%] w-[90%]  
+           rounded-[1.5rem] border border-gray-400/50
+  2xl:p-8 p-6 shadow-2xl  "
           >
             <div className=" h-full ">
               <h1 className="text-2xl 2xl:text-3xl font-bold mb-8">
@@ -53,7 +54,7 @@ function Singup() {
                     })}
                     type="text"
                     className="w-full p-1.5 px-4
-                     text-gray-200 rounded-md 2xl:py-4 border border-gray-700 focus:outline-none focus:border-orange-500"
+                     text-gray-200 rounded-[0.75rem] 2xl:py-4 border border-gray-400/50 focus:outline-none focus:border-orange-500"
                   />
                   {errors.fullName && (
                     <p className="text-red-500 text-sm ">
@@ -70,7 +71,7 @@ function Singup() {
                       required: "Username is required",
                     })}
                     type="text"
-                    className="w-full p-1.5 px-4 2xl:py-4 text-gray-200 rounded-md border border-gray-700 focus:outline-none focus:border-orange-500"
+                    className="w-full p-1.5 px-4 2xl:py-4 text-gray-200 rounded-[0.75rem] border border-gray-400/50 focus:outline-none focus:border-orange-500"
                   />
                   {errors.username && (
                     <p className="text-red-500 text-sm mt-1">
@@ -86,7 +87,7 @@ function Singup() {
                 <input
                   {...register("email", { required: "Email is required" })}
                   type="email"
-                  className="w-full p-1.5 px-4 2xl:py-4 text-gray-200 rounded-md border border-gray-700 focus:outline-none focus:border-orange-500"
+                  className="w-full p-1.5 px-4 2xl:py-4 text-gray-200 rounded-[0.75rem] border border-gray-400/50 focus:outline-none focus:border-orange-500"
                 />
                 {errors.email && (
                   <p className="text-red-500 text-sm mt-1">
@@ -134,7 +135,7 @@ function Singup() {
                     required: "Password is required",
                   })}
                   type="password"
-                  className="w-full p-1.5 px-4 2xl:py-4 text-gray-200 rounded-md border border-gray-700
+                  className="w-full p-1.5 px-4 2xl:py-4 text-gray-200 rounded-[0.75rem] border border-gray-400/50
                    focus:outline-none focus:border-orange-500"
                 />
                 {errors.ref && (
@@ -150,7 +151,7 @@ function Singup() {
                     required: "Password is required",
                   })}
                   type="password"
-                  className="w-full p-1.5 px-4 2xl:py-4 text-gray-200 rounded-md border border-gray-700
+                  className="w-full p-1.5 px-4 2xl:py-4 text-gray-200 rounded-[0.75rem] border border-gray-400/50
                    focus:outline-none focus:border-orange-500"
                 />
                 {errors.password && (
@@ -159,8 +160,8 @@ function Singup() {
                   </p>
                 )}
               </div>
-              <div>
-                <p className="text-sm flex items-center md:flex-nowrap flex-wrap text-gray-300 mb-4 2xl:text-xl">
+              <div className="p-3 2xl:p-4">
+                <p className="text-sm flex items-center md:flex-nowrap flex-wrap w-full text-gray-300 mb-4 2xl:text-xl">
                   <input
                     type="checkbox"
                     {...register("terms", {
@@ -169,7 +170,7 @@ function Singup() {
                     className="mr-2 w-5 h-5 2xl:py-4 accent-orange-500"
                   />
                   By creating an account, you agree to our
-                  <Link to="/terms" className=" underline ml-1">
+                  <Link to="/terms" className=" underline ">
                     Terms of Use
                   </Link>
                   and
@@ -203,7 +204,7 @@ function Singup() {
               <div className="flex text-center md:flex-row flex-col items-center justify-between">
                 <button
                   type="submit"
-                  className="p-10 bg-[#F1713D] hover:bg-orange-700 text-white py-2 rounded-lg font-semibold"
+                  className="p-10 bg-[#F1713D] hover:bg-orange-700 text-white py-2 rounded-[1rem] font-semibold"
                 >
                   Create an account
                 </button>

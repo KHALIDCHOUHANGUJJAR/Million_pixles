@@ -17,7 +17,7 @@ export default function Payment() {
     <div className="flex flex-col  w-full md:flex-row min-h-screen">
       <div className="w-[100%] md:w-[60%] flex items-center md:justify-start justify-center bg-[#272727] p-6 min-h-screen">
         <div className="p-2 2xl:p-4 md:w-[60%] w-[100%] 2xl:space-y-20">
-          <h1 className="text-white text-xl md:text-2xl 2xl:text-3xl  font-semibold pb-4 2xl:pb-10  border-b ">
+          <h1 className="text-white text-xl md:text-2xl 2xl:text-3xl  font-semibold pb-4 2xl:pb-10  border-b border-[#D0CFCF] ">
             Payment Proceed
           </h1>
 
@@ -32,7 +32,8 @@ export default function Payment() {
                 <p className="mb-1 font-semibold 2xl:text-xl ">Name</p>
                 <input
                   placeholder="Write here"
-                  className="w-full rounded-xl border-2 border-white/20 bg-transparent p-3 2xl:p-6 px-10 2xl:rounded-2xl text-white placeholder:text-white/50"
+                  className="w-full rounded-[1.125rem] border-2 border-white/20 bg-transparent p-3 2xl:p-6 px-10 2xl:rounded-2xl
+                   text-white placeholder:text-white/50"
                   {...register("name", { required: true })}
                 />
               </div>
@@ -41,7 +42,7 @@ export default function Payment() {
                 <p className="mb-1 font-semibold 2xl:text-xl">Email Address</p>
                 <input
                   placeholder="https://Example.com"
-                  className="w-full rounded-xl border-2 border-white/20 bg-transparent p-3 2xl:p-6 px-10 2xl:rounded-2xl text-white placeholder:text-white/50"
+                  className="w-full rounded-[1.125rem] border-2 border-white/20 bg-transparent p-3 2xl:p-6 px-10 2xl:rounded-2xl text-white placeholder:text-white/50"
                   {...register("email", { required: true })}
                 />
               </div>
@@ -52,7 +53,7 @@ export default function Payment() {
                 </p>
                 <input
                   type="datetime-local"
-                  className="w-full rounded-xl border-2 border-white/20 bg-transparent p-3 2xl:p-6 px-10 2xl:rounded-2xl text-white"
+                  className="w-full rounded-[1.125rem] border-2 border-white/20 bg-transparent p-3 2xl:p-6 px-10 2xl:rounded-2xl text-white"
                   {...register("orderDate", { required: true })}
                 />
               </div>
@@ -61,7 +62,7 @@ export default function Payment() {
                 <p className="mb-1 font-semibold 2xl:text-xl">Order ID</p>
                 <input
                   placeholder="Order #12345"
-                  className="w-full rounded-xl border-2 border-white/20 bg-transparent p-3 2xl:p-6 px-10 2xl:rounded-2xl text-white"
+                  className="w-full rounded-[1.125rem] border-2 border-white/20 bg-transparent p-3 2xl:p-6 px-10 2xl:rounded-2xl text-white"
                   {...register("orderId", { required: true })}
                 />
               </div>
@@ -98,11 +99,13 @@ export default function Payment() {
         </div>
 
         <div
-          className="md:bg-white bg-white rounded-xl p-2 2xl:p-6 md:w-[30vw] shadow-lg 
+          className="md:bg-white bg-white rounded-[1.25rem] p-2 2xl:p-6 md:w-[60%] shadow-lg 
              transform transition-all  duration-1000 ease-in-out"
         >
           <div className="p-2">
-            <h3 className="text-lg text-black font-bold mb-1 2xl:mb-2 2xl:text-2xl">Card Details</h3>
+            <h3 className="text-lg text-black font-bold mb-1 2xl:mb-2 2xl:text-2xl">
+              Card Details
+            </h3>
             <div className="w-full ">
               <h5 className="text-md 2xl:text-xl text-black"> Card Type</h5>
               <div className="flex items-center justify-center">
@@ -135,7 +138,9 @@ export default function Payment() {
                 className="text-black  space-y-1.5 2xl:space-y-3 2xl:mb-4  "
               >
                 <div>
-                  <label className="text-sm font-semibold 2xl:text-xl  ">Name</label>
+                  <label className="text-sm font-semibold 2xl:text-xl  ">
+                    Name
+                  </label>
                   <input
                     placeholder="Name"
                     className="border-2 rounded-lg  border-white/20  w-full bg-[#272727] text-white px-5 p-1.5 2xl:p-5 "
@@ -143,7 +148,9 @@ export default function Payment() {
                   />{" "}
                 </div>
                 <div>
-                  <label className="text-sm font-semibold 2xl:text-xl ">Card Number</label>
+                  <label className="text-sm font-semibold 2xl:text-xl ">
+                    Card Number
+                  </label>
                   <input
                     placeholder="1111 2222 3333 4444 "
                     type="number"
@@ -158,12 +165,15 @@ export default function Payment() {
                     </label>
                     <input
                       type="date"
-                      className="border-2 rounded-lg  border-white/20  w-full bg-[#272727] text-white px-5 p-1.5 2xl:p-5"
+                      className="border-2 rounded-lg  border-white/20  w-full bg-[#272727] text-white
+                        p-1.5 2xl:p-5"
                       {...register("exampleRequired", { required: true })}
                     />{" "}
                   </div>
                   <div>
-                    <label className="text-sm font-semibold 2xl:text-xl ">CVV</label>
+                    <label className="text-sm font-semibold 2xl:text-xl ">
+                      CVV
+                    </label>
                     <input
                       placeholder="123 "
                       type="number"
@@ -191,7 +201,7 @@ export default function Payment() {
               </div>
               <div
                 className="text-white flex items-center justify-between w-full 
-               cursor-pointer bg-[#F1713D] px-6 p-1 2xl:p-4 rounded-xl"
+               cursor-pointer bg-[#F1713D] px-6 p-1 2xl:p-4 rounded-[0.75rem]"
               >
                 <p>$1,672</p>
                 <Button

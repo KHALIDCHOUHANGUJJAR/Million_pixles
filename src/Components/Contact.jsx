@@ -19,7 +19,7 @@ const Contact = () => {
           👋 contact{" "}
         </button>
       </div>
-      <div className="w-[95%] h-0.5 bg-[#FFF] z-10 mt-8"></div>
+      <div className="w-[95%] h-0.5 bg-[#F7F8FA] z-10 mt-8"></div>
     </div>
   );
 };

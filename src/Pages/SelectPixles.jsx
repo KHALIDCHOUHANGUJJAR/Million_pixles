@@ -184,8 +184,7 @@ export const SelectPixels = () => {
             <h1 className="text-2xl 2xl:text-3xl  font-bold flex items-center gap-2">
               Select Pixel <IoIosInformationCircleOutline className="text-md" />
             </h1>
-            <div className="flex items-center gap-1.5
-             bg-[#B7552E] text-white text-sm  2xl:text-xl 2xl:p-3 rounded p-2">
+            <div className="inline-flex items-center gap-[10px] bg-[#B7552E] text-white text-sm 2xl:text-xl 2xl:p-3 rounded p-[10px]">
               <IoIosInformationCircleOutline />
               Use Cursor To Select An Area
             </div>
@@ -207,8 +206,10 @@ export const SelectPixels = () => {
               isCollapsed ? " hidden" : "block"
             }`}
           >
-            <div className="flex ml-6 items-center justify-between gap-4
-             w-fit">
+            <div
+              className="flex ml-6 items-center justify-between gap-4
+             w-fit"
+            >
               <h2 className="flex items-center gap-1.5 2xl:text-xl">
                 <FaCircle className="text-green-600" />
                 Available Pixels
@@ -219,13 +220,15 @@ export const SelectPixels = () => {
               </h2>
             </div>
             <div className="flex gap-2">
-              <button className="bg-gray-700 flex items-center
-               gap-1.5 text-white px-4 py-2 2xl:text-xl rounded-md text-sm">
+              <button
+                className="bg-[#272727] flex items-center
+               gap-1.5 text-white px-5 py-3 2xl:text-xl rounded-[1.34rem] text-sm"
+              >
                 <FaCircleQuestion /> How It Works
               </button>
               <button
                 onClick={handleClick}
-                className="bg-gray-700 text-white 2xl:text-xl px-4 py-2 rounded-md text-sm"
+                className="bg-[#272727] text-white 2xl:text-xl px-4 py-2 rounded-[1.34rem] text-sm"
               >
                 View Whole Canvas
               </button>
@@ -236,16 +239,22 @@ export const SelectPixels = () => {
       <BiCollapseHorizontal
         onClick={handleClick}
         className={`absolute h-[4vh] w-[2vw] rounded-lg top-[20%] bg-[#272727] z-10 text-4xl text-white ${
-          isCollapsed ? "left-[89%]" : "left-[68.9%]"
+          isCollapsed ? "left-[84.5%]" : "left-[68.9%]"
         }`}
       />
 
       <div
         className={`h-screen ${
-          isCollapsed ? "w-[10%]" : "w-[30%]"
+          isCollapsed ? "w-[15%]" : "w-[30%]"
         } bg-[#272727] p-6 z-0 relative text-white flex flex-col transition-all`}
       >
-        <h2 className="text-2xl 2xl:text-3xl 2xl:p-3 font-bold border-b text-center border-gray-600 pb-2">
+        <h2
+          className={`
+          text-2xl 2xl:text-3xl 2xl:p-3 font-bold border-b text-center border-[#D0CFCF] pb-2 ${
+            isCollapsed ? "text-[20px] 2xl:text-xl " : "text-2xl 2xl:text-3xl"
+          }
+          `}
+        >
           Pixels Details
         </h2>
         <div
@@ -254,29 +263,29 @@ export const SelectPixels = () => {
           id="pixelsDetails"
         >
           <div
-            className="border-2 p-6 2xl:space-y-10  flex  flex-col justify-center
-           border-[#2F2F2F] rounded-2xl"
+            className="-2 p-6 2xl:space-y-10  flex  flex-col justify-center
+          rounded-[1.25rem] border-2 border-[#343434]"
           >
-            <p className="flex justify-between flex-col border-b gap-1.5 2xl:gap-6 border-gray-600 pb-2">
+            <p className="flex justify-between flex-col border-b gap-1.5 2xl:gap-6 border-[#D0CFCF] pb-2">
               <span className="font-bold">Selected Block:</span>
               <span id="selectedBlock">0 x 0</span>
             </p>
-            <p className="flex justify-between flex-col border-b gap-1.5 2xl:gap-6 py-2 border-gray-600 pb-2">
+            <p className="flex justify-between flex-col border-b gap-1.5 2xl:gap-6 py-2 border-[#D0CFCF] pb-2">
               <span className="font-bold">Pixels Count:</span>
               <span id="pixelsCount">0 Pixels</span>
             </p>
-            <p className="flex justify-between flex-col border-b gap-1.5 2xl:gap-6 py-2 border-gray-600 pb-2">
+            <p className="flex justify-between flex-col border-b gap-1.5 2xl:gap-6 py-2 border-[#D0CFCF] pb-2">
               <span className="font-bold">Pixels Location:</span>
               <span id="pixelsLocation">Y: 0px X: 0px</span>
             </p>
-            <p className="flex justify-between border-b flex-col gap-1.5 2xl:gap-6 py-2 border-gray-600 pb-2">
+            <p className="flex justify-between border-b flex-col gap-1.5 2xl:gap-6 py-2 border-[#D0CFCF] pb-2">
               <span className="font-bold">Price Per:</span>
               <span id="pricePerPixel">$0.00</span>
             </p>
             <button
               onClick={() => navigate("/review")}
               className="w-full bg-[#F1713D] text-white font-bold 
-              py-2 2xl:p-4 2xl:text-xl mt-4 rounded-md hover:bg-[#d85c2b] transition"
+              py-2 2xl:p-4 2xl:text-xl mt-4 rounded-[1rem] hover:bg-[#d85c2b] transition"
             >
               Confirm Selection
             </button>
@@ -285,12 +294,12 @@ export const SelectPixels = () => {
 
         {isCollapsed ? (
           <div className="flex mt-[20vh] items-center justify-center h-full ">
-            <div className="rotate-90">
+            <div className="rotate-90 ">
               <Button text={"View Details"} handleClick={handleClick} />
             </div>
           </div>
         ) : (
-          <p className="text-xs 2xl:text-lg text-gray-400 mt-auto text-center px-4 ">
+          <p className="text-[0.875rem] 2xl:text-lg text-[#E2E2E2] text-center font-[Poppins]">
             Claim your space in the digital landscape! Wall of internet lets you
             buy, own, and customize pixels on the most interactive online
             canvas. Showcase your creativity, promote your brand, or leave your
@@ -301,7 +310,7 @@ export const SelectPixels = () => {
           className={` ${
             isCollapsed
               ? "  flex flex-col gap-2 "
-              : " flex justify-center gap-3 text-xs 2xl:text-lg text-gray-400 mt-4"
+              : " flex justify-center gap-3 text-xs 2xl:text-lg text-[#E2E2E2] mt-4"
           }`}
         >
           <Link to={"#"} className="hover:text-gray-200 underline">

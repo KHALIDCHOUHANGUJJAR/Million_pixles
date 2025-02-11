@@ -33,18 +33,25 @@ const Created = ({
         }`}
       >
         <div className="flex items-center justify-center flex-col gap-10">
-          <h1 className="text-3xl 2xl:text-4xl font-poppins italic font-bold">{heading}</h1>
+          <h1 className="text-[3rem] 2xl:text-4xl font-poppins italic font-bold">
+            {heading}
+          </h1>
           <div
-            className={`text-white bg-[#272727]  rounded-xl md:p-8 2xl:p-10  p-4 shadow-2xl text-center 
+            className={`text-white bg-[#272727]  rounded-[1.5rem] md:p-8 2xl:p-10  p-4 shadow-2xl text-center 
     ${isShow ? "md:w-[60%] w-[90%]" : " w-[40%]"} 
   `}
           >
             <div className="h-full flex items-center flex-col">
-              <h1 className="text-2xl 2xl:text-3xl font-semibold font-poppins mb-8">
+              <h1 className="text-[1.5rem] 2xl:text-3xl font-semibold font-poppins mb-8">
                 {subHeading}
               </h1>
-              <p className="text-sm 2xl:text-lg  mb-5 text-[#E2E2E2]">{paragraph}</p>
-              <p className="text-sm  2xl:text-lg mb-5 text-[#E2E2E2]">{paragraph2}</p>
+              <p className="text-[0.9rem] 2xl:text-lg mb-5 text-[#E2E2E2] text-center font-poppins font-normal leading-normal">
+                {paragraph}
+              </p>
+              <p className="text-[1rem] 2xl:text-lg mb-5 text-[#E2E2E2] text-center font-poppins font-normal leading-normal">
+                {paragraph2}
+              </p>
+
               <Button
                 text={
                   location.pathname === "/cong" ? "View Dashboard" : buttonText
@@ -61,10 +68,11 @@ const Created = ({
           </div>
 
           <div className="flex items-center flex-col w-[60%] text-center">
-            <h1 className="text-3xl font-Poppins italic 2xl:text-4xl m-3">
+            <h1 className="text-[2.3rem] font-poppins text-white italic font-semibold leading-[8.5vh] text-center">
               Wall Of Internet
             </h1>
-            <p className="text-center font-Poppins italic 2xl:text-lg ">
+
+            <p className="text-[0.9rem] text-[#E2E2E2] text-center font-poppins font-normal leading-normal">
               Claim your space in the digital landscape! Wall of Internet lets
               you buy, own, and customize pixels on the most interactive online
               canvas. Showcase your creativity, promote your brand, or leave

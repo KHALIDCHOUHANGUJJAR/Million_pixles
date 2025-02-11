@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { myRoutes } from "./Routes/Routes";
 import { Toaster } from "react-hot-toast";
 import { ContextProvider } from "./Context/Context";
+import "@fontsource/poppins"; 
+import "@fontsource/poppins/600.css"; 
 
 function App() {
   return (

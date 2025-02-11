@@ -31,7 +31,7 @@ function Login() {
             <div className="flex items-center justify-center h-full ">
               <h1 className="text-3xl  2xl:text-4xl font-bold mb-8">Login</h1>
             </div>
-            <p className="text-sm w-[100%]  md:w-[35vw]  2xl:text-lg text-gray-200 mb-4 font-semibold">
+            <p className="text-sm   w-full  2xl:text-lg text-gray-200 mb-4 font-semibold">
               By creating an account. you agree to the
               <Link href="#" className="text-[#F1713D] underline mr-0.5">
                 Terms of Use
@@ -55,7 +55,8 @@ function Login() {
                     required: "User name is required",
                   })}
                   type="text"
-                  className="w-full px-4 py-2 2xl:py-6 text-gray-200 rounded-md border border-gray-700 focus:outline-none focus:border-orange-900"
+                  className="w-full px-4 py-2 2xl:py-6 text-gray-200 rounded-lg  border border-gray-400/50
+                  focus:outline-none focus:border-orange-900"
                 />
                 {errors.name && (
                   <span className="text-red-500">{errors.name.message}</span>
@@ -63,14 +64,15 @@ function Login() {
               </div>
               <div className="mb-4">
                 <label className="block text-gray-200 text-md mb-2 2xl:text-lg">
-               Password
+                  Password
                 </label>
                 <input
                   {...register("Password", {
                     required: "Password is required",
                   })}
-                  type="text"
-                  className="w-full px-4 py-2 2xl:py-6 text-gray-200 rounded-md border border-gray-700 focus:outline-none focus:border-orange-900"
+                  type="password"
+                  className="w-full px-4 py-2 2xl:py-6 text-gray-200 rounded-lg  border border-gray-400/50
+ focus:outline-none focus:border-orange-900"
                 />
                 {errors.name && (
                   <span className="text-red-500">{errors.name.message}</span>
