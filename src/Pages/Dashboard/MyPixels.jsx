@@ -164,7 +164,7 @@ const MyPixels = () => {
                   <div className="flex flex-col w-full sm:w-1/1  justify-center space-y-4 relative">
                     <div>
                       <label className="text-white text-sm">Text</label>
-                      <AiOutlineEdit className="absolute left-[86%] top-[33%] 2xl:top-[38%] 2xl:text-3xl text-2xl" />
+                      <AiOutlineEdit className="absolute left-[86%] top-[33%] 2xl:top-[35%] 2xl:text-3xl text-2xl" />
 
                       <input
                         type="text"
@@ -189,7 +189,7 @@ const MyPixels = () => {
                         onClick={handleEdit}
                         className="flex items-center justify-center rounded-full bg-[#F1713D] p-2 px-4 gap-3 text-xl cursor-pointer "
                       >
-                        Save Change{" "}
+                        Save Change
                         <span>
                           <FiEdit />
                         </span>
@@ -202,10 +202,10 @@ const MyPixels = () => {
           ))}
         </div>
 
-        <div className={activeEditId ? "hidden" : "block"}>
-          <div className="bg-[#814127] w-[100%] px-6 p-2 2xl:p-1 2xl:px-5 2xl:rounded-3xl rounded-2xl ">
+        <div className={`2xl:p-1 ${activeEditId ? "hidden" : "block"}`}>
+          <div className="bg-[#814127] w-[100%] px-6 p-2 2xl:p-3 2xl:px-5 2xl:rounded-3xl rounded-2xl ">
             <div className="flex items-center justify-between w-full 2xl:text-2xl">
-              <div className="flex items-center justify-center gap-1.5 ">
+              <div className="flex items-center justify-center gap-1.5  ">
                 {" "}
                 <BsExclamationCircleFill className="w-5 h-5" />
                 <span>Important Note:</span>
@@ -217,7 +217,7 @@ const MyPixels = () => {
                 />
               </div>
             </div>
-            <div className="text-center mt-1.5 2xl:text-2xl">
+            <div className="text-center mt-1.5 2xl:text-xl">
               <p>
                 Please note that “not sent” , might be because target is not
                 valid mobile or international number or your settings are
