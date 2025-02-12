@@ -12,27 +12,37 @@ function Landing() {
           className="w-full h-full object-cover"
         />
       </section>
-      <main className="flex flex-col items-center
-       w-full relative">
-        <div className="w-full flex flex-col md:flex-row items-center justify-center p-4 md:p-8">
-          <div className="w-full md:w-[80%] mb-8 md:mb-0">
-            <h1 className="text-3xl md:text-[3vw] font-semibold tracking-wider md:tracking-[1vw] mb-4">
-              <span className="text-[#B7552E] text-4xl md:text-[5vw]">
+      <main
+        className="flex flex-col items-center
+       w-full relative py-16  "
+      >
+        <div
+          className="w-full flex flex-col md:flex-row
+         items-center justify-center p-4  md:p-8 mb-[8rem]"
+        >
+          <div className="w-full md:w-[90%]  md:mb-0">
+            <h1
+              className="  font-semibold tracking-wider font-nunito
+             md:tracking-[0.4vw] "
+            >
+              <span className=" md:tracking-[1vw] font-black 
+               shrink text-[#B7552E] text-4xl md:text-[7rem]">
                 Wall
               </span>
-              <br /> Of Internet
+              <br />
+              <span className="text-[5rem]"> Of Internet</span>
             </h1>
             <p
-              className="text-[#B7552E] font-poppins text-xl md:text-[2vw] font-normal 
-            leading-relaxed md:leading-[4vw] 2xl:leading-[8vw] tracking-wide md:tracking-[0.5vw]"
+              className="text-[#B7552E] font-poppins text-[5rem] md:text-[2vw] font-normal 
+            leading-[5vw] md:leading-[2vw] tracking-[1vw] md:tracking-[0.3vw]"
             >
               Own a Piece of the Internet.
             </p>
 
-            <div className="w-full md:w-[24vw] h-0.5 bg-amber-100 my-4"></div>
+            <div className="w-full md:w-[21vw] h-[0.2vw] bg-amber-100 my-4"></div>
             <p
-              className="text-white font-poppins text-base md:text-[1.5vw] font-normal
-             leading-relaxed md:leading-[3vw] tracking-wider md:tracking-[4px] w-full md:w-[80%]"
+              className="text-white font-poppins text-[5vw] md:text-[1.2vw] font-normal 
+            leading-[7vw] md:leading-[2.5vw] tracking-[1vw] md:tracking-[0.2vw] w-full"
             >
               Buy, Sell, and Edit Pixels on the Wall of Internet – Where Your
               Creativity Lives Forever.
@@ -49,9 +59,11 @@ function Landing() {
             className="absolute top-0 left-[80%] w-[20%] h-[37%]"
           />
           <div className=" w-full h-full ">
-            <nav className="relative z-10 flex flex-col md:items-end
+            <nav
+              className="relative z-10 flex flex-col md:items-end
              items-center justify-center md:justify-start w-full md:h-full
-              gap-4 md:gap-[3vh] text-base md:text-lg font-poppins md:mt-[18vh]">
+              gap-4 md:gap-[3vh] text-base md:text-lg font-poppins md:mt-[18vh]"
+            >
               <NavLink
                 to=""
                 className="flex items-center py-2 md:py-2 2xl:py-3.5 px-4 md:px-6 hover:underline underline-offset-4 font-semibold text-lg md:text-xl 2xl:text-3xl text-white"

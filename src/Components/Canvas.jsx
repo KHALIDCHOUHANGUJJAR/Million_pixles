@@ -19,12 +19,12 @@ const Canvas = () => {
     window.addEventListener("resize", resizeCanvas);
 
     const drawGrid = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-      ctx.strokeStyle = "#ffff";
+      ctx.fillStyle = "#272727";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.strokeStyle = "#ffffff";
       ctx.lineWidth = 0.5;
 
-      const cellSize = 20;
+      const cellSize = 15;
       for (let x = 0; x <= canvas.width; x += cellSize) {
         ctx.beginPath();
         ctx.moveTo(x, 0);
@@ -38,9 +38,6 @@ const Canvas = () => {
         ctx.lineTo(canvas.width, y);
         ctx.stroke();
       }
-
-      ctx.fillStyle = "#0000";
-      ctx.fillRect(0, 9, canvas.width, canvas.height);
     };
 
     const updatePixelDetails = (width, height, x, y) => {
@@ -50,7 +47,6 @@ const Canvas = () => {
       const pricePerPixel = document.getElementById("pricePerPixel");
 
       const pixelCount = Math.abs(width * height);
-
       selectedBlock.textContent = `${Math.abs(width)} x ${Math.abs(height)}`;
       pixelsCount.textContent = `${pixelCount} Pixels`;
       pixelsLocation.textContent = `Y: ${Math.round(y)}px X: ${Math.round(
@@ -64,15 +60,11 @@ const Canvas = () => {
       const rect = canvas.getBoundingClientRect();
       startX = e.clientX - rect.left;
       startY = e.clientY - rect.top;
-
       startX = Math.floor(startX / 20) * 20;
       startY = Math.floor(startY / 20) * 20;
-
       endX = startX;
       endY = startY;
     };
-
-    let toastShown = false;
 
     const draw = (e) => {
       if (!isDrawing) return;
@@ -84,28 +76,10 @@ const Canvas = () => {
       endX = Math.floor(endX / 20) * 20;
       endY = Math.floor(endY / 20) * 20;
 
-      const restrictedX = canvas.width * 0.6;
-      const restrictedY = canvas.height * 0.3;
-      const restrictedWidth = 200;
-      const restrictedHeight = 150;
-
-      startX < restrictedX + restrictedWidth &&
-        startX + Math.abs(endX - startX) > restrictedX &&
-        startY < restrictedY + restrictedHeight &&
-        startY + Math.abs(endY - startY) > restrictedY;
-
-      if (toastShown) {
-        toastShown = false;
-      }
-
       drawGrid();
 
-      const width = Math.abs(endX - startX);
-      const height = Math.abs(endY - startY);
-
-      if (width > 1000 || height > 1000) {
-        return;
-      }
+      const width = endX - startX;
+      const height = endY - startY;
 
       ctx.fillStyle = "rgba(241, 113, 61, 0.3)";
       ctx.fillRect(startX, startY, width, height);
@@ -141,7 +115,10 @@ const Canvas = () => {
       className=" flex items-center  justify-center  w-[100%] xl:h-[62.5vh]
       2xl:h-[66vh] bg-[#171717] 2xl:p-3 p-2 rounded  2xl:rounded-2xl   overflow-hidden"
     >
-      <canvas ref={canvasRef} className="w-full h-full  cursor-crosshair border-2 border-amber-700 " />
+      <canvas
+        ref={canvasRef}
+        className="w-full h-full  cursor-crosshair border-2 border-amber-700 "
+      />
     </div>
   );
 };

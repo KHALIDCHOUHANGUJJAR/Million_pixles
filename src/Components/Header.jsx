@@ -17,7 +17,7 @@ const Header = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleClick = (index, route) => {
-    if (route === handleEdit) {
+    if (route === handleEdit()) {
       route();
     }
     setActiveIndex(index);
@@ -44,8 +44,10 @@ const Header = () => {
           </div>
           <div className="flex gap-10">
             <div className="flex gap-1.5 ml-1">
-              <div className="bg-[#A86D5B] xl:h-[2.5vw] 2xl:h-[3vw] text-center flex items-center justify-center
-               w-9 2xl:w-12 rounded-full text-black border-[#696464] relative">
+              <div
+                className="bg-[#A86D5B] xl:h-[2.5vw] 2xl:h-[3vw] text-center flex items-center justify-center
+               w-9 2xl:w-12 rounded-full text-black border-[#696464] relative"
+              >
                 CM
               </div>
               <div className="bg-[#A86D5B] xl:h-[2.5vw] 2xl:h-[3vw] text-center flex xl:left-[70%] 2xl:left-[72%] items-center justify-center w-9 2xl:w-12 rounded-full text-black absolute">
@@ -60,8 +62,10 @@ const Header = () => {
                 <PlusCircleOutlined className="text-2xl" />
               </div>
             </div>
-            <div className="ml-11 flex border-2 justify-between gap-3 text-[#8a8686] 
-            font-semibold rounded-3xl text-center xl:p-4 2xl:p-4 h-10 items-center bg-[#171717] border-gray-700 px-3">
+            <div
+              className="ml-11 flex border-2 justify-between gap-3 text-[#8a8686] 
+            font-semibold rounded-3xl text-center xl:p-4 2xl:p-4 h-10 items-center bg-[#171717] border-gray-700 px-3"
+            >
               <BellOutlined className="xl:text-2xl 2xl:text-3xl text-white" />
               <IoIosInformationCircleOutline className="xl:text-2xl 2xl:text-3xl text-white" />
               <IoIosContact className="xl:text-3xl 2xl:text-3xl rounded-full text-white bg-[#2EBC96]" />

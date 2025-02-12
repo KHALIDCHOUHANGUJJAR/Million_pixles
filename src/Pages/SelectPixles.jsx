@@ -13,7 +13,6 @@ export const SelectPixels = () => {
   const handleClick = () => {
     setIsCollapsed(!isCollapsed);
   };
-
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
@@ -30,10 +29,11 @@ export const SelectPixels = () => {
     window.addEventListener("resize", resizeCanvas);
 
     const drawGrid = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "#272727";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       ctx.strokeStyle = "#ffff";
-      ctx.lineWidth = 0.4;
+      ctx.lineWidth = 0.5;
 
       const cellSize = 15;
       for (let x = 0; x <= canvas.width; x += cellSize) {
@@ -50,11 +50,13 @@ export const SelectPixels = () => {
         ctx.stroke();
       }
 
-      ctx.fillStyle = "#0000";
-      ctx.fillRect(0, 9, canvas.width, canvas.height);
+      const restrictedX = canvas.width * 0.6;
+      const restrictedY = canvas.height * 0.12;
+      const restrictedWidth = 200;
+      const restrictedHeight = 150;
 
-      ctx.fillStyle = "rgba(255, 255, 0, 0.2)";
-      ctx.fillRect(canvas.width * 0.6, canvas.height * 0.3, 200, 150);
+      ctx.fillStyle = "rgba(0, 255, 0, 0.2)";
+      ctx.fillRect(restrictedX, restrictedY, restrictedWidth, restrictedHeight);
     };
 
     const updatePixelDetails = (width, height, x, y) => {
@@ -103,15 +105,18 @@ export const SelectPixels = () => {
       const restrictedWidth = 200;
       const restrictedHeight = 150;
 
+      const width = endX - startX;
+      const height = endY - startY;
+
       if (
-        startX < restrictedX + restrictedWidth &&
-        startX + Math.abs(endX - startX) > restrictedX &&
-        startY < restrictedY + restrictedHeight &&
-        startY + Math.abs(endY - startY) > restrictedY
+        Math.min(startX, endX) < restrictedX + restrictedWidth &&
+        Math.max(startX, endX) > restrictedX &&
+        Math.min(startY, endY) < restrictedY + restrictedHeight &&
+        Math.max(startY, endY) > restrictedY
       ) {
         if (!toastShown) {
           toast.error(
-            "The selected area is restricted. Please select a smaller area."
+            "The selected area is restricted. Please select a different area."
           );
           toastShown = true;
         }
@@ -124,20 +129,28 @@ export const SelectPixels = () => {
 
       drawGrid();
 
-      const width = Math.abs(endX - startX);
-      const height = Math.abs(endY - startY);
-
-      if (width > 1000 || height > 1000) {
-        return;
-      }
-
       ctx.fillStyle = "rgba(241, 113, 61, 0.3)";
-      ctx.fillRect(startX, startY, width, height);
+      ctx.fillRect(
+        Math.min(startX, endX),
+        Math.min(startY, endY),
+        Math.abs(width),
+        Math.abs(height)
+      );
       ctx.strokeStyle = "#EBFA171A";
       ctx.lineWidth = 2;
-      ctx.strokeRect(startX, startY, width, height);
+      ctx.strokeRect(
+        Math.min(startX, endX),
+        Math.min(startY, endY),
+        Math.abs(width),
+        Math.abs(height)
+      );
 
-      updatePixelDetails(width, height, startX, startY);
+      updatePixelDetails(
+        Math.abs(width),
+        Math.abs(height),
+        Math.min(startX, endX),
+        Math.min(startY, endY)
+      );
     };
 
     const stopDrawing = () => {

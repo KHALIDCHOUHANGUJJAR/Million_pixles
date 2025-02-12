@@ -113,91 +113,93 @@ const MyPixels = () => {
                 </div>
               </div>
 
-              {activeEditId === order.id && (
-                <div className="mt-2 bg-[#171717] rounded-xl p-6 flex flex-col  sm:flex-row gap-6 ">
-                  <div className="flex flex-col items-center justify-between gap-5">
-                    <div className=" border-2 rounded-xl border-dashed border-gray-500 p-3">
-                      <img
-                        src="/Assets/Images/images.jpeg"
-                        alt=""
-                        className="w-[50vw] h-32 2xl:h-[23vh] rounded-2xl "
-                      />
-                    </div>
+              <div className="px-4">
+                {activeEditId === order.id && (
+                  <div className="mt-2 bg-[#171717] rounded-xl p-3 flex flex-col  sm:flex-row gap-6 ">
+                    <div className="flex flex-col items-center justify-between gap-5">
+                      <div className=" border-2 rounded-xl border-dashed border-gray-500 p-3">
+                        <img
+                          src="/Assets/Images/images.jpeg"
+                          alt=""
+                          className="w-[50vw] h-32 2xl:h-[23vh] rounded-2xl "
+                        />
+                      </div>
 
-                    <div
-                      className="flex items-center
+                      <div
+                        className="flex items-center
                      justify-between h-full p- border-2 
                      border-dashed rounded-2xl border-gray-500
                       p-1.5 bg-[#272727]"
-                    >
-                      <img
-                        src="/Assets/Images/images.jpeg"
-                        alt=""
-                        className="w-[5vw] h-[5vh] rounded "
-                      />
-                      <input
-                        type="file"
-                        className="  border-gray-600 rounded-lg p-2 w-full text-sm text-white "
-                      />
-                    </div>
-                  </div>
-
-                  <div className="flex flex-col justify-between w-full sm:w-[40vw] h-[35vh] ">
-                    <div className="text-center sm:text-left ">
-                      <h2 className="text-lg font-semibold text-white">
-                        12/Jan/2025
-                      </h2>
-                      <p className="text-gray-400">Position: X:10, Y:20</p>
-                    </div>
-
-                    <div className="flex text-start text-sm">
-                      <p className="text-sm text-[#FFF]">
-                        Please upload an image with a maximum size of 10x10
-                        pixels. Ensure your file meets the size limit to
-                        proceed.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="hidden sm:block w-0.5 bg-gray-600"></div>
-
-                  <div className="flex flex-col w-full sm:w-1/1  justify-center space-y-4 relative">
-                    <div>
-                      <label className="text-white text-sm">Text</label>
-                      <AiOutlineEdit className="absolute left-[86%] top-[33%] 2xl:top-[38%] 2xl:text-3xl text-2xl" />
-
-                      <input
-                        type="text"
-                        placeholder="Write here"
-                        className="w-full p-2 2xl:p-4 bg-[#272727]  border border-gray-600 rounded-lg text-white"
-                      />
-                    </div>
-                    <div className="w-full ">
-                      <label className="text-white text-sm">URL 🔗</label>
-                      <AiOutlineEdit className=" absolute left-[86%] top-[68%] 2xl:top-[64%] text-2xl 2xl:text-3xl" />
-                      <input
-                        type="url"
-                        placeholder="Write here"
-                        className="w-full p-2 2xl:p-4 bg-[#272727] border border-gray-600 rounded-lg text-white"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="w-full ">
-                    <div className="w-full flex justify-end ">
-                      <button
-                        onClick={handleEdit}
-                        className="flex items-center justify-center rounded-full bg-[#F1713D] p-2 px-4 gap-3 text-xl cursor-pointer "
                       >
-                        Save Change{" "}
-                        <span>
-                          <FiEdit />
-                        </span>
-                      </button>
+                        <img
+                          src="/Assets/Images/images.jpeg"
+                          alt=""
+                          className="w-[5vw] h-[5vh] rounded "
+                        />
+                        <input
+                          type="file"
+                          className="  border-gray-600 rounded-lg p-2 w-full text-sm text-white "
+                        />
+                      </div>
+                    </div>
+
+                    <div className="flex flex-col justify-between w-full sm:w-[40vw] h-[35vh] ">
+                      <div className="text-center sm:text-left ">
+                        <h2 className="text-lg font-semibold text-white">
+                          12/Jan/2025
+                        </h2>
+                        <p className="text-gray-400">Position: X:10, Y:20</p>
+                      </div>
+
+                      <div className="flex text-start text-sm">
+                        <p className="text-sm text-[#FFF]">
+                          Please upload an image with a maximum size of 10x10
+                          pixels. Ensure your file meets the size limit to
+                          proceed.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="hidden sm:block w-0.5 bg-gray-600"></div>
+
+                    <div className="flex flex-col w-full sm:w-1/1  justify-center space-y-4 relative">
+                      <div>
+                        <label className="text-white text-sm">Text</label>
+                        <AiOutlineEdit className="absolute left-[86%] top-[33%] 2xl:top-[38%] 2xl:text-3xl text-2xl" />
+
+                        <input
+                          type="text"
+                          placeholder="Write here"
+                          className="w-full p-2 2xl:p-4 bg-[#272727]  border border-gray-600 rounded-lg text-white"
+                        />
+                      </div>
+                      <div className="w-full ">
+                        <label className="text-white text-sm">URL 🔗</label>
+                        <AiOutlineEdit className=" absolute left-[86%] top-[68%] 2xl:top-[64%] text-2xl 2xl:text-3xl" />
+                        <input
+                          type="url"
+                          placeholder="Write here"
+                          className="w-full p-2 2xl:p-4 bg-[#272727] border border-gray-600 rounded-lg text-white"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="w-full ">
+                      <div className="w-full flex justify-end ">
+                        <button
+                          onClick={handleEdit}
+                          className="flex items-center justify-center rounded-full bg-[#F1713D] p-2 px-4 gap-3 text-xl cursor-pointer "
+                        >
+                          Save Change{" "}
+                          <span>
+                            <FiEdit />
+                          </span>
+                        </button>
+                      </div>
                     </div>
                   </div>
-                </div>
-              )}
+                )}
+              </div>
             </div>
           ))}
         </div>

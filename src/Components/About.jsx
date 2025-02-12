@@ -19,43 +19,68 @@ const About = () => {
         className="flex flex-col lg:flex-row items-center justify-between
        w-full min-h-screen p-4 xl:p-6 2xl:p-8 text-white gap-8 2xl:gap-12"
       >
-        <div className="relative  flex flex-col gap-4 xl:gap-5 2xl:gap-10 w-full lg:w-[40%] 2xl:w-[35%] rounded-xl overflow-hidden">
-          <div className="absolute top-[50px] 2xl:top-[50%] left-[50px] w-[20vw] h-[20vw] bg-[#6b3f2b] opacity-30 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-[50px] right-[50px] w-[20vw] h-[20vw] bg-[#703a21] opacity-20 rounded-full blur-2xl animate-pulse"></div>
-
-          <h3 className="text-[#B7552E] text-2xl xl:text-3xl 2xl:text-5xl font-bold z-10">
+        <div
+          className="relative  flex flex-col gap-4 xl:gap-[5vh] justify-between 
+        2xl:gap-10 w-full lg:w-[40%] 2xl:w-[35%] rounded-xl overflow-hidden"
+        >
+          <h3
+            className="text-[#B7552E] font-nunito text-[2.625rem] font-normal 
+            not-even:not-first-of-type:leading-[6.25vh] tracking-[-0.005rem] z-10"
+          >
             About Us
           </h3>
-          <h1 className="text-3xl lg:text-4xl xl:text-5xl 2xl:text-7xl font-extrabold leading-tight z-10">
-            Why Choose the <br /> Wall of Internet?
-          </h1>
-          <div className="w-full lg:w-[25vw] 2xl:w-[20vw] h-1 xl:h-1  bg-[#F7F8FA] z-10"></div>
-          <p className="text-gray-300 text-base xl:text-lg 2xl:text-3xl leading-relaxed tracking-wide z-10">
-            We're redefining digital ownership. The Wall of Internet is a
-            platform where creativity meets innovation. By owning pixels, you
-            become part of an ever-evolving artwork built by individuals
-            worldwide. Our mission is to provide you with a canvas to express,
-            create, and connect.
-          </p>
+
+          <div className="relative flex flex-col gap-4">
+            <div
+              className="absolute top-[50px] 2xl:top-[50%] left-[50px] w-[20vw] h-[20vw]
+           bg-[#6b3f2b] opacity-30 rounded-full blur-3xl animate-pulse"
+            ></div>
+            <div
+              className="absolute bottom-[50px] right-[50px] w-[20vw] h-[20vw]
+           bg-[#703a21] opacity-20 rounded-full blur-2xl animate-pulse"
+            ></div>
+            <h1
+              className="text-[#F7F8FA] font-nunito text-[3.5rem]  font-normal 
+               leading-[4.8rem] tracking-[-0.005rem] z-10"
+            >
+              Why Choose the <br /> Wall of Internet?
+            </h1>
+
+            <div className="w-full lg:w-[25vw] 2xl:w-[20vw] h-1 xl:h-1  bg-[#F7F8FA] z-10"></div>
+            <p
+              className="text-[#FFF] font-poppins text-[1.125rem] font-normal 
+            leading-[1.80rem] tracking-[0.375rem] z-10"
+            >
+              We're redefining digital ownership. The Wall of Internet is a
+              platform where creativity meets innovation. By owning pixels, you
+              become part of an ever-evolving artwork built by individuals
+              worldwide. Our mission is to provide you with a canvas to express,
+              create, and connect.
+            </p>
+          </div>
         </div>
 
         <div className="p-4 flex flex-col gap-8 2xl:gap-8 w-full lg:w-[30%] 2xl:w-[32%]">
-          <div className="w-full h-full bg-[#B7552E] rounded-2xl p-2 2xl:py-6 ">
-            <div className="flex items-center justify-center p-3 2xl:p-1 gap-2  2xl:text-2xl">
+          <div className="w-full h-full bg-[#B7552E] rounded-2xl p-2 py-6 2xl:py-6 ">
+            <div className="flex items-center justify-center p-2 2xl:p-1 gap-2  2xl:text-2xl">
               <div className="text-black font-bold p-2 rounded-full bg-[#A86D5B] px-3 ">
                 Ui
               </div>
               <h2 className="font-bold text-lg 2xl:text-2xl">Join Now</h2>
             </div>
-            <div className=" p-2.5  px-10 2xl:text-xl">
+            <div className="px-5 text-lg 2xl:text-xl">
               <p>Edit your pixles anytime- showcase imageLink or messages</p>
             </div>
           </div>
 
-          <div className="p-6 2xl:p-6 border-2 border-[#343434]
-           rounded-2xl shadow-md">
-            <div className="flex items-center justify-between
-             mb-5 2xl:mb-6">
+          <div
+            className="p-6 2xl:p-6 border-2 border-[#343434]
+           rounded-2xl shadow-md"
+          >
+            <div
+              className="flex items-center justify-between
+             mb-5 2xl:mb-6"
+            >
               <div>
                 <h1 className="text-xl 2xl:text-3xl font-semibold">
                   Pixels Available
@@ -89,7 +114,7 @@ const About = () => {
 
         <div
           className="border-2 border-[#343434] w-full lg:w-[30%]
-         2xl:w-[32%] shadow-2xl rounded-2xl p-3 2xl:p-5 flex flex-col  gap-[2vh] 2xl:gap-[3vh]"
+         2xl:w-[32%] shadow-2xl rounded-2xl p-6 2xl:p-5 flex flex-col  gap-[2vh] 2xl:gap-[3vh]"
         >
           <h2 className="text-2xl 2xl:text-4xl font-semibold">
             Welcome to your account
@@ -105,7 +130,7 @@ const About = () => {
                   onClick={() => handleClick(index)}
                   className={`flex  border-2 
                   rounded-3xl text-center justify-center  2xl:px-1 2xl:gap-1
-                   xl:h-10.5 xl:w-[13vw] 
+                   xl:h-10.5 xl:w-[13.5vw] 
                    items-center border-gray-700 text-xs 2xl:text-sm   ${
                      activeIndex === index
                        ? "bg-[#F1713D] text-[#FFFFFF] border-[#B55A37]"

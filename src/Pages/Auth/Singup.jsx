@@ -161,7 +161,7 @@ function Singup() {
                   </p>
                 )}
               </div>
-              <div className="p-3 2xl:p-1">
+              <div className="p-3 2xl:p-1 flex flex-col xl:gap-3.5">
                 <p className="text-sm flex items-center md:flex-nowrap flex-wrap w-full text-gray-300  2xl:text-lg 2">
                   <input
                     type="checkbox"

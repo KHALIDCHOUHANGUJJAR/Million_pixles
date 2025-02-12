@@ -25,7 +25,7 @@ function Login() {
         </div>
         <div className="flex items-center h-full  justify-center">
           <div
-            className="text-white
+            className="text-white 
             "
           >
             <div className="flex items-center justify-center h-full ">
