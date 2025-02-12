@@ -21,7 +21,7 @@ const About = () => {
       >
         <div
           className="relative  flex flex-col gap-4 xl:gap-[5vh] justify-between 
-        2xl:gap-10 w-full lg:w-[40%] 2xl:w-[35%] rounded-xl overflow-hidden"
+        2xl:gap-[8vh] w-full lg:w-[40%]  rounded-xl overflow-hidden"
         >
           <h3
             className="text-[#B7552E] font-nunito text-[2.625rem] font-normal 
@@ -30,7 +30,7 @@ const About = () => {
             About Us
           </h3>
 
-          <div className="relative flex flex-col gap-4">
+          <div className="relative flex flex-col gap-4 2xl:gap-10">
             <div
               className="absolute top-[50px] 2xl:top-[50%] left-[50px] w-[20vw] h-[20vw]
            bg-[#6b3f2b] opacity-30 rounded-full blur-3xl animate-pulse"
@@ -41,7 +41,7 @@ const About = () => {
             ></div>
             <h1
               className="text-[#F7F8FA] font-nunito text-[3.5rem]  font-normal 
-               leading-[4.8rem] tracking-[-0.005rem] z-10"
+               leading-[4.8rem] tracking-[-0.005rem] 2xl:tracking-[0.05rem] z-10"
             >
               Why Choose the <br /> Wall of Internet?
             </h1>
@@ -49,7 +49,7 @@ const About = () => {
             <div className="w-full lg:w-[25vw] 2xl:w-[20vw] h-1 xl:h-1  bg-[#F7F8FA] z-10"></div>
             <p
               className="text-[#FFF] font-poppins text-[1.125rem] font-normal 
-            leading-[1.80rem] tracking-[0.375rem] z-10"
+            leading-[1.80rem] 2xl:leading-[2.4rem] tracking-[0.375rem] 2xl:tracking-[0.370rem] z-10"
             >
               We're redefining digital ownership. The Wall of Internet is a
               platform where creativity meets innovation. By owning pixels, you
@@ -114,7 +114,7 @@ const About = () => {
 
         <div
           className="border-2 border-[#343434] w-full lg:w-[30%]
-         2xl:w-[32%] shadow-2xl rounded-2xl p-6 2xl:p-5 flex flex-col  gap-[2vh] 2xl:gap-[3vh]"
+         2xl:w-[32%] shadow-2xl rounded-2xl p-6  flex flex-col  gap-[2vh] "
         >
           <h2 className="text-2xl 2xl:text-4xl font-semibold">
             Welcome to your account
