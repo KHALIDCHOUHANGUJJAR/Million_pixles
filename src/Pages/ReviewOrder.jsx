@@ -10,7 +10,7 @@ export default function ReviewOrder() {
   };
   const navigate = useNavigate();
   return (
-    <div className="flex flex-col w-full md:flex-row min-h-screen">
+    <div className="flex flex-col w-full md:flex-row overflow-hidden min-h-screen">
       <div className="w-full md:w-[60%] bg-[#272727] p-6 min-h-screen">
         <div className="p-2 2xl:p-4 md:w-[60%]  2xl:py-1 ">
           <h1 className="text-white text-[1.5rem] 2xl:text-3xl  font-semibold pb-4 2xl:pb-6 border-b border-[#D0CFCF] ">

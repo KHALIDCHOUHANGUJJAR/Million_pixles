@@ -130,6 +130,7 @@ const MyPixels = () => {
                      justify-between h-full p- border-2 
                      border-dashed rounded-2xl border-gray-500
                       p-1.5 bg-[#272727]"
+<<<<<<< HEAD
                       >
                         <img
                           src="/Assets/Images/images.jpeg"
@@ -196,6 +197,73 @@ const MyPixels = () => {
                           </span>
                         </button>
                       </div>
+=======
+                    >
+                      <img
+                        src="/Assets/Images/images.jpeg"
+                        alt=""
+                        className="w-[5vw] h-[5vh] rounded "
+                      />
+                      <input
+                        type="file"
+                        className="  border-gray-600 rounded-lg p-2 w-full text-sm text-white "
+                      />
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col justify-between w-full sm:w-[40vw] h-[35vh] ">
+                    <div className="text-center sm:text-left ">
+                      <h2 className="text-lg font-semibold text-white">
+                        12/Jan/2025
+                      </h2>
+                      <p className="text-gray-400">Position: X:10, Y:20</p>
+                    </div>
+
+                    <div className="flex text-start text-sm">
+                      <p className="text-sm text-[#FFF]">
+                        Please upload an image with a maximum size of 10x10
+                        pixels. Ensure your file meets the size limit to
+                        proceed.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="hidden sm:block w-0.5 bg-gray-600"></div>
+
+                  <div className="flex flex-col w-full sm:w-1/1  justify-center space-y-4 relative">
+                    <div>
+                      <label className="text-white text-sm">Text</label>
+                      <AiOutlineEdit className="absolute left-[86%] top-[33%] 2xl:top-[35%] 2xl:text-3xl text-2xl" />
+
+                      <input
+                        type="text"
+                        placeholder="Write here"
+                        className="w-full p-2 2xl:p-4 bg-[#272727]  border border-gray-600 rounded-lg text-white"
+                      />
+                    </div>
+                    <div className="w-full ">
+                      <label className="text-white text-sm">URL 🔗</label>
+                      <AiOutlineEdit className=" absolute left-[86%] top-[68%] 2xl:top-[64%] text-2xl 2xl:text-3xl" />
+                      <input
+                        type="url"
+                        placeholder="Write here"
+                        className="w-full p-2 2xl:p-4 bg-[#272727] border border-gray-600 rounded-lg text-white"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="w-full ">
+                    <div className="w-full flex justify-end ">
+                      <button
+                        onClick={handleEdit}
+                        className="flex items-center justify-center rounded-full bg-[#F1713D] p-2 px-4 gap-3 text-xl cursor-pointer "
+                      >
+                        Save Change
+                        <span>
+                          <FiEdit />
+                        </span>
+                      </button>
+>>>>>>> dd31be09d6dab19ff0916586504a4edc1bb6446f
                     </div>
                   </div>
                 )}
@@ -204,10 +272,10 @@ const MyPixels = () => {
           ))}
         </div>
 
-        <div className={activeEditId ? "hidden" : "block"}>
-          <div className="bg-[#814127] w-[100%] px-6 p-2 2xl:p-1 2xl:px-5 2xl:rounded-3xl rounded-2xl ">
+        <div className={`2xl:p-1 ${activeEditId ? "hidden" : "block"}`}>
+          <div className="bg-[#814127] w-[100%] px-6 p-2 2xl:p-3 2xl:px-5 2xl:rounded-3xl rounded-2xl ">
             <div className="flex items-center justify-between w-full 2xl:text-2xl">
-              <div className="flex items-center justify-center gap-1.5 ">
+              <div className="flex items-center justify-center gap-1.5  ">
                 {" "}
                 <BsExclamationCircleFill className="w-5 h-5" />
                 <span>Important Note:</span>
@@ -219,7 +287,7 @@ const MyPixels = () => {
                 />
               </div>
             </div>
-            <div className="text-center mt-1.5 2xl:text-2xl">
+            <div className="text-center mt-1.5 2xl:text-xl">
               <p>
                 Please note that “not sent” , might be because target is not
                 valid mobile or international number or your settings are

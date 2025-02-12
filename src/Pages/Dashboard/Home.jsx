@@ -24,8 +24,8 @@ const Home = () => {
             <Canvas />
           </div>
         </div>
-        <div className="w-[30%] h-full  p-1 text-white">
-          <div className=" flex flex-col justify-between p-2">
+        <div className="w-[30%] h-full  p-1 2xl:p-4 text-white">
+          <div className=" flex flex-col justify-between p-2 2xl:p-3">
             <div
               className="bg-[#171717] p-4 space-y-4 flex flex-col items-center justify-between   2xl:p-4 rounded-lg
              border-2 border-[#252323] "
@@ -71,14 +71,14 @@ const Home = () => {
             </div>
           </div>
           <div className="flex  items-center justify-center">
-            <div className="bg-[#F1713D] text-white p-4  text-center w-[92%] rounded-lg 2xl:mt-5 mt-2   ">
+            <div className="bg-[#F1713D] text-white p-4  text-center w-[94%] rounded-lg 2xl:mt-10 2xl:p-6 mt-2   ">
               <h3 className="text-md font-poppins  font-semibold flex items-center gap-2 justify-center">
                 Here Is What You Can Do
                 <RiQuestionnaireLine className="text-xl " />{" "}
               </h3>
               <p
-                className="xl:text-sm 2xl:text-xl font-poppins text-start 
-             bg-[#171717] rounded-2xl xl:px- p-1.5 2xl:p-3 flex items-center"
+                className="xl:text-sm 2xl:text-md italic font-poppins text-start 
+             bg-[#171717] rounded-2xl xl:px- p-1.5 2xl:p-8 flex items-center"
               >
                 Order: Choose And Order New Pixels. Manage: Manage Pixels Owned
                 By You. View Your Order History. Edit Your Personal Details,

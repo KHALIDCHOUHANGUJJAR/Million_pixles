@@ -9,7 +9,7 @@ function Layout() {
         <Sidebar />
       </div>
 
-      <div className="w-[100%] ml-[20%] flex flex-col">
+      <div className="w-[100%] ml-[20%] flex flex-col overflow-y-hidden">
         <Header />
         <div className="flex-1  ">
           <Outlet />
