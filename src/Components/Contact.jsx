@@ -15,7 +15,8 @@ const Contact = () => {
         your space on the Wall of Internet. Start building your legacy
         today—because the internet belongs to everyone.
       </p>
-      <div className="flex items-center justify-between gap-10 mt-5">
+      <div className="flex items-center justify-between gap-10 mt-5
+      ">
         <Button text={"   👀 Insight "} />
         <Button text={"Contact"} />
       </div>
