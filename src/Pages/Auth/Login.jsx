@@ -88,7 +88,7 @@ function Login() {
               </button>
             </form>
             <p className="mt-4 text-sm text-center font-semibold text-gray-200 2xl:text-xl ">
-              Don’t have an account? Sign in{" "}
+              Don’t have an account? 
               <Link to="/singup" className="text-[#F1713D] ml-1.5 underline">
                 Sign Up
               </Link>

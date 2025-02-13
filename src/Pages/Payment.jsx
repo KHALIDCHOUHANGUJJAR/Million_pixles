@@ -9,10 +9,13 @@ export default function Payment() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) =>{
+    reset(data);
+  };
   return (
     <div className="flex flex-col  w-full md:flex-row min-h-screen">
       <div className="w-[100%] md:w-[60%] flex items-center md:justify-start justify-center bg-[#272727] p-6 min-h-screen">
@@ -107,7 +110,10 @@ export default function Payment() {
               Card Details
             </h3>
             <div className="w-full  ">
-              <h5 className="text-md 2xl:text-xl text-black mb-3 "> Card Type</h5>
+              <h5 className="text-md 2xl:text-xl text-black mb-3 ">
+                {" "}
+                Card Type
+              </h5>
               <div className="flex items-center justify-center mb-4">
                 <img
                   src="Assets/Images/Rectangle 9.png"
@@ -152,10 +158,22 @@ export default function Payment() {
                     Card Number
                   </label>
                   <input
-                    placeholder="1111 2222 3333 4444 "
-                    type="number"
-                    className="border-2 rounded-lg  border-white/20  w-full bg-[#272727] text-white px-5 p-1.5 2xl:p-4 flex  "
-                    {...register("exampleRequired", { required: true })}
+                    className="input-style border-2 rounded-lg  border-white/20  w-full bg-[#272727] text-white px-5 p-1.5 2xl:p-4 flex  "
+                    placeholder="1111 2222 3333 4444"
+                    type="text"
+                    maxLength="19"
+                    onInput={(e) => {
+                      e.target.value = e.target.value
+                        .replace(/\D/g, "")
+                        .substring(0, 16)
+                        .replace(/(.{4})/g, "$1 ")
+                        .trim();
+                    }}
+                    {...register("cardNumber", {
+                      required: true,
+                      minLength: 14,
+                      maxLength: 16,
+                    })}
                   />{" "}
                 </div>
                 <div className="flex w-full items-center justify-between gap-1.5">
@@ -164,22 +182,33 @@ export default function Payment() {
                       Expiration date{" "}
                     </label>
                     <input
-                      type="date"
-                      className="border-2 rounded-lg  border-white/20  w-full bg-[#272727] text-white
-                        p-1.5 2xl:p-4"
-                      {...register("exampleRequired", { required: true })}
-                    />{" "}
+                      className="border-2 rounded-lg border-white/20 w-full bg-[#272727] text-white
+                      p-1.5 2xl:p-4"
+                      placeholder="MM/YY"
+                      type="text"
+                      maxLength="5"
+                      onInput={(e) => {
+                        e.target.value = e.target.value
+                          .replace(/\D/g, "")
+                          .replace(/(\d{2})(\d{0,2})/, "$1/$2");
+                      }}
+                      {...register("expiryDate", { required: true })}
+                    />
                   </div>
                   <div>
                     <label className="text-sm font-semibold 2xl:text-xl ">
                       CVC
                     </label>
                     <input
-                      placeholder="123 "
-                      type="number"
                       className="border-2 rounded-lg  border-white/20  w-full bg-[#272727] text-white
                         p-1.5  2xl:p-4  "
-                      {...register("exampleRequired", { required: true })}
+                        placeholder="123"
+                        type="text"
+                        maxLength="3"
+                        onInput={(e) => {
+                          e.target.value = e.target.value.replace(/\D/g, "").substring(0, 3);
+                        }}
+                        {...register("cvc", { required: true, minLength: 3, maxLength: 3 })}
                     />{" "}
                   </div>
                 </div>

@@ -78,10 +78,10 @@ const Home = () => {
               </h3>
               <p
                 className="xl:text-xs 2xl:text-md italic font-poppins text-start 
-             bg-[#171717] rounded-2xl p-2 2xl:p-6 flex items-center"
+             bg-[#171717] rounded-2xl p-1  2xl:p-6 flex items-center"
               >
                 Order: Choose And Order New Pixels. <br /> Manage: Manage Pixels Owned
-                By You. View Your Order History. Edit Your Personal Details,
+                By You. View Your Order History <br /> Edit Your Personal Details,
                 Change Your Password.
               </p>
             </div>

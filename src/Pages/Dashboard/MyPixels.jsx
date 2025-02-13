@@ -63,16 +63,20 @@ const MyPixels = () => {
                       />
                     </div>
 
-                    <div className="flex items-center justify-between h-full 2xl:h-[4rem] border-2 border-dashed rounded-2xl border-gray-500 p-1.5 bg-[#272727]">
+                    <div className="flex items-center gap-3 h-full 2xl:h-[4rem] border-2 border-dashed rounded-2xl border-gray-500 p-2 bg-[#272727] cursor-pointer">
                       <img
                         src="/Assets/Images/images.jpeg"
-                        alt=""
-                        className="w-[5vw] h-[5vh] rounded"
+                        alt="Upload Icon"
+                        className="w-[3rem] h-[2.7rem] rounded object-cover"
                       />
-                      <input
-                        type="file"
-                        className="border-gray-600 rounded-lg p-2 w-full text-sm text-white"
-                      />
+                      <label className="text-white text-xs cursor-pointer w-full">
+                        Upload Image Here
+                        <input
+                          type="file"
+                          className="hidden"
+                          accept="image/*"
+                        />
+                      </label>
                     </div>
                   </div>
 
@@ -81,7 +85,7 @@ const MyPixels = () => {
                       <h2 className="text-lg font-semibold text-white">
                         12/Jan/2025
                       </h2>
-                      <p className="text-gray-400">Position: X:10, Y:20</p>
+                      <p className="text-[#FFF]">Position: X:10, Y:20</p>
                     </div>
 
                     <div className="flex text-start text-sm">
@@ -120,13 +124,11 @@ const MyPixels = () => {
                     <div className="w-full flex justify-end">
                       <button
                         onClick={() => handleEdit(null)}
-                        className="flex items-center justify-center rounded-full
-                         bg-[#F1713D] p-1.5 px-4 gap-3 text-xl cursor-pointer"
+                        className="flex items-center justify-center rounded-full border-2 border-[#303030]
+                     bg-[#F1713D] p-2 px-6 gap-2  text-white cursor-pointer"
                       >
-                        Save Change{" "}
-                        <span>
-                          <FiEdit />
-                        </span>
+                        Save Changes
+                        <FiEdit />
                       </button>
                     </div>
                   </div>
@@ -134,11 +136,14 @@ const MyPixels = () => {
               ) : (
                 <div className=" flex justify-between ">
                   <div className="flex items-center justify-center gap-3">
-                    <div className="w-full sm:w-[15%]">
+                    <div
+                      className="w-full sm:w-[15%] border-dotted flex items-center justify-center border-2 p-2.5
+                     rounded-lg border-[#5A677D]"
+                    >
                       <img
                         src={order.image || "/placeholder.svg"}
                         alt="Pixel preview"
-                        className="h-24 md:h-20 2xl:h-[12vh] object-cover rounded-lg"
+                        className="h-24 md:h-[8.5vh] 2xl:h-[12vh] object-cover "
                       />
                     </div>
 
@@ -148,10 +153,10 @@ const MyPixels = () => {
                           key={idx}
                           className="space-y-1 2xl:space-y-3 text-center"
                         >
-                          <h3 className="text-gray-400 font-medium 2xl:font-semibold">
+                          <h3 className="text-[#FFFFF] font-medium 2xl:font-semibold">
                             {date}
                           </h3>
-                          <p className="text-sm 2xl:text-xl text-gray-500">
+                          <p className="text-sm 2xl:text-xl text-[#FFFFF]">
                             Position: {order.positions[idx]}
                           </p>
                         </div>

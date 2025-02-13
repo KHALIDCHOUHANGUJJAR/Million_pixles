@@ -10,7 +10,7 @@ function Sidebar() {
       <div className="flex flex-col p-3 justify-between w-[18vw] 2xl:w-[16vw] h-full">
         <div>
           <h2 className=" text-3xl 2xl:text-4xl mb-10  font-semibold text-center py-1  border-gray-700">
-            <span className="text-orange-500">Wall</span>ofinternet
+            <span className="text-[#F1713D]">Wall</span>ofinternet
           </h2>
 
           <div className="flex items-center gap-2  mt-4 mb-2">

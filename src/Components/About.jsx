@@ -61,15 +61,17 @@ const About = () => {
         </div>
 
         <div className="p-4 flex flex-col gap-8 2xl:gap-8 w-full lg:w-[30%] 2xl:w-[32%]">
-          <div className="w-full h-full bg-[#B7552E] rounded-2xl p-2 py-6 2xl:py-6 ">
-            <div className="flex items-center justify-center p-2 2xl:p-1 gap-2  2xl:text-2xl">
+          <div className="w-full h-full bg-[#B7552E] rounded-2xl  py-6 2xl:py-6 flex items-center flex-col justify-center ">
+            <div className="flex items-center justify-center p-2 2xl:p-2 gap-2  2xl:text-2xl">
               <div className="text-black font-bold p-2 rounded-full bg-[#A86D5B] px-3 ">
                 Ui
               </div>
               <h2 className="font-bold text-lg 2xl:text-2xl">Join Now</h2>
             </div>
-            <div className="px-5 text-xl 2xl:text-xl">
-              <p>Edit your pixles anytime- showcase image, Links, or messages</p>
+            <div className="px-9 text-xl 2xl:text-xl ">
+              <p>
+                Edit your pixles anytime- showcase image, Links, or messages
+              </p>
             </div>
           </div>
 
@@ -113,7 +115,7 @@ const About = () => {
         </div>
 
         <div
-          className="border-2 border-[#343434] w-full lg:w-[30%]
+          className="border-2 border-[#343434] w-full lg:w-[31%]
          2xl:w-[32%] shadow-2xl rounded-2xl p-6  flex flex-col  gap-[2vh] "
         >
           <h2 className="text-2xl 2xl:text-4xl font-semibold">
@@ -122,20 +124,20 @@ const About = () => {
           <p className="text-md 2xl:text-xl text-[#FFF]">
             Here you can manage your pixels
           </p>
-          <div className="flex items-center 2xl:justify-center gap-2">
-            {["Manage Pixels", "Order Pixels", "My order History "].map(
+          <div className="flex items-center 2xl:justify-center gap-1">
+            {["Manage Pixels", "Order Pixels", "My Order History "].map(
               (label, index) => (
                 <div
                   key={index}
                   onClick={() => handleClick(index)}
-                  className={`flex  border-2 
-                  rounded-3xl text-center justify-center  2xl:px-1 2xl:gap-2 gap-1
+                  className={`  border-2 
+                  rounded-3xl  2xl:px-1 2xl:gap-1 gap-
                    xl:h-10.5 xl:w-[13.5vw] 
-                   items-center border-gray-700 text-xs 2xl:text-sm   ${
+                    border-gray-700 text-xs 2xl:text-sm   ${
                      activeIndex === index
                        ? "bg-[#F1713D] text-[#FFFFFF] border-[#B55A37]"
                        : "text-[#828282] bg-[#272727]"
-                   } cursor-pointer transition-all duration-300`}
+                   } cursor-pointer transition-all duration-300 flex items-center justify-center  `}
                 >
                   <PlusCircleOutlined className=" cursor-pointer" />
                   {label}
