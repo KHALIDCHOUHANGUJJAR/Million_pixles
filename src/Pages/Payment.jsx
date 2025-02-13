@@ -125,7 +125,7 @@ export default function Payment() {
                   className="object-cover w-[10vw] h-[9vh] "
                 />
                 <div className="px-3 border-2 border-black/5 rounded  flex items-center justify-center text-center">
-                  <h4 className="text-black w-[2vw] flex items-center h-[8vh] justify-center ">
+                  <h4 className="text-black w-[2vw] flex items-center h-[8vh] 2xl:h-[7vh] justify-center ">
                     See all
                   </h4>
                 </div>
@@ -135,7 +135,7 @@ export default function Payment() {
             <div>
               <form
                 onSubmit={handleSubmit(onSubmit)}
-                className="text-black  space-y-[2vh] 2xl:space-y-3 2xl:mb-4  "
+                className="text-black  space-y-[2vh] 2xl:space-y-2 2xl:mb-4  "
               >
                 <div>
                   <label className="text-sm font-semibold 2xl:text-xl  ">
@@ -143,7 +143,7 @@ export default function Payment() {
                   </label>
                   <input
                     placeholder="Name"
-                    className="border-2 rounded-lg  border-white/20  w-full bg-[#272727] text-white px-5 p-1.5 2xl:p-5 "
+                    className="border-2 rounded-lg  border-white/20  w-full bg-[#272727] text-white px-5 p-1.5 2xl:p-4 "
                     {...register("exampleRequired", { required: true })}
                   />{" "}
                 </div>
@@ -154,7 +154,7 @@ export default function Payment() {
                   <input
                     placeholder="1111 2222 3333 4444 "
                     type="number"
-                    className="border-2 rounded-lg  border-white/20  w-full bg-[#272727] text-white px-5 p-1.5 2xl:p-5 flex  "
+                    className="border-2 rounded-lg  border-white/20  w-full bg-[#272727] text-white px-5 p-1.5 2xl:p-4 flex  "
                     {...register("exampleRequired", { required: true })}
                   />{" "}
                 </div>
@@ -166,7 +166,7 @@ export default function Payment() {
                     <input
                       type="date"
                       className="border-2 rounded-lg  border-white/20  w-full bg-[#272727] text-white
-                        p-1.5 2xl:p-5"
+                        p-1.5 2xl:p-4"
                       {...register("exampleRequired", { required: true })}
                     />{" "}
                   </div>
@@ -177,7 +177,8 @@ export default function Payment() {
                     <input
                       placeholder="123 "
                       type="number"
-                      className="border-2 rounded-lg  border-white/20  w-full bg-[#272727] text-white px-5 p-1.5 2xl:p-5 flex  "
+                      className="border-2 rounded-lg  border-white/20  w-full bg-[#272727] text-white
+                        p-1.5  2xl:p-4  "
                       {...register("exampleRequired", { required: true })}
                     />{" "}
                   </div>
@@ -201,7 +202,7 @@ export default function Payment() {
               </div>
               <div
                 className="text-white flex items-center justify-between w-full 
-               cursor-pointer bg-[#F1713D]  p-1 2xl:p-4 rounded-[0.75rem]"
+               cursor-pointer bg-[#F1713D]  p-1 2xl:p-3 rounded-[0.75rem]"
               >
                 <p>$1,672</p>
                 <Button

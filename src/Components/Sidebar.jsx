@@ -20,7 +20,7 @@ function Sidebar() {
               className="relative w-full shadow-2xl  px-10 2xl:px-15 2xl:text-2xl
                xl:py-2 2xl:py-2 border-2 bg-[#272727]  border-[#413e3e] rounded-3xl  focus:outline-none "
             />
-            <SearchOutlined className="text-xl 2xl:text-2xl text-[#fffff] absolute xl:left-[15%] 2xl:left-[16%] " />
+            <SearchOutlined className="text-xl 2xl:text-2xl text-[#fffff] absolute xl:left-[15%] 2xl:left-[19%] " />
             <button className="xl:p-3 2xl:p-3 rounded-full bg-[#272727] border-2 border-[#413e3e] ">
               <MdOutlineMicNone className="text-xl 2xl:text-2xl text-[#fffff] " />
             </button>
@@ -103,7 +103,7 @@ function Sidebar() {
           </div>
         </div>
 
-        <div className=" 2xl:mb-8 mb-5">
+        <div className=" 2xl:mb-10 mb-5">
           <button
             className="w-full flex items-center gap-1 shadow-2xl
            border-2 border-[#413e3e]  p-4 xl:py-3 2xl:py-4 bg-[#272727]

@@ -5,7 +5,7 @@ import { orders } from "../../Utils/text";
 
 export default function OrderHistory() {
   return (
-    <div className="flex  w-full flex-col bg-[#111111] p-4 text-white">
+    <div className="flex  w-full flex-col bg-[#111111] 2xl:px-6 2xl:p-0 p-4 text-white">
       <div className="mb-6 flex flex-col gap-4">
         <h1 className="text-xl font-semibold md:text-2xl xl:text-3xl">
           Order History

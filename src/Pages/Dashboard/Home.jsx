@@ -37,7 +37,7 @@ const Home = () => {
                 Here You Can <br /> Manage Your Pixels.
                 <RxArrowTopRight
                   className=" rounded-full bg-[#272727]
-                 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12 p-1.5 text-center "
+                 xl:w-10 xl:h-10 2xl:w-11 2xl:h-11 2xl:p-2 p-1.5 text-center "
                 />
               </h2>
               <div className=" 2xl:mt-2  xl:space-y-2 2xl:space-y-5  ">
@@ -72,13 +72,13 @@ const Home = () => {
           </div>
           <div className="flex  items-center justify-center">
             <div className="bg-[#F1713D] text-white p-4  text-center w-[94%] rounded-lg 2xl:mt-10 2xl:p-6 mt-2   ">
-              <h3 className="text-md font-poppins  font-semibold flex items-center gap-2 justify-center">
+              <h3 className="text-md font-poppins 2xl:p-2 font-semibold flex items-center gap-2 justify-center">
                 Here Is What You Can Do
                 <RiQuestionnaireLine className="text-xl " />{" "}
               </h3>
               <p
                 className="xl:text-xs 2xl:text-md italic font-poppins text-start 
-             bg-[#171717] rounded-2xl p-2 2xl:p-8 flex items-center"
+             bg-[#171717] rounded-2xl p-2 2xl:p-6 flex items-center"
               >
                 Order: Choose And Order New Pixels. <br /> Manage: Manage Pixels Owned
                 By You. View Your Order History. Edit Your Personal Details,

@@ -41,7 +41,7 @@ const MyPixels = () => {
                         </div>
                       );
                     })}
-                    <RxArrowTopRight className="text-xl rounded-full bg-[#272727] xl:w-10 xl:h-10 2xl:w-14 2xl:h-14 text-center" />
+                    <RxArrowTopRight className="text-xl rounded-full bg-[#272727] xl:w-10 xl:h-10 2xl:w-12 2xl:h-12 2xl:p-2 text-center" />
                   </div>
                 </div>
               </div>
@@ -49,21 +49,21 @@ const MyPixels = () => {
           )}
         </div>
 
-        <div className="w-full flex flex-col gap-1">
+        <div className="w-full flex flex-col gap-1 2xl:gap-5">
           {pixelOrders.map((order) => (
             <div key={order.id} className="px-4">
               {activeEditId === order.id ? (
-                <div className="mt-2 bg-[#171717] rounded-xl p-3  flex flex-col sm:flex-row gap-6">
-                  <div className="flex flex-col items-center justify-between gap-5">
+                <div className="mt-2 bg-[#171717] rounded-xl p-3 2xl:px-5  flex flex-col sm:flex-row gap-6">
+                  <div className="flex flex-col items-center justify-between 2xl:justify-evenly gap-5">
                     <div className="border-2 rounded-xl border-dashed border-gray-500 p-3">
                       <img
                         src="/Assets/Images/images.jpeg"
                         alt=""
-                        className="w-[50vw] h-32 rounded-2xl"
+                        className="w-[50vw] h-32 2xl:h-36 rounded-2xl"
                       />
                     </div>
 
-                    <div className="flex items-center justify-between h-full border-2 border-dashed rounded-2xl border-gray-500 p-1.5 bg-[#272727]">
+                    <div className="flex items-center justify-between h-full 2xl:h-[4rem] border-2 border-dashed rounded-2xl border-gray-500 p-1.5 bg-[#272727]">
                       <img
                         src="/Assets/Images/images.jpeg"
                         alt=""
@@ -76,7 +76,7 @@ const MyPixels = () => {
                     </div>
                   </div>
 
-                  <div className="flex flex-col justify-between w-full sm:w-[40vw] h-[35vh]">
+                  <div className="flex flex-col justify-between 2xl:py-8 w-full sm:w-[40vw] h-[35vh]">
                     <div className="text-center sm:text-left">
                       <h2 className="text-lg font-semibold text-white">
                         12/Jan/2025
@@ -98,7 +98,7 @@ const MyPixels = () => {
                   <div className="flex flex-col w-full sm:w-1/1 justify-center space-y-4 relative">
                     <div>
                       <label className="text-white text-sm">Text</label>
-                      <AiOutlineEdit className="absolute left-[80%] top-[33%]  text-2xl" />
+                      <AiOutlineEdit className="absolute left-[80%] top-[33%] 2xl:top-[38%] text-2xl" />
                       <input
                         type="text"
                         placeholder="Write here"
@@ -107,7 +107,7 @@ const MyPixels = () => {
                     </div>
                     <div className="w-full">
                       <label className="text-white text-sm">URL 🔗</label>
-                      <AiOutlineEdit className="absolute left-[80%] top-[67%] text-2xl" />
+                      <AiOutlineEdit className="absolute left-[80%] top-[67%] 2xl:top-[63%] text-2xl" />
                       <input
                         type="url"
                         placeholder="Write here"
@@ -132,7 +132,7 @@ const MyPixels = () => {
                   </div>
                 </div>
               ) : (
-                <div className="px- flex justify-between">
+                <div className=" flex justify-between ">
                   <div className="flex items-center justify-center gap-3">
                     <div className="w-full sm:w-[15%]">
                       <img

@@ -185,7 +185,7 @@ export const SelectPixels = () => {
             isCollapsed ? "hidden" : "block"
           }`}
         >
-          <div className="w-[3rem] h-[7vh] bg-white rounded-full"></div>
+          <div className="w-[3rem] 2xl:w-[3rem] h-[7vh] 2xl:h-[3rem]  bg-white rounded-full"></div>
         </div>
 
         <div className="flex flex-col flex-grow items-center justify-start p-">
@@ -194,14 +194,14 @@ export const SelectPixels = () => {
               isCollapsed ? " hidden" : "block"
             }`}
           >
-            <h1 className="text-[1.3rem] 2xl:text-[3rem] font-bold flex items-center gap-2">
+            <h1 className="text-[1.3rem] 2xl:text-[2rem] font-bold flex items-center gap-2">
               Select Pixel{" "}
               <IoIosInformationCircleOutline className="text-[1.7rem]" />
             </h1>
 
             <div
               className="inline-flex items-center gap-[0.625rem] bg-[#B7552E]
-             text-white text-[0.85rem] 2xl:text-[1.25rem] 2xl:p-3 rounded p-[0.3rem]"
+             text-white text-[0.85rem] 2xl:text-[1rem] 2xl:p-3 rounded p-[0.3rem]"
             >
               <IoIosInformationCircleOutline />
               Use Cursor To Select An Area
@@ -215,7 +215,7 @@ export const SelectPixels = () => {
           >
             <canvas
               ref={canvasRef}
-              className="w-full h-full cursor-crosshair"
+              className={`*:w-full 2xl:w-[66vw]  h-full cursor-crosshair ${isCollapsed? "2xl:w-full ":""}`}
             />
           </div>
 
@@ -256,7 +256,7 @@ export const SelectPixels = () => {
       </div>
       <BiCollapseHorizontal
         onClick={handleClick}
-        className={`absolute h-[4vh] w-[2vw] rounded-lg top-[9%] bg-[#272727] z-10 text-4xl text-white ${
+        className={`absolute h-[4vh] w-[2vw] rounded-lg top-[9%] 2xl:top-[6%] bg-[#272727] z-10 text-4xl text-white ${
           isCollapsed ? "left-[84.5%] top-[2%]" : "left-[68.9%]"
         }`}
       />
@@ -264,7 +264,7 @@ export const SelectPixels = () => {
       <div
         className={`h-screen ${
           isCollapsed ? "w-[15%]" : "w-[30%]"
-        } bg-[#272727] p-6 z-0 relative text-white flex flex-col transition-all`}
+        } bg-[#272727] p-6 2xl:p-10 z-0 relative text-white flex flex-col transition-all`}
       >
         <h2
           className={`
