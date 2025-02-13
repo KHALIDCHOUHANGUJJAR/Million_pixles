@@ -9,9 +9,13 @@ function Login() {
     register,
     handleSubmit,
     watch,
+    reset,
     formState: { errors },
   } = useForm();
-  const onSubmit = () => naivgate("/pixels");
+  const onSubmit = () => {
+    naivgate("/pixels");
+    reset();
+  };
 
   console.log(watch("example"));
   return (
@@ -24,20 +28,17 @@ function Login() {
           </p>
         </div>
         <div className="flex items-center h-full  justify-center">
-          <div
-            className="text-white 
-            "
-          >
+          <div className="text-white">
             <div className="flex items-center justify-center h-full ">
               <h1 className="text-3xl  2xl:text-4xl font-bold mb-8">Login</h1>
             </div>
-            <p className="text-sm   w-full  2xl:text-lg text-gray-200 mb-4 font-semibold">
+            <p className="text-sm   w-full  2xl:text-lg text-gray-200 mb-4 ">
               By creating an account. you agree to the
-              <Link href="#" className="text-[#F1713D] underline mr-0.5">
+              <Link href="#" className="ml-2 text-[#F1713D] underline mr-1.5">
                 Terms of Use
               </Link>
               and
-              <Link href="#" className="text-[#F1713D] ml-0.5 underline">
+              <Link href="#" className=" text-[#F1713D] ml-1.5 underline">
                 Privacy Policy
               </Link>
             </p>
@@ -87,7 +88,7 @@ function Login() {
               </button>
             </form>
             <p className="mt-4 text-sm text-center font-semibold text-gray-200 2xl:text-xl ">
-              Dont have an account?
+              Don’t have an account? Sign in{" "}
               <Link to="/singup" className="text-[#F1713D] ml-1.5 underline">
                 Sign Up
               </Link>

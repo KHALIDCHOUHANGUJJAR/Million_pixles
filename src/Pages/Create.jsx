@@ -27,8 +27,10 @@ export const Create = () => {
           transition={{ duration: 0.5, ease: "easeInOut" }}
         >
           <Created
-            heading="Welcome"
-            subHeading={isBuy ? "Purchase Your First Pixels!" : "Your Account is Ready!"}
+            heading={isBuy ? "Get Your Pixel" : "Welcome"}
+            subHeading={
+              isBuy ? "Purchase Your First Pixels" : "Your Account is Ready!"
+            }
             paragraph={
               isBuy
                 ? "Claim your space on the Wall of Internet. Choose the blocks that represent you!"

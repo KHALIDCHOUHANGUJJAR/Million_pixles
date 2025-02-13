@@ -68,8 +68,8 @@ const About = () => {
               </div>
               <h2 className="font-bold text-lg 2xl:text-2xl">Join Now</h2>
             </div>
-            <div className="px-5 text-lg 2xl:text-xl">
-              <p>Edit your pixles anytime- showcase imageLink or messages</p>
+            <div className="px-5 text-xl 2xl:text-xl">
+              <p>Edit your pixles anytime- showcase image, Links, or messages</p>
             </div>
           </div>
 
@@ -129,7 +129,7 @@ const About = () => {
                   key={index}
                   onClick={() => handleClick(index)}
                   className={`flex  border-2 
-                  rounded-3xl text-center justify-center  2xl:px-1 2xl:gap-1
+                  rounded-3xl text-center justify-center  2xl:px-1 2xl:gap-2 gap-1
                    xl:h-10.5 xl:w-[13.5vw] 
                    items-center border-gray-700 text-xs 2xl:text-sm   ${
                      activeIndex === index

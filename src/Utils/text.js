@@ -1,11 +1,11 @@
 export const leftbarText = [
   {
-    textHeading: "you Own",
+    textHeading: "You Own",
     textSubHeading: 10,
     textSubHeading2: "Block",
   },
   {
-    textHeading: "you have pixles on order",
+    textHeading: "You have pixles on order",
     textSubHeading: 10,
     textSubHeading2: "Block",
   },

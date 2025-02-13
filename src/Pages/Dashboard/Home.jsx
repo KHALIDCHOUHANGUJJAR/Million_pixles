@@ -12,11 +12,11 @@ const Home = () => {
               className="xl:text-2xl 2xl:text-3xl font-bold"
               style={{ fontFamily: "Nunito Sans, sans-serif" }}
             >
-              Mange Your Pixels
+              Manage Your Pixels
             </h1>
 
             <p className="xl:text-sm 2xl:text-lg text-[#c4baba] font-semibold flex gap-1 w-full text-center">
-              Your block are shown on the grid below{" "}
+              Your block are shown on the grid below.{" "}
               <RiQuestionnaireLine className="text-2xl " />{" "}
             </p>
           </div>
@@ -36,8 +36,8 @@ const Home = () => {
               >
                 Here You Can <br /> Manage Your Pixels.
                 <RxArrowTopRight
-                  className="text-xl rounded-full bg-[#272727]
-                 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12 text-center "
+                  className=" rounded-full bg-[#272727]
+                 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12 p-1.5 text-center "
                 />
               </h2>
               <div className=" 2xl:mt-2  xl:space-y-2 2xl:space-y-5  ">
@@ -77,10 +77,10 @@ const Home = () => {
                 <RiQuestionnaireLine className="text-xl " />{" "}
               </h3>
               <p
-                className="xl:text-sm 2xl:text-md italic font-poppins text-start 
-             bg-[#171717] rounded-2xl xl:px- p-1.5 2xl:p-8 flex items-center"
+                className="xl:text-xs 2xl:text-md italic font-poppins text-start 
+             bg-[#171717] rounded-2xl p-2 2xl:p-8 flex items-center"
               >
-                Order: Choose And Order New Pixels. Manage: Manage Pixels Owned
+                Order: Choose And Order New Pixels. <br /> Manage: Manage Pixels Owned
                 By You. View Your Order History. Edit Your Personal Details,
                 Change Your Password.
               </p>

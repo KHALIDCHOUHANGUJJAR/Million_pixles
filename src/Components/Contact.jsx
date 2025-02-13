@@ -18,7 +18,7 @@ const Contact = () => {
       <div className="flex items-center justify-between gap-10 mt-5
       ">
         <Button text={"   👀 Insight "} />
-        <Button text={"Contact"} />
+        <Button text={"👋 Contact"} />
       </div>
       <div className="w-[67.125rem] h-[1px] flex-shrink-0 opacity-10 bg-[#FFF] z-10 mt-8"></div>
     </div>

@@ -10,14 +10,16 @@ function Singup() {
   const {
     register,
     handleSubmit,
-    watch,
+    reset,
     control,
 
     formState: { errors },
   } = useForm();
-  const onSubmit = () => naivgate("/create");
 
-  console.log(watch("example"));
+  const onSubmit = () => {
+    naivgate("/create");
+    reset();
+  };
   return (
     <div className="flex justify-center items-center  w-full h-screen relative">
       <div className="hidden md:block w-[40%] h-[100vh] fixed left-0">
@@ -32,18 +34,18 @@ function Singup() {
           <div
             className="text-white md:w-[80%] w-[90%]  
            rounded-[1.5rem] border border-gray-400/50
-  2xl:p-8 p-6 shadow-2xl  "
+           2xl:p-8 p-5 shadow-2xl  "
           >
             <div className=" h-full ">
-              <h1 className="text-2xl 2xl:text-3xl font-bold mb-8">
-                Create an Account
+              <h1 className="text-2xl 2xl:text-3xl font-bold mb-3 font-poppins">
+                Create an account
               </h1>
             </div>
             <form
               onSubmit={handleSubmit(onSubmit)}
               className="h-full 2xl:space-y-10"
             >
-              <div className="flex items-center  h-full justify-between ">
+              <div className="flex items-center  h-full justify-between mb-2 ">
                 <div className=" w-[48%] 2xl:space-y-2">
                   <label className="block text-gray-200 text-sm  2xl:text-xl">
                     Full Name
@@ -111,7 +113,7 @@ function Singup() {
                         background: "transparent",
                         color: "#fff",
                         borderColor: "#374151",
-                        borderRadius:"12px",
+                        borderRadius: "12px",
                       }}
                       containerStyle={{ width: "100%" }}
                     />
@@ -121,13 +123,13 @@ function Singup() {
                   <p className="text-red-500 text-sm">{errors.phone.message}</p>
                 )}
               </div>
-              <div className="space-y-2 mt-1 2xl:space-y-2">
-                <div className="flex items-center justify-between">
+              <div className=" mt-5 2xl:space-y-2 ">
+                <div className="flex items-center justify-between ">
                   <label htmlFor="refer" className="text-gray-200 2xl:text-xl">
                     Refer
                   </label>
-                  <span className="text-sm text-gray-500">
-                    (choose unique member ID that you will use to log in, but
+                  <span className="text-xs text-gray-500">
+                    (choose a unique member ID that you will use to log in, but
                     don't use spaces)
                   </span>
                 </div>
@@ -143,7 +145,7 @@ function Singup() {
                   <p className="text-red-500 text-sm">{errors.ref.message}</p>
                 )}
               </div>
-              <div className="mb-4  2xl:space-y-2">
+              <div className="mt-3  2xl:space-y-2">
                 <label className="block text-gray-200 text-sm 2xl:text-xl ">
                   Set Your Password
                 </label>
@@ -171,7 +173,7 @@ function Singup() {
                     className="mr-2 w-5 h-5 2xl:py-2 accent-orange-500"
                   />
                   By creating an account, you agree to our
-                  <Link to="/terms" className=" underline ">
+                  <Link to="/terms" className=" underline p-1 ">
                     Terms of Use
                   </Link>
                   and
@@ -184,7 +186,7 @@ function Singup() {
                     {errors.terms.message}
                   </p>
                 )}
-                <p className="text-sm  flex font-sans  text-gray-300 mb-4 2xl:text-xl">
+                <p className="text-sm text-start  flex font-sans   text-gray-300 mb-3 2xl:text-xl">
                   <input
                     type="checkbox"
                     {...register("terms", {
@@ -192,7 +194,7 @@ function Singup() {
                     })}
                     className="mr-2 w-8 h-8 2xl:py-2 accent-orange-500"
                   />
-                  By creating an account, i am also concenting to recive SMS{" "}
+                  By creating an account, I am also concenting to recive SMS{" "}
                   messages and email, including products, new features updates,{" "}
                   events, and marketing promotions.
                 </p>

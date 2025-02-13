@@ -32,14 +32,14 @@ const Header = () => {
               Welcome to your account
             </h1>
             <p className="text-[#c4baba] 2xl:text-2xl">
-              Here you can manage your pixels
+              Here you can manage your pixels.
             </p>
           </div>
           <div
             className="2xl:p-4 flex border-2 text-[#8a8686] font-semibold rounded-3xl 
-           text-center p-1 text-md 2xl:text-xl h-10 text-sm items-center border-gray-700 bg-[#171717] px-3"
+           text-center p-1 text-md 2xl:text-xl h-10  gap-1 text-sm items-center border-gray-700 bg-[#171717] px-3"
           >
-            <LuCrown className="2xl:text-xl" />
+            <LuCrown className="2xl:text-xl text-lg" />
             Pro Member
           </div>
           <div className="flex gap-10">
@@ -50,7 +50,7 @@ const Header = () => {
               >
                 CM
               </div>
-              <div className="bg-[#A86D5B] xl:h-[2.5vw] 2xl:h-[3vw] text-center flex xl:left-[70%] 2xl:left-[72%] items-center justify-center w-9 2xl:w-12 rounded-full text-black absolute">
+              <div className="bg-[#A86D5B] xl:h-[2.5vw] 2xl:h-[3vw] text-center flex xl:left-[71%] 2xl:left-[72%] items-center justify-center w-9 2xl:w-12 rounded-full text-black absolute">
                 SH
               </div>
               <div
@@ -59,7 +59,7 @@ const Header = () => {
               rounded-3xl text-center p-1 text-md 2xl:text-xl h-10 text-sm items-center border-gray-700 bg-[#171717] px-3"
               >
                 Invited
-                <PlusCircleOutlined className="text-2xl" />
+                <PlusCircleOutlined className=" ml-0.5" />
               </div>
             </div>
             <div
@@ -111,7 +111,7 @@ const Header = () => {
             ))}
           </div>
           <p className="text-[#dad5d5] font-semibold p-1">
-            Question? Email us: info1millionpixels.com{" "}
+            Questions? Email us: info@1millionpixel.com{" "}
           </p>
         </div>
       </header>

@@ -33,13 +33,13 @@ const Created = ({
         }`}
       >
         <div className="flex items-center justify-center flex-col gap-10">
-          <h1 className="text-[3rem] 2xl:text-4xl font-poppins italic font-bold">
+          <h1 className="hf text-[3rem] 2xl:text-4xl font-poppins italic font-bold">
             {heading}
           </h1>
           <div
             className={`text-white bg-[#272727]  rounded-[1.5rem] md:p-8 2xl:p-10  p-4 shadow-2xl text-center 
-    ${isShow ? "md:w-[60%] w-[90%]" : " w-[40%]"} 
-  `}
+       ${isShow ? "md:w-[60%] w-[90%]" : " w-[40%]"} 
+      `}
           >
             <div className="h-full flex items-center flex-col">
               <h1 className="text-[1.5rem] 2xl:text-3xl font-semibold font-poppins mb-8">
@@ -67,7 +67,7 @@ const Created = ({
             </div>
           </div>
 
-          <div className="flex items-center flex-col w-[60%] text-center">
+          <div className="flex items-center flex-col w-[60%] text-center mt-10">
             <h1 className="text-[2.3rem] font-poppins text-white italic font-semibold leading-[8.5vh] text-center">
               Wall Of Internet
             </h1>

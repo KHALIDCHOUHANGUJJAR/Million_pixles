@@ -22,11 +22,13 @@ function Landing() {
         >
           <div className="w-full md:w-[90%]  md:mb-0">
             <h1
-              className="  font-semibold tracking-wider font-nunito
+              className=" wall font-semibold tracking-wider font-nunito
              md:tracking-[0.4vw] "
             >
-              <span className=" md:tracking-[1vw] font-black 
-               shrink text-[#B7552E] text-4xl md:text-[7rem]">
+              <span
+                className=" md:tracking-[1vw] font-semibold 
+               shrink text-[#B7552E] text-4xl md:text-[7rem]"
+              >
                 Wall
               </span>
               <br />
@@ -39,7 +41,7 @@ function Landing() {
               Own a Piece of the Internet.
             </p>
 
-            <div className="w-full md:w-[21vw] h-[0.2vw] bg-amber-100 my-4"></div>
+            <div className="w-full md:w-[21vw] h-[0.4vw] bg-amber-100 my-4"></div>
             <p
               className="text-white font-poppins text-[5vw] md:text-[1.2vw] font-normal 
             leading-[7vw] md:leading-[2.5vw] tracking-[1vw] md:tracking-[0.2vw] w-full"
@@ -66,25 +68,41 @@ function Landing() {
             >
               <NavLink
                 to=""
-                className="flex items-center py-2 md:py-2 2xl:py-3.5 px-4 md:px-6 hover:underline underline-offset-4 font-semibold text-lg md:text-xl 2xl:text-3xl text-white"
+                className="flex items-center py-2 md:py-2 2xl:py-3.5 px-4 md:px-1 font-semibold
+                 text-lg md:text-xl 2xl:text-3xl text-white relative 
+                 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0
+                  after:h-[2px] after:bg-[#B7552E] after:transition-all after:duration-300
+                   hover:after:w-full"
               >
                 Home
               </NavLink>
               <NavLink
                 to="/about"
-                className="flex items-center py-2 md:py-2 2xl:py-3.5 px-4 md:px-6 hover:underline underline-offset-4 font-semibold text-lg md:text-xl 2xl:text-3xl text-white"
+                className="flex items-center py-2 md:py-2 2xl:py-3.5 px-4 md:px-1 font-semibold
+                text-lg md:text-xl 2xl:text-3xl text-white relative 
+                after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0
+                 after:h-[2px] after:bg-[#B7552E] after:transition-all after:duration-300
+                  hover:after:w-full"
               >
                 About
               </NavLink>
               <NavLink
                 to="/contact"
-                className="flex items-center py-2 md:py-2 2xl:py-3.5 px-4 md:px-6 hover:underline underline-offset-4 font-semibold text-lg md:text-xl 2xl:text-3xl text-white"
+                className="flex items-center py-2 md:py-2 2xl:py-3.5 px-4 md:px-1 font-semibold
+                text-lg md:text-xl 2xl:text-3xl text-white relative 
+                after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0
+                 after:h-[2px] after:bg-[#B7552E] after:transition-all after:duration-300
+                  hover:after:w-full"
               >
                 Contact Us
               </NavLink>
               <NavLink
                 to="/login"
-                className="flex items-center py-2 md:py-2 2xl:py-3.5 px-4 md:px-6 hover:underline underline-offset-4 font-semibold text-lg md:text-xl 2xl:text-3xl text-white"
+                className="flex items-center py-2 md:py-2 2xl:py-3.5 px-4 md:px-1 font-semibold
+                text-lg md:text-xl 2xl:text-3xl text-white relative 
+                after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0
+                 after:h-[2px] after:bg-[#B7552E] after:transition-all after:duration-300
+                  hover:after:w-full"
               >
                 Login
               </NavLink>

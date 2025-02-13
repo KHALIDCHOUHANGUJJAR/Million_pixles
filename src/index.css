@@ -1,6 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?famiSly=Dancing+Script:wght@400..700&family=Danfo&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Danfo&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 
 body {
   background-color: #111111;
@@ -11,12 +10,18 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.wall {
+  font-family: Nunito;
+  font-weight: 400;
+}
 
-
-
+.hf {
+  font-family: Poppins;
+  font-weight: 700;
+}
 
 .selected-flag {
-  background: #272727 !important;
+  background: #111111 !important;
   border-right: none !important ;
 }
 .flag-dropdown {
@@ -25,42 +30,13 @@ body {
   border: 1px solid #4b5563 !important;
 }
 .country-list {
-  background-color: #272727 !important;
+  background-color: #111111 !important;
 }
 
 .country {
-  background-color: #8d8f92 !important;
+  background-color: #111111 !important;
+
 }
-
-@keyframes moveClouds {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: -1000px 0;
-  }
+.dial-code{
+  color: white !important;
 }
-
-.cloud-bg {
-  background: #1e130e;
-}
-
-.cloud-bg::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200%;
-  height: 100%;
-  background: url("https://www.transparenttextures.com/patterns/cloudy.png");
-  opacity: 0.1;
-  animation: moveClouds 30s linear infinite;
-  z-index: 1;
-}
-
-.cloud-bg > * {
-  position: relative;
-  z-index: 10;
-}
-
-

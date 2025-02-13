@@ -71,7 +71,7 @@ export default function Payment() {
         </div>
       </div>
 
-      <div className="w-full flex flex-col items-center  md:w-[50%] bg-[#F1713D] p-2 2xl:p-8  min-h-screen ">
+      <div className="w-full flex flex-col items-center  md:w-[50%] bg-[#F1713D]  2xl:p-8  min-h-screen ">
         <div className="flex justify-between items-center mb-4 mt-4 2xl:mt-8">
           <div className="flex items-start justify-center w-full">
             <div className="flex items-center flex-col justify-between">
@@ -102,30 +102,30 @@ export default function Payment() {
           className="md:bg-white bg-white rounded-[1.25rem] p-2  md:w-[60%] shadow-lg 
              transform transition-all  duration-1000 ease-in-out"
         >
-          <div className="p-2">
-            <h3 className="text-lg text-black font-bold mb-1 2xl:text-2xl">
+          <div className="px-4">
+            <h3 className="text-lg text-black font-bold mb-4 2xl:text-2xl ">
               Card Details
             </h3>
-            <div className="w-full ">
-              <h5 className="text-md 2xl:text-xl text-black"> Card Type</h5>
-              <div className="flex items-center justify-center">
+            <div className="w-full  ">
+              <h5 className="text-md 2xl:text-xl text-black mb-3 "> Card Type</h5>
+              <div className="flex items-center justify-center mb-4">
                 <img
                   src="Assets/Images/Rectangle 9.png"
                   alt="masterCard"
-                  className="object-fill w-[6vw]  "
+                  className="object-cover w-[10vw] h-[9vh]  "
                 />
                 <img
                   src="Assets/Images/Rectangle 10.png"
                   alt="Visa"
-                  className="object-fill w-[6vw] "
+                  className="object-cover w-[10vw] h-[9vh] "
                 />
                 <img
                   src="Assets/Images/Rectangle 11.png"
                   alt="RuPay"
-                  className="object-fill w-[6vw] "
+                  className="object-cover w-[10vw] h-[9vh] "
                 />
                 <div className="px-3 border-2 border-black/5 rounded  flex items-center justify-center text-center">
-                  <h4 className="text-black w-[2vw] flex items-center h-[6vh] justify-center ">
+                  <h4 className="text-black w-[2vw] flex items-center h-[8vh] justify-center ">
                     See all
                   </h4>
                 </div>
@@ -135,11 +135,11 @@ export default function Payment() {
             <div>
               <form
                 onSubmit={handleSubmit(onSubmit)}
-                className="text-black  space-y-1.5 2xl:space-y-3 2xl:mb-4  "
+                className="text-black  space-y-[2vh] 2xl:space-y-3 2xl:mb-4  "
               >
                 <div>
                   <label className="text-sm font-semibold 2xl:text-xl  ">
-                    Name
+                    Name on card
                   </label>
                   <input
                     placeholder="Name"
@@ -161,7 +161,7 @@ export default function Payment() {
                 <div className="flex w-full items-center justify-between gap-1.5">
                   <div>
                     <label className="text-sm font-semibold 2xl:text-xl ">
-                      Expiration date
+                      Expiration date{" "}
                     </label>
                     <input
                       type="date"
@@ -172,7 +172,7 @@ export default function Payment() {
                   </div>
                   <div>
                     <label className="text-sm font-semibold 2xl:text-xl ">
-                      CVV
+                      CVC
                     </label>
                     <input
                       placeholder="123 "
@@ -184,7 +184,7 @@ export default function Payment() {
                 </div>
                 {errors.exampleRequired && <span>This field is required</span>}
               </form>
-              <div className="w-full p-2 border-b-1 mb-1 border-black"></div>
+              <div className="w-full p-2 border-b-1 mb-1  border-[#5F65C3] "></div>
               <div className="w-full space-y-2 2xl:space-y-4 2xl:text-xl mb-3">
                 <div className="flex items-center justify-between text-black">
                   <h2>Subtotal</h2>
@@ -201,13 +201,13 @@ export default function Payment() {
               </div>
               <div
                 className="text-white flex items-center justify-between w-full 
-               cursor-pointer bg-[#F1713D] px-6 p-1 2xl:p-4 rounded-[0.75rem]"
+               cursor-pointer bg-[#F1713D]  p-1 2xl:p-4 rounded-[0.75rem]"
               >
                 <p>$1,672</p>
                 <Button
                   handleClick={() => navigate("/cong")}
                   text={"Checkout"}
-                  iconR={<FaArrowRightLong className="ml-6 text-2xl" />}
+                  iconR={<FaArrowRightLong className="ml-2.5 text-2xl" />}
                 />
               </div>
             </div>

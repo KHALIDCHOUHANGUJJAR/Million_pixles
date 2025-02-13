@@ -12,44 +12,44 @@ export default function ReviewOrder() {
   return (
     <div className="flex flex-col w-full md:flex-row overflow-hidden min-h-screen">
       <div className="w-full md:w-[60%] bg-[#272727] p-6 min-h-screen">
-        <div className="p-2 2xl:p-4 md:w-[60%]  2xl:py-1 ">
+        <div className="p- 2xl:p-4 md:w-[60%]  2xl:py-1 ">
           <h1 className="text-white text-[1.5rem] 2xl:text-3xl  font-semibold pb-4 2xl:pb-6 border-b border-[#D0CFCF] ">
             Review Your Order
           </h1>
 
-          <div className="mt-8 2xl:mt-02  mb-10 text-white space-y-8 2xl:space-y-10">
+          <div className="mt-8 2xl:mt-02  mb-6 text-white space-y-5 2xl:space-y-10">
             <h2 className="text-xl 2xl:text-2xl ">Pixels Details</h2>
 
-            <div className="2xl:space-y-10">
-              <div className="border-b pb-4 2xl:pb-6  border-white/20">
+            <div className="2xl:space-y-10 ">
+              <div className="border-b pb-4 2xl:pb-6 mt-3  border-white/20">
                 <p className="text-gray-400 mb-1 2xl:mb-2 2xl:text-xl">
                   Selected Block
                 </p>
                 <p>300 x 500</p>
               </div>
 
-              <div className="border-b pb-4 2xl:pb-6  border-white/20">
+              <div className="border-b pb-4 2xl:pb-6 mt-3  border-white/20">
                 <p className="text-gray-400 mb-1 2xl:mb-2 2xl:text-xl">
                   Pixels Count
                 </p>
                 <p>2000 Pixels</p>
               </div>
 
-              <div className="border-b pb-4 2xl:pb-6  border-white/20">
+              <div className="border-b pb-4 2xl:pb-6 mt-3  border-white/20">
                 <p className="text-gray-400 mb-1 2xl:mb-2 2xl:text-xl">
                   Pixels Location
                 </p>
                 <p>X: 157Px Y: 284Px</p>
               </div>
 
-              <div className="border-b pb-4 2xl:pb-6  border-white/20">
+              <div className="border-b pb-4 2xl:pb-6 mt-3  border-white/20">
                 <p className="text-gray-400 mb-1 2xl:mb-2 2xl:text-xl">
                   Price Per Pixels
                 </p>
                 <p>$2</p>
               </div>
 
-              <div className="border-b pb-4 2xl:pb-6  border-white/20">
+              <div className="border-b pb-4 2xl:pb-6 mt-3  border-white/20">
                 <p className="text-gray-400 mb-1 2xl:mb-2 2xl:text-xl">
                   Total Price
                 </p>
@@ -105,21 +105,29 @@ export default function ReviewOrder() {
             </h3>
 
             <div className="space-y-2 2xl:space-y-8 mb-4 2xl:mb-6  text-black">
-              <div className="flex border-b-2 2xl:text-xl 2xl:pb-6 2xl:mt-8 border-black/25 pb-4  flex-col justify-between">
-                <span>Pixel Price</span>
+              <div className="flex border-b-2 2xl:text-xl 2xl:pb-6 2xl:mt-8  mt-3 border-black/25 pb-4 italic flex-col justify-between">
+                <span className="text-[1.25rem] font-medium leading-[1.25rem] text-[#272727] capitalize">
+                  Pixel Price
+                </span>
                 <span>$2.50 Per Pixel</span>
               </div>
-              <div className="flex flex-col 2xl:pb-6 2xl:mt-8 2xl:text-xl justify-between border-b-2 border-black/25 pb-4">
-                <span>Total Cost</span>
+              <div className="flex flex-col 2xl:pb-6 2xl:mt-8  mt-3 2xl:text-xl justify-between border-b-2 border-black/25 pb-4">
+                <span className="text-[1.25rem] font-medium leading-[1.25rem] text-[#272727] capitalize">
+                  Total Cost
+                </span>
                 <span>100 Pixels x $2.50 = $250.00</span>
               </div>
 
-              <div className="flex flex-col 2xl:pb-6 2xl:mt-8 2xl:text-xl justify-between border-b-2 border-black/25 pb-4">
-                <span>Additional Fees</span>
+              <div className="flex flex-col 2xl:pb-6 2xl:mt-8  mt-3 2xl:text-xl justify-between border-b-2 border-black/25 pb-4">
+                <span className="text-[1.25rem] font-medium leading-[1.25rem] text-[#272727] capitalize">
+                  Additional Fees
+                </span>
                 <span>Tax: $5.00</span>
               </div>
-              <div className="flex flex-col 2xl:pb-6 2xl:mt-8 2xl:text-xl justify-between  border-b-2 border-black/25 pb-4">
-                <span>Total Amount</span>
+              <div className="flex flex-col 2xl:pb-6 2xl:mt-8  mt-3 2xl:text-xl justify-between  border-b-2 border-black/25 pb-4">
+                <span className="text-[1.25rem] font-medium leading-[1.25rem] text-[#272727] capitalize">
+                  Total Amount
+                </span>
                 <span>$55.00</span>
               </div>
             </div>
@@ -140,10 +148,13 @@ export default function ReviewOrder() {
           } transform transition-all duration-500 ease-in-out`}
         >
           <div className=" px-4 mb-2 flex flex-col gap-1">
-            <h2 className="text-[#F1713D] text-xl font-black ">
+            <h2 className="text-[#F1713D] text-[1.4rem] font-bold leading-[150%]">
               Terms and Conditions
             </h2>
-            <h4 className=" font-bold">Your Agreement</h4>
+
+            <h4 className="text-[#132F41] text-[1.122rem] font-bold leading-[150%]">
+              Your Agreement
+            </h4>
           </div>
           <div
             className="px-4 overflow-y-scroll h-[50vh]
@@ -183,7 +194,7 @@ export default function ReviewOrder() {
               className="mr-2 w-5 h-5 accent-orange-500"
               required
             />
-            <p className="text-sm ml- font-bold w-full ">
+            <p className="text-[1rem] text-black font-medium leading-[130%] text-justify w-full">
               I confirm that I have read and accept the terms and conditions and
               privacy policy
             </p>
