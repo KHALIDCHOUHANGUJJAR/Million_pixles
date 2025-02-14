@@ -71,8 +71,8 @@ export default function OrderHistory() {
                   <span
                     className={`rounded-md  px-2 py-2 2xl:py-3 2xl:px-3  cursor-pointer  text-xs font-bold ${
                       order.status === "Completed"
-                        ? "bg-[#24CC63] text-white"
-                        : "bg-[#FF3C23]/70 text-white"
+                        ? "bg-[#0b7a36] text-white"
+                        : "bg-[#F1713D] text-white"
                     }`}
                   >
                     {order.status}
@@ -80,7 +80,7 @@ export default function OrderHistory() {
                 </td>
                 <td className="whitespace-nowrap px-4 py-3 2xl:py-5  ">
                   <div className="flex items-center gap-2 ">
-                    <button className="rounded-md 2xl:p-4  cursor-pointer text-[#24CC63] hover:bg-green-500/10">
+                    <button className="rounded-md 2xl:p-4  cursor-pointer text-[#0b8339] hover:bg-green-500/10">
                       <FaTrashAlt className="h-4 w-4" />
                     </button>
                     <button className="rounded-md p-1 cursor-pointer  hover:bg-green-500/10">

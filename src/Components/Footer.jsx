@@ -5,8 +5,11 @@ import { FaLinkedinIn } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="flex md:flex-row flex-col  items-center gap-[3vh] md:items-end justify-end md:gap-[24%] w-full p-6">
-      <h1 className="text-center font-semibold text-lg 2xl:text-2xl">
+    <div
+      className="flex md:flex-row flex-col  items-center gap-[3vh] md:items-end
+     justify-end md:gap-[20%] w-full p-4 mt-5 px-24"
+    >
+      <h1 className="text-center font-normal text-lg 2xl:text-2xl">
         © 2025 Wall Of Internet. All Rights Reserved.{" "}
       </h1>
       <div className="flex items-center justify-center shrink-0 md:justify-end gap-4 md:gap-5 2xl:gap-8 order-1 md:order-2">

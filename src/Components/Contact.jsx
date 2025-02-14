@@ -9,18 +9,23 @@ const Contact = () => {
       >
         Join the Wall of Internet Revolution
       </h1>
-      <p className="flex items-center  text-center w-[63vw]
-       text-gray-300 text-lg leading-relaxed tracking-wide">
+      <p
+        className="flex items-center text-center w-[63vw]
+   text-gray-300 2xl:text-[1.2rem] text-[0.9rem] leading-[3.6vh] tracking-[0.3rem]"
+      >
         Be part of a groundbreaking digital movement. Own, create, and trade
         your space on the Wall of Internet. Start building your legacy
         today—because the internet belongs to everyone.
       </p>
-      <div className="flex items-center justify-between gap-10 mt-5
-      ">
+
+      <div
+        className="flex items-center justify-between gap-10 2xl:mt-16 mt-10
+      "
+      >
         <Button text={"   👀 Insight "} />
         <Button text={"👋 Contact"} />
       </div>
-      <div className="w-[67.125rem] h-[1px] flex-shrink-0 opacity-10 bg-[#FFF] z-10 mt-8"></div>
+      <div className="w-[69.125rem] h-[1px] flex-shrink-0 opacity-10 bg-[#FFF] z-10 mt-8"></div>
     </div>
   );
 };

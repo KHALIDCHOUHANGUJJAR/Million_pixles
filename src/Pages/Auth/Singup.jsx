@@ -106,7 +106,7 @@ function Singup() {
                   render={({ field }) => (
                     <PhoneInput
                       {...field}
-                      country={"us"}
+                      country={"af"}
                       inputStyle={{
                         width: "100%",
                         height: "40px",

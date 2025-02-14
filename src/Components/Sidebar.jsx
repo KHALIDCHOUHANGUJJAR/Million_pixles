@@ -1,8 +1,7 @@
-import { NavLink } from "react-router-dom";
-import { MdOutlineMicNone } from "react-icons/md";
-import { CiSettings, CiLogin } from "react-icons/ci";
+import { HomeOutlined } from "@ant-design/icons";
+import { CiLogin, CiSettings } from "react-icons/ci";
 import { IoMdNotificationsOutline } from "react-icons/io";
-import { HomeOutlined, SearchOutlined } from "@ant-design/icons";
+import { NavLink } from "react-router-dom";
 
 function Sidebar() {
   return (
@@ -20,10 +19,7 @@ function Sidebar() {
               className="relative w-full shadow-2xl  px-10 2xl:px-15 2xl:text-2xl
                xl:py-2 2xl:py-2 border-2 bg-[#272727]  border-[#413e3e] rounded-3xl  focus:outline-none "
             />
-            <SearchOutlined className="text-xl 2xl:text-2xl text-[#fffff] absolute xl:left-[15%] 2xl:left-[19%] " />
-            <button className="xl:p-3 2xl:p-3 rounded-full bg-[#272727] border-2 border-[#413e3e] ">
-              <MdOutlineMicNone className="text-xl 2xl:text-2xl text-[#fffff] " />
-            </button>
+         
           </div>
           <nav
             className=" bg-[#272727] text-[#777777] 

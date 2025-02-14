@@ -61,7 +61,7 @@ const About = () => {
         </div>
 
         <div className="p-4 flex flex-col gap-8 2xl:gap-8 w-full lg:w-[30%] 2xl:w-[32%]">
-          <div className="w-full h-full bg-[#B7552E] rounded-2xl  py-6 2xl:py-6 flex items-center flex-col justify-center ">
+          <div className="w-full h-full bg-[#B7552E] rounded-2xl  py-5 2xl:py-13 2xl:p-4 flex items-center flex-col justify-center ">
             <div className="flex items-center justify-center p-2 2xl:p-2 gap-2  2xl:text-2xl">
               <div className="text-black font-bold p-2 rounded-full bg-[#A86D5B] px-3 ">
                 Ui

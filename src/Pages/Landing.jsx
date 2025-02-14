@@ -14,7 +14,7 @@ function Landing() {
       </section>
       <main
         className="flex flex-col items-center
-       w-full relative py-16  "
+       w-full relative py-10  "
       >
         <div
           className="w-full flex flex-col md:flex-row

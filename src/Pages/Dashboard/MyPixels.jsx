@@ -64,11 +64,14 @@ const MyPixels = () => {
                     </div>
 
                     <div className="flex items-center gap-3 h-full 2xl:h-[4rem] border-2 border-dashed rounded-2xl border-gray-500 p-2 bg-[#272727] cursor-pointer">
-                      <img
-                        src="/Assets/Images/images.jpeg"
-                        alt="Upload Icon"
-                        className="w-[3rem] h-[2.7rem] rounded object-cover"
-                      />
+                      <div className="border-2 rounded-xl border-dashed border-gray-500 p-2">
+                        {" "}
+                        <img
+                          src="/Assets/Images/images.jpeg"
+                          alt="Upload Icon"
+                          className="w-[3rem] h-[2rem] rounded object-cover"
+                        />
+                      </div>
                       <label className="text-white text-xs cursor-pointer w-full">
                         Upload Image Here
                         <input
@@ -102,7 +105,7 @@ const MyPixels = () => {
                   <div className="flex flex-col w-full sm:w-1/1 justify-center space-y-4 relative">
                     <div>
                       <label className="text-white text-sm">Text</label>
-                      <AiOutlineEdit className="absolute left-[80%] top-[33%] 2xl:top-[38%] text-2xl" />
+                      <AiOutlineEdit className="absolute left-[80%] top-[33%] 2xl:top-[40%] text-2xl" />
                       <input
                         type="text"
                         placeholder="Write here"
@@ -111,7 +114,7 @@ const MyPixels = () => {
                     </div>
                     <div className="w-full">
                       <label className="text-white text-sm">URL 🔗</label>
-                      <AiOutlineEdit className="absolute left-[80%] top-[67%] 2xl:top-[63%] text-2xl" />
+                      <AiOutlineEdit className="absolute left-[80%] top-[67%] 2xl:top-[62%] text-2xl" />
                       <input
                         type="url"
                         placeholder="Write here"

@@ -281,7 +281,7 @@ export const SelectPixels = () => {
           id="pixelsDetails"
         >
           <div
-            className="-2 p-3 2xl:space-y-10  flex  flex-col justify-center
+            className=" p-3 2xl:space-y-4  flex  flex-col justify-center
           rounded-[1.25rem] border-2 border-[#343434]"
           >
             <p className="flex justify-between flex-col border-b gap-1 2xl:gap-6 border-[#D0CFCF] pb-2">
