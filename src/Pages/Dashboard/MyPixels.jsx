@@ -105,7 +105,7 @@ const MyPixels = () => {
                   <div className="flex flex-col w-full sm:w-1/1 justify-center space-y-4 relative">
                     <div>
                       <label className="text-white text-sm">Text</label>
-                      <AiOutlineEdit className="absolute left-[80%] top-[33%] 2xl:top-[40%] text-2xl" />
+                      <AiOutlineEdit className="absolute left-[87%] top-[33%] 2xl:top-[39%] text-2xl" />
                       <input
                         type="text"
                         placeholder="Write here"
@@ -114,7 +114,7 @@ const MyPixels = () => {
                     </div>
                     <div className="w-full">
                       <label className="text-white text-sm">URL 🔗</label>
-                      <AiOutlineEdit className="absolute left-[80%] top-[67%] 2xl:top-[62%] text-2xl" />
+                      <AiOutlineEdit className="absolute left-[87%] top-[65.5%] 2xl:top-[60%] text-2xl" />
                       <input
                         type="url"
                         placeholder="Write here"

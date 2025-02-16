@@ -12,15 +12,6 @@ function Sidebar() {
             <span className="text-[#F1713D]">Wall</span>ofinternet
           </h2>
 
-          <div className="flex items-center gap-2  mt-4 mb-2">
-            <input
-              type="text"
-              placeholder="Search"
-              className="relative w-full shadow-2xl  px-10 2xl:px-15 2xl:text-2xl
-               xl:py-2 2xl:py-2 border-2 bg-[#272727]  border-[#413e3e] rounded-3xl  focus:outline-none "
-            />
-         
-          </div>
           <nav
             className=" bg-[#272727] text-[#777777] 
           shadow-2xl border-2 border-[#413e3e] rounded-xl p-2 flex flex-col gap-1.5
