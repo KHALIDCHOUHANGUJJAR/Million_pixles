@@ -32,7 +32,7 @@ export default function ReviewOrder() {
                 <p className="text-gray-400 mb-1 2xl:mb-2 2xl:text-xl">
                   Pixels Count
                 </p>
-                <p>2000 Pixels</p>
+                <p>2000.00 Pixels</p>
               </div>
 
               <div className="border-b pb-4 2xl:pb-6 mt-3  border-white/20">
@@ -46,14 +46,14 @@ export default function ReviewOrder() {
                 <p className="text-gray-400 mb-1 2xl:mb-2 2xl:text-xl">
                   Price Per Pixels
                 </p>
-                <p>1$.12</p>
+                <p>1$.00</p>
               </div>
 
               <div className="border-b pb-4 2xl:pb-6 mt-3  border-white/20">
                 <p className="text-gray-400 mb-1 2xl:mb-2 2xl:text-xl">
                   Total Price
                 </p>
-                <p>$2000</p>
+                <p>$2000.00</p>
               </div>
             </div>
           </div>

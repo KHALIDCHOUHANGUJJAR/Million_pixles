@@ -218,15 +218,15 @@ export default function Payment() {
               <div className="w-full space-y-2 2xl:space-y-4 2xl:text-xl mb-3">
                 <div className="flex items-center justify-between text-black">
                   <h2>Subtotal</h2>
-                  <h2>$21000</h2>
+                  <h2>$2100.00</h2>
                 </div>
                 <div className="flex items-center justify-between text-black">
                   <h2>Platform fee</h2>
-                  <h2>$4</h2>
+                  <h2>$4.00</h2>
                 </div>
                 <div className="flex items-center justify-between text-black">
                   <h2>Total (Tax incl.)</h2>
-                  <h2>$21004</h2>
+                  <h2>$2104.00</h2>
                 </div>
               </div>
               <div

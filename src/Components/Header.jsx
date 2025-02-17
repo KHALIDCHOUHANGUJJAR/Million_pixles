@@ -46,11 +46,16 @@ const Header = () => {
             <div className="flex gap-1.5 ml-1">
               <div
                 className="bg-[#A86D5B] xl:h-[2.5vw] 2xl:h-[2.6vw] text-center flex items-center justify-center
-               w-9 2xl:w-12 rounded-full text-black border-[#696464] relative"
+                w-9 2xl:w-12 rounded-full text-black border-[#696464] relative"
               >
                 CM
               </div>
-              <div className="bg-[#A86D5B] xl:h-[2.5vw] 2xl:h-[2.6vw] text-center flex xl:left-[71%] 2xl:left-[76%] items-center justify-center w-9 2xl:w-12 rounded-full text-black absolute">
+
+              <div
+                className="bg-[#A86D5B] xl:h-[2.5vw] 2xl:h-[2.6vw] text-center flex items-center justify-center 
+                 w-9 2xl:w-12 rounded-full text-black border-[#696464] relative"
+                style={{ left: "calc(70% - 11vw)" }} 
+              >
                 SH
               </div>
               <div
