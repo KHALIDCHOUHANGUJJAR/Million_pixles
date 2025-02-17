@@ -21,7 +21,7 @@ function Sidebar() {
               to="/home"
               className={({ isActive }) =>
                 `flex items-center xl:py-1.5 2xl:py-4.5 px-6 hover:bg-gray-700 ${
-                  isActive ? "bg-[#B55A37] text-[#FFFFFF] rounded-2xl" : ""
+                  isActive ? "bg-[#F1713D] text-[#FFFFFF] rounded-2xl" : ""
                 } text-lg font-bold`
               }
             >
@@ -32,7 +32,7 @@ function Sidebar() {
               to="/MyPixels"
               className={({ isActive }) =>
                 `flex items-center xl:py-1.5 2xl:py-4.5 px-6 hover:bg-gray-700 ${
-                  isActive ? "bg-[#B55A37]  text-[#FFFFFF] rounded-2xl" : ""
+                  isActive ? "bg-[#F1713D]  text-[#FFFFFF] rounded-2xl" : ""
                 } text-lg font-bold`
               }
             >
@@ -43,7 +43,7 @@ function Sidebar() {
               to="/buy-sell"
               className={({ isActive }) =>
                 `flex items-center xl:py-1.5 2xl:py-4.5 px-6 hover:bg-gray-700 ${
-                  isActive ? "bg-[#B55A37]  text-[#FFFFFF] rounded-2xl" : ""
+                  isActive ? "bg-[#F1713D]  text-[#FFFFFF] rounded-2xl" : ""
                 } text-lg font-bold`
               }
             >
@@ -54,7 +54,7 @@ function Sidebar() {
               to="/support"
               className={({ isActive }) =>
                 `flex items-center xl:py-1.5 2xl:py-4.5 px-6   w-full hover:bg-gray-700 ${
-                  isActive ? "bg-[#B55A37] rounded-2xl text-[#FFFFFF]" : ""
+                  isActive ? "bg-[#F1713D] rounded-2xl text-[#FFFFFF]" : ""
                 } text-lg font-bold`
               }
             >
@@ -65,7 +65,7 @@ function Sidebar() {
               to="/profile"
               className={({ isActive }) =>
                 `flex items-center xl:py-1.5 2xl:py-5.5 px-6 hover:bg-gray-700 ${
-                  isActive ? "bg-[#B55A37]  text-[#FFFFFF] rounded-2xl" : ""
+                  isActive ? "bg-[#F1713D]  text-[#FFFFFF] rounded-2xl" : ""
                 } text-lg font-bold`
               }
             >
@@ -90,7 +90,7 @@ function Sidebar() {
           </div>
         </div>
 
-        <div className=" 2xl:mb-10 mb-5">
+        <div className=" 2xl:mb-24 mb-8">
           <button
             className="w-full flex items-center gap-1 shadow-2xl
            border-2 border-[#413e3e]  p-4 xl:py-3 2xl:py-4 bg-[#272727]

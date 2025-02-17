@@ -102,7 +102,7 @@ export default function Payment() {
         </div>
 
         <div
-          className="md:bg-white bg-white rounded-[1.25rem] p-2  md:w-[60%] shadow-lg 
+          className="md:bg-white bg-white rounded-[1rem] p-2  md:w-[60%] shadow-lg 
              transform transition-all  duration-1000 ease-in-out"
         >
           <div className="px-4">

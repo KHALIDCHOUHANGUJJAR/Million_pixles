@@ -39,14 +39,14 @@ export default function ReviewOrder() {
                 <p className="text-gray-400 mb-1 2xl:mb-2 2xl:text-xl">
                   Pixels Location
                 </p>
-                <p>X: 157Px Y: 284Px</p>
+                <p>Y.10786p X.7894p</p>
               </div>
 
               <div className="border-b pb-4 2xl:pb-6 mt-3  border-white/20">
                 <p className="text-gray-400 mb-1 2xl:mb-2 2xl:text-xl">
                   Price Per Pixels
                 </p>
-                <p>$2</p>
+                <p>1$.12</p>
               </div>
 
               <div className="border-b pb-4 2xl:pb-6 mt-3  border-white/20">
