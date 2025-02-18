@@ -29,7 +29,7 @@ function Sidebar() {
             </NavLink>
 
             <NavLink
-              to="/MyPixels"
+              to=""
               className={({ isActive }) =>
                 `flex items-center xl:py-1.5 2xl:py-4.5 px-6 hover:bg-gray-700 ${
                   isActive ? "bg-[#F1713D]  text-[#FFFFFF] rounded-2xl" : ""

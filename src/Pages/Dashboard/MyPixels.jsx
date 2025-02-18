@@ -105,7 +105,7 @@ const MyPixels = () => {
                   <div className="flex flex-col w-full sm:w-1/1 justify-center space-y-4 relative">
                     <div>
                       <label className="text-white text-sm">Text</label>
-                      <AiOutlineEdit className="absolute left-[87%] top-[33%] 2xl:top-[39%] text-2xl" />
+                      <AiOutlineEdit className="absolute left-[87%] top-[33%] 2xl:top-[37.6%] text-2xl" />
                       <input
                         type="text"
                         placeholder="Write here"
@@ -114,7 +114,7 @@ const MyPixels = () => {
                     </div>
                     <div className="w-full">
                       <label className="text-white text-sm">URL 🔗</label>
-                      <AiOutlineEdit className="absolute left-[87%] top-[65.5%] 2xl:top-[60%] text-2xl" />
+                      <AiOutlineEdit className="absolute left-[87%] top-[65.5%] 2xl:top-[63%] text-2xl" />
                       <input
                         type="url"
                         placeholder="Write here"
@@ -182,8 +182,8 @@ const MyPixels = () => {
         </div>
 
         {!activeEditId && (
-          <div className="2xl:p-1 px-3">
-            <div className="bg-[#814127] w-[100%] px-6 p-2 2xl:p-3 2xl:px-5 2xl:rounded-3xl rounded-2xl">
+          <div className=" px-3">
+            <div className="bg-[#814127] w-[100%] px-6 p-2 2xl:p-1 2xl:px-5 2xl:rounded-3xl rounded-2xl">
               <div className="flex items-center justify-between w-full 2xl:text-2xl">
                 <div className="flex items-center justify-center gap-1.5">
                   <BsExclamationCircleFill className="w-5 h-5" />

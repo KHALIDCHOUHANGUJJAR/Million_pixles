@@ -10,7 +10,7 @@ const About = () => {
     <div className="flex items-center flex-col">
       <div
         className="flex flex-col lg:flex-row items-center justify-between
-       w-full min-h-screen p-4 xl:p-6 2xl:p-8 text-white gap-8 2xl:gap-12"
+       w-full min-h-screen p-4 xl:p-6 2xl:p-8 text-white gap-8 2xl:gap-8"
       >
         <div
           className="relative  flex flex-col gap-4 xl:gap-[5vh] justify-between 
@@ -53,7 +53,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="p-4 flex flex-col gap-8 2xl:gap-8 w-full lg:w-[30%] 2xl:w-[32%]">
+        <div className="p-4 flex flex-col gap-8 2xl:gap-8 w-full lg:w-[30%] 2xl:w-[30%]">
           <div className="w-full h-full bg-[#B7552E] rounded-2xl  py-5 2xl:py-6 2xl:p-4 flex items-center flex-col justify-center ">
             <div className="flex items-center justify-center p-2 2xl:p-2 gap-2  2xl:text-2xl">
               <div className="text-black font-bold p-2 rounded-full bg-[#A86D5B] px-3 ">
@@ -61,7 +61,7 @@ const About = () => {
               </div>
               <h2 className="font-bold text-lg 2xl:text-2xl">Join Now</h2>
             </div>
-            <div className="px-9 text-xl 2xl:text-3xl ">
+            <div className="px-9 text-xl 2xl:text-2xl  ">
               <p>
                 Edit your pixles anytime- showcase image, Links, or messages
               </p>
@@ -95,7 +95,7 @@ const About = () => {
                   Buy
                 </button>
               </div>
-              <h2 className="text-3xl 2xl:text-5xl font-bold">823,200</h2>
+              <h2 className="text-3xl 2xl:text-4xl font-bold">823,200</h2>
               <div className="flex items-center">
                 <div className="w-[20%] lg:w-[12vw] 2xl:w-[12vw] p-2 2xl:p-3 rounded-2xl bg-[#B7552E] relative z-10"></div>
                 <div className="w-[50%] lg:w-[13.5vw] 2xl:w-[12vw] p-2 2xl:p-3 rounded-2xl bg-[#704839] absolute left-[45%] lg:left-[49%] z-0"></div>
@@ -111,7 +111,7 @@ const About = () => {
           <img
             src={AboutImage}
             alt="aboutImage"
-            className="w-[30vw] xl:h-[83vh] object-fill 2xl:h-[90vh] "
+            className="w-[30vw] xl:h-[83vh] object-fill 2xl:h-[81vh] "
           />
         </div>
       </div>
