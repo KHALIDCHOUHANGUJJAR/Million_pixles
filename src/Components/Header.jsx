@@ -89,7 +89,7 @@ const Header = () => {
           <div className="flex items-center gap-4 2xl:gap-2">
             {Object.entries(routes).map(([label, path], index) => (
               <div key={index}>
-                {label === "Edit Pixels" ? (
+                 {label === "Order Pixels" ||  label === "Edit Pixels"   ? (
                   <div
                     onClick={() => handleClick(index, handleEdit)}
                     className={`flex gap-2 border-2 text-[#8a8686]
