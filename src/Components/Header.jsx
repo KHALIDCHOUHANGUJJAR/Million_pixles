@@ -19,8 +19,8 @@ const Header = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const handleClick = (index, route) => {
     if (route === handleEdit) {
-      handleEdit(activeEditId === null ? index : null); 
-      setActiveIndex(index === activeIndex ? null : index); 
+      handleEdit(activeEditId === null ? index : null);
+      setActiveIndex(index === activeIndex ? null : index);
 
       if (activeEditId === null) {
         navigate("/MyPixels");
@@ -89,7 +89,7 @@ const Header = () => {
           <div className="flex items-center gap-4 2xl:gap-2">
             {Object.entries(routes).map(([label, path], index) => (
               <div key={index}>
-                 {label === "Order Pixels" ||  label === "Edit Pixels"   ? (
+                {label === "Edit Pixels" ? (
                   <div
                     onClick={() => handleClick(index, handleEdit)}
                     className={`flex gap-2 border-2 text-[#8a8686]
