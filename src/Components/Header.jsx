@@ -2,11 +2,13 @@ import { BellOutlined, PlusCircleOutlined } from "@ant-design/icons";
 import { useState } from "react";
 import { IoIosContact, IoIosInformationCircleOutline } from "react-icons/io";
 import { LuCrown } from "react-icons/lu";
-import { Link } from "react-router-dom"; // Correct import
+import { Link, useNavigate } from "react-router-dom";
 import { UseEditContext } from "../Context/Context";
 
 const Header = () => {
-  const { handleEdit } = UseEditContext();
+  const navigate = useNavigate();
+
+  const { handleEdit, activeEditId } = UseEditContext();
   const routes = {
     "Manage Pixels": "/home",
     "Order Pixels": "/MyPixels",
@@ -15,12 +17,18 @@ const Header = () => {
   };
 
   const [activeIndex, setActiveIndex] = useState(null);
-
   const handleClick = (index, route) => {
-    if (route === handleEdit()) {
-      route();
+    if (route === handleEdit) {
+      handleEdit(activeEditId === null ? index : null); 
+      setActiveIndex(index === activeIndex ? null : index); 
+
+      if (activeEditId === null) {
+        navigate("/MyPixels");
+      }
+    } else {
+      setActiveIndex(index);
+      navigate(route);
     }
-    setActiveIndex(index);
   };
 
   return (
@@ -53,8 +61,8 @@ const Header = () => {
 
               <div
                 className="bg-[#A86D5B] xl:h-[2.5vw] 2xl:h-[2.6vw] text-center flex items-center justify-center 
-                 w-9 2xl:w-12 rounded-full text-black border-[#696464] relative"
-                style={{ left: "calc(70% - 11vw)" }} 
+                 w-9 2xl:w-12 rounded-full text-black border-[#696464] relative 2xl:left-calc(70% - 9vw) "
+                style={{ left: "calc(63% - 9vw) " }}
               >
                 SH
               </div>
@@ -83,7 +91,7 @@ const Header = () => {
               <div key={index}>
                 {label === "Edit Pixels" ? (
                   <div
-                    onClick={() => handleClick(index, path)}
+                    onClick={() => handleClick(index, handleEdit)}
                     className={`flex gap-2 border-2 text-[#8a8686]
                     2xl:rounded-4xl rounded-3xl text-center xl:p-2 px-8 2xl:p-5 2xl:px-8 h-10 
                     items-center text-sm border-gray-700  font-semibold ${
