@@ -62,7 +62,7 @@ const Header = () => {
               <div
                 className="bg-[#A86D5B] xl:h-[2.5vw] 2xl:h-[2.6vw] text-center flex items-center justify-center 
                  w-9 2xl:w-12 rounded-full text-black border-[#696464] relative 2xl:left-calc(70% - 9vw) "
-                style={{ left: "calc(63% - 9vw) " }}
+                style={{ left: "calc(64.5% - 10vw) " }}
               >
                 SH
               </div>
@@ -93,8 +93,8 @@ const Header = () => {
                   <div
                     onClick={() => handleClick(index, handleEdit)}
                     className={`flex gap-2 border-2 text-[#8a8686]
-                    2xl:rounded-4xl rounded-3xl text-center xl:p-2 px-8 2xl:p-5 2xl:px-8 h-10 
-                    items-center text-sm border-gray-700  font-semibold ${
+                    2xl:rounded-4xl rounded-3xl text-center xl:p-2 px-8 2xl:p-5  h-10 
+                    items-center 2xl:text-lg text-sm border-gray-700  font-semibold ${
                       activeIndex === index
                         ? "bg-[#F1713D] text-[#FFFFFF] border-[#B55A37]"
                         : "bg-[#171717] text-[#8a8686]"
