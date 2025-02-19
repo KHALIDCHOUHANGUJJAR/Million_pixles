@@ -5,19 +5,28 @@ import { useNavigate } from "react-router";
 
 export default function ReviewOrder() {
   const [isNext, setisNext] = useState(null);
+  const [isChecked, setisChecked] = useState(false);
+  const [ShowError, setShowError] = useState(false);
+  const handleCheck = () => {
+    if (!isChecked) {
+      setShowError(true);
+    } else {
+      navigate("/payment");
+    }
+  };
   const handleNext = () => {
     setisNext(!isNext);
   };
   const navigate = useNavigate();
   return (
     <div className="flex flex-col w-full md:flex-row overflow-hidden min-h-screen">
-      <div className="w-full md:w-[60%] bg-[#272727] p-6 min-h-screen">
+      <div className="w-full md:w-[60%] bg-blacke-400 p-6 min-h-screen">
         <div className="p- 2xl:p-4 md:w-[60%]  2xl:py-1 ">
-          <h1 className="text-white text-[1.5rem] 2xl:text-3xl  font-semibold pb-4 2xl:pb-6 border-b border-[#D0CFCF] ">
+          <h1 className="text-text-200 text-[1.5rem] 2xl:text-3xl  font-semibold pb-4 2xl:pb-6 border-b border-text-2 ">
             Review Your Order
           </h1>
 
-          <div className="mt-8 2xl:mt-02  mb-6 text-white space-y-5 2xl:space-y-10">
+          <div className="mt-8 2xl:mt-02  mb-6 text-text-200 space-y-5 2xl:space-y-10">
             <h2 className="text-xl 2xl:text-2xl ">Pixels Details</h2>
 
             <div className="2xl:space-y-10 ">
@@ -66,7 +75,7 @@ export default function ReviewOrder() {
         </div>
       </div>
 
-      <div className="w-full flex flex-col items-center  md:w-[50%] bg-[#F1713D] p-6 min-h-screen">
+      <div className="w-full flex flex-col items-center  md:w-[50%] bg-orange-500 p-6 min-h-screen">
         <div className="flex justify-between items-center mb-8 2xl:mb-16">
           <div className="flex items-start justify-center w-full mt-4 2xl:mt-10  mb-2">
             <div className="flex items-center flex-col justify-between">
@@ -106,26 +115,26 @@ export default function ReviewOrder() {
 
             <div className="space-y-2 2xl:space-y-8 mb-4 2xl:mb-6  text-black">
               <div className="flex border-b-2 2xl:text-xl 2xl:pb-6 2xl:mt-8  mt-3 border-black/25 pb-4 italic flex-col justify-between">
-                <span className="text-[1.25rem] font-medium leading-[1.25rem] text-[#272727] capitalize">
+                <span className="text-[1.25rem] font-medium leading-[1.25rem] text-blbg-blacke-400 capitalize">
                   Pixel Price
                 </span>
                 <span>$2.50 Per Pixel</span>
               </div>
               <div className="flex flex-col 2xl:pb-6 2xl:mt-8  mt-3 2xl:text-xl justify-between border-b-2 border-black/25 pb-4">
-                <span className="text-[1.25rem] font-medium leading-[1.25rem] text-[#272727] capitalize">
+                <span className="text-[1.25rem] font-medium leading-[1.25rem] text-blbg-blacke-400 capitalize">
                   Total Cost
                 </span>
                 <span>100 Pixels x $2.50 = $250.00</span>
               </div>
 
               <div className="flex flex-col 2xl:pb-6 2xl:mt-8  mt-3 2xl:text-xl justify-between border-b-2 border-black/25 pb-4">
-                <span className="text-[1.25rem] font-medium leading-[1.25rem] text-[#272727] capitalize">
+                <span className="text-[1.25rem] font-medium leading-[1.25rem] text-blbg-blacke-400 capitalize">
                   Additional Fees
                 </span>
                 <span>Tax: $5.00</span>
               </div>
               <div className="flex flex-col 2xl:pb-6 2xl:mt-8  mt-3 2xl:text-xl justify-between  border-b-2 border-black/25 pb-4">
-                <span className="text-[1.25rem] font-medium leading-[1.25rem] text-[#272727] capitalize">
+                <span className="text-[1.25rem] font-medium leading-[1.25rem] text-blbg-blacke-400 capitalize">
                   Total Amount
                 </span>
                 <span>$55.00</span>
@@ -134,8 +143,8 @@ export default function ReviewOrder() {
 
             <button
               onClick={handleNext}
-              className="w-full mt-6 px-6 2xl:px-10 py-3 2xl:py-5 2xl:text-2xl bg-[#F1713D]
-               text-white rounded-[1rem] hover:bg-[#F1713D]/90 transition-colors"
+              className="w-full mt-6 px-6 2xl:px-10 py-3 2xl:py-5 2xl:text-2xl bg-orange-500
+               text-text-200 rounded-[1rem] hover:bg-orange-500/90 transition-colors"
             >
               Payment method
             </button>
@@ -148,7 +157,7 @@ export default function ReviewOrder() {
           } transform transition-all duration-500 ease-in-out`}
         >
           <div className=" px-4 mb-2 flex flex-col gap-1">
-            <h2 className="text-[#F1713D] text-[1.4rem] font-bold leading-[150%]">
+            <h2 className="text-orbg-orange-500 text-[1.4rem] font-bold leading-[150%]">
               Terms and Conditions
             </h2>
 
@@ -191,25 +200,41 @@ export default function ReviewOrder() {
           <div className="flex items-center px-3 w-full gap-1 ">
             <input
               type="checkbox"
-              className="mr-2 w-5 h-5 accent-orange-500"
+              className="mr-2 w-5 h-5 accent-orange-500 rounded"
               required
+              checked={isChecked}
+              onChange={() => {
+                setisChecked(!isChecked);
+                setShowError(false);
+              }}
             />
             <p className="text-[1rem] text-black font-medium leading-[130%] text-justify w-full">
               I confirm that I have read and accept the terms and conditions and
               privacy policy
             </p>
+            {ShowError && (
+              <p className="text-red-500 text-sm px-3">
+                You must accept the terms before proceeding.
+              </p>
+            )}
           </div>
           <div className="w-full flex items-center justify-end">
             <div className="flex items-center gap-10 p- justify-end px-3 p-3 w-full">
               <button
                 onClick={handleNext}
-                className="text-[#F1713D] cursor-pointer"
+                className="text-orbg-orange-500 cursor-pointer"
               >
                 Cancel
               </button>
               <button
-                onClick={() => navigate("/payment")}
-                className="flex w-[10rem] p-[1.3vh] justify-center items-center gap-[0.625rem] bg-[#F1713D] text-white rounded-[7.25px]"
+                onClick={handleCheck}
+                disabled={!isChecked}
+                className={`flex w-[10rem] p-[1.3vh] justify-center items-center gap-[0.625rem] rounded-[7.25px] 
+     ${
+       isChecked
+         ? "bg-orange-500 text-white cursor-pointer"
+         : "bg-gray-400 text-gray-600 cursor-not-allowed"
+     }`}
               >
                 Next
               </button>

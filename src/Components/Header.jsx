@@ -33,7 +33,7 @@ const Header = () => {
 
   return (
     <div>
-      <header className="flex flex-col w-full 2xl:w-[100%] p-5 h-[20vh] bg-[#00000] gap-2">
+      <header className="flex flex-col w-full 2xl:w-[100%] p-5 h-[20vh] bg-body-400  gap-2">
         <div className="flex justify-between w-full mb-1 2xl:mb-4">
           <div>
             <h1 className="text-2xl 2xl:text-4xl font-bold">
@@ -44,44 +44,43 @@ const Header = () => {
             </p>
           </div>
           <div
-            className="2xl:p-4 flex border-2 text-[#8a8686] font-semibold rounded-3xl 
-           text-center p-1 text-md 2xl:text-xl h-10  gap-1 text-sm items-center border-gray-700 bg-[#171717] px-3"
+            className="2xl:p-4 flex border-2 text-[#8a8686] font-semibold rounded-3xl hover:bg-gray-700 cursor-pointer
+           text-center p-1 text-md 2xl:text-xl h-10  gap-1 text-sm items-center border-gray-700 bg-body2-400 px-3"
           >
             <LuCrown className="2xl:text-xl text-lg" />
             Pro Member
           </div>
           <div className="flex gap-10">
-            <div className="flex gap-1.5 ml-1">
+            <div className="flex ">
               <div
                 className="bg-[#A86D5B] xl:h-[2.5vw] 2xl:h-[2.6vw] text-center flex items-center justify-center
-                w-9 2xl:w-12 rounded-full text-black border-[#696464] relative"
+                w-9 2xl:w-12 rounded-full text-black border-[#696464] -mr-[6px]"
               >
                 CM
               </div>
 
               <div
                 className="bg-[#A86D5B] xl:h-[2.5vw] 2xl:h-[2.6vw] text-center flex items-center justify-center 
-                 w-9 2xl:w-12 rounded-full text-black border-[#696464] relative 2xl:left-calc(70% - 9vw) "
-                style={{ left: "calc(64.5% - 10vw) " }}
+                 w-9 2xl:w-12 rounded-full text-black border-[#696464]   "
               >
                 SH
               </div>
               <div
-                className="2xl:p-4 flex border-2 text-[#8a8686] font-semibold
+                className="2xl:p-4 flex border-2 text-[#8a8686] font-semibold hover:bg-gray-700 cursor-pointer
               2xl:rounded-4xl
-              rounded-3xl text-center p-1 text-md 2xl:text-xl h-10 text-sm items-center border-gray-700 bg-[#171717] px-3"
+              rounded-3xl text-center p-1 text-md 2xl:text-xl h-10 text-sm items-center border-gray-700 bg-body2-400 px-3"
               >
                 Invited
                 <PlusCircleOutlined className=" ml-0.5" />
               </div>
             </div>
             <div
-              className="ml-11 flex border-2 justify-between gap-3 text-[#8a8686] 
-            font-semibold rounded-3xl text-center xl:p-4 2xl:p-4 h-10 items-center bg-[#171717] border-gray-700 px-3"
+              className="ml-11 flex border-2 justify-between gap-3 text-[#8a8686]  cursor-pointer
+            font-semibold rounded-3xl text-center xl:p-4 2xl:p-4 h-10 items-center hover:bg-gray-700 bg-body2-400 border-gray-700 px-3"
             >
-              <BellOutlined className="xl:text-2xl 2xl:text-3xl text-white" />
-              <IoIosInformationCircleOutline className="xl:text-2xl 2xl:text-3xl text-white" />
-              <IoIosContact className="xl:text-3xl 2xl:text-3xl rounded-full text-white bg-[#2EBC96]" />
+              <BellOutlined className="xl:text-2xl 2xl:text-3xl text-text-2" />
+              <IoIosInformationCircleOutline className="xl:text-2xl 2xl:text-3xl text-text-2" />
+              <IoIosContact className="xl:text-3xl 2xl:text-3xl rounded-full text-text-2 bg-[#2EBC96]" />
             </div>
           </div>
         </div>
@@ -94,10 +93,10 @@ const Header = () => {
                     onClick={() => handleClick(index, handleEdit)}
                     className={`flex gap-2 border-2 text-[#8a8686]
                     2xl:rounded-4xl rounded-3xl text-center xl:p-2 px-8 2xl:p-5  h-10 
-                    items-center 2xl:text-lg text-sm border-gray-700  font-semibold ${
+                    items-center 2xl:text-lg text-sm border-gray-700  font-semibold  hover:bg-gray-700 ${
                       activeIndex === index
-                        ? "bg-[#F1713D] text-[#FFFFFF] border-[#B55A37]"
-                        : "bg-[#171717] text-[#8a8686]"
+                        ? "bg-orange-500 text-text-200 border-text2-200"
+                        : "bg-body2-400 text-[#8a8686]"
                     } cursor-pointer transition-all duration-300`}
                   >
                     <PlusCircleOutlined />
@@ -110,10 +109,10 @@ const Header = () => {
                     onClick={() => handleClick(index, path)}
                     className={`flex gap-2 border-2 text-[#8a8686]
                     2xl:rounded-4xl rounded-3xl text-center xl:p-2 px-8 2xl:p-5  h-10 
-                    items-center 2xl:text-lg text-sm border-gray-700  font-semibold ${
+                    items-center 2xl:text-lg text-sm border-gray-700  font-semibold hover:bg-gray-700 ${
                       activeIndex === index
-                        ? "bg-[#F1713D] text-[#FFFFFF] border-[#B55A37]"
-                        : "bg-[#171717] text-[#8a8686]"
+                        ? "bg-orange-500 text-text-200 border-text2-200"
+                        : "bg-body2-400 text-[#8a8686]"
                     } cursor-pointer transition-all duration-300`}
                   >
                     <PlusCircleOutlined />

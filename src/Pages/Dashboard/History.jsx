@@ -21,25 +21,25 @@ export default function OrderHistory() {
         <table className="w-full border-collapse text-left text-sm l ">
           <thead>
             <tr className="border-b border-[#2a2a2a]">
-              <th className="whitespace-nowrap px-4 py-4 2xl:py-5 2xl:px-5 2xl:text-xl font-black text-[#F1713D] ">
+              <th className="whitespace-nowrap px-4 py-4 2xl:py-5 2xl:px-5 2xl:text-xl font-black text-orange-500 ">
                 Date & Time
               </th>
-              <th className="whitespace-nowrap px-4 py-4 2xl:py-5 2xl:px-5 2xl:text-xl font-black text-[#F1713D]">
+              <th className="whitespace-nowrap px-4 py-4 2xl:py-5 2xl:px-5 2xl:text-xl font-black text-orange-500">
                 Order ID
               </th>
-              <th className="whitespace-nowrap px-4 py-4 2xl:py-5 2xl:px-5 2xl:text-xl font-black text-[#F1713D]">
+              <th className="whitespace-nowrap px-4 py-4 2xl:py-5 2xl:px-5 2xl:text-xl font-black text-orange-500">
                 Pixel Count
               </th>
-              <th className="whitespace-nowrap px-4 py-4 2xl:py-5 2xl:px-5 2xl:text-xl font-black text-[#F1713D]">
+              <th className="whitespace-nowrap px-4 py-4 2xl:py-5 2xl:px-5 2xl:text-xl font-black text-orange-500">
                 Order Price
               </th>
-              <th className="whitespace-nowrap px-4 py-4 2xl:py-5 2xl:px-5 2xl:text-xl font-black text-[#F1713D]">
+              <th className="whitespace-nowrap px-4 py-4 2xl:py-5 2xl:px-5 2xl:text-xl font-black text-orange-500">
                 Pixel Positions
               </th>
-              <th className="whitespace-nowrap px-4 py-4 2xl:py-5 2xl:px-5 2xl:text-xl font-black text-[#F1713D]">
+              <th className="whitespace-nowrap px-4 py-4 2xl:py-5 2xl:px-5 2xl:text-xl font-black text-orange-500">
                 Order Status
               </th>
-              <th className="whitespace-nowrap px-4 py-4 2xl:py-5 2xl:px-5 2xl:text-xl font-black text-[#F1713D]">
+              <th className="whitespace-nowrap px-4 py-4 2xl:py-5 2xl:px-5 2xl:text-xl font-black text-orange-500">
                 Actions
               </th>
             </tr>
@@ -72,7 +72,7 @@ export default function OrderHistory() {
                     className={`rounded-md  px-2 py-2 2xl:py-3 2xl:px-3  cursor-pointer  text-xs font-bold ${
                       order.status === "Completed"
                         ? "bg-[#0b7a36] text-white"
-                        : "bg-[#F1713D] text-white"
+                        : "bg-orange-500 text-white"
                     }`}
                   >
                     {order.status}

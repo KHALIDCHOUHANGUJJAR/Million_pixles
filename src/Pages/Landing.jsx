@@ -22,21 +22,21 @@ function Landing() {
         >
           <div className="w-full md:w-[90%]  md:mb-0">
             <h1
-              className=" wall font-semibold tracking-wider font-nunito
-             md:tracking-[0.4vw] "
+              className="wall font-semibold  font-nunito
+             md:tracking-[0.4vw] tracking-[0.8vw] "
             >
               <span
-                className=" md:tracking-[1vw] font-semibold 
-               shrink text-[#B7552E] text-4xl md:text-[7rem]"
+                className=" md:tracking-[1vw] tracking-[2vw] font-semibold 
+               shrink text-text2-200 text-[5rem] md:text-[7rem]"
               >
                 Wall
               </span>
               <br />
-              <span className="text-[5rem]"> Of Internet</span>
+              <span className="md:text-[5rem] text-[3rem] "> Of Internet</span>
             </h1>
             <p
-              className="text-[#B7552E] font-poppins text-[5rem] md:text-[2vw] font-normal 
-            leading-[5vw] md:leading-[2vw] tracking-[1vw] md:tracking-[0.3vw]"
+              className="text-text2-200 font-poppins text-[2rem] md:text-[2vw] font-normal 
+            leading-[9vw] md:leading-[2vw]  tracking-[0.8vw] md:tracking-[0.3vw]"
             >
               Own a Piece of the Internet.
             </p>
@@ -44,7 +44,7 @@ function Landing() {
             <div className="w-full md:w-[21vw] h-[0.4vw] bg-amber-100 my-4"></div>
             <p
               className="text-white font-poppins text-[5vw] md:text-[1.2vw] font-normal 
-            leading-[7vw] md:leading-[2.5vw] tracking-[1vw] md:tracking-[0.2vw] w-full"
+            leading-[10vw] md:leading-[2.5vw] tracking-[1.5vw] md:tracking-[0.2vw] w-full"
             >
               Buy, Sell, and Edit Pixels on the Wall of Internet – Where Your
               Creativity Lives Forever.
@@ -62,16 +62,16 @@ function Landing() {
           />
           <div className=" w-full h-full ">
             <nav
-              className="relative z-10 flex flex-col md:items-end
+              className="relative z-10 flex md:flex-col md:items-end flex-row 
              items-center justify-center md:justify-start w-full md:h-full
-              gap-4 md:gap-[3vh] text-base md:text-lg font-poppins md:mt-[18vh]"
+              gap-0 md:gap-[3vh] text-base md:text-lg font-poppins md:mt-[18vh] mt-[5vh] "
             >
               <NavLink
                 to=""
                 className="flex items-center py-2 md:py-2 2xl:py-3.5 px-4 md:px-1 font-semibold
-                 text-lg md:text-xl 2xl:text-3xl text-white relative 
+                 text-md md:text-xl 2xl:text-3xl text-white relative 
                  after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0
-                  after:h-[2px] after:bg-[#B7552E] after:transition-all after:duration-300
+                  after:h-[2px] after:bg-text2-200 after:transition-all after:duration-300
                    hover:after:w-full"
               >
                 Home
@@ -79,9 +79,9 @@ function Landing() {
               <NavLink
                 to="/about"
                 className="flex items-center py-2 md:py-2 2xl:py-3.5 px-4 md:px-1 font-semibold
-                text-lg md:text-xl 2xl:text-3xl text-white relative 
+                text-md md:text-xl 2xl:text-3xl text-white relative 
                 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0
-                 after:h-[2px] after:bg-[#B7552E] after:transition-all after:duration-300
+                 after:h-[2px] after:bg-text2-200 after:transition-all after:duration-300
                   hover:after:w-full"
               >
                 About
@@ -89,9 +89,9 @@ function Landing() {
               <NavLink
                 to="/contact"
                 className="flex items-center py-2 md:py-2 2xl:py-3.5 px-4 md:px-1 font-semibold
-                text-lg md:text-xl 2xl:text-3xl text-white relative 
+                text-md md:text-xl 2xl:text-3xl text-white relative 
                 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0
-                 after:h-[2px] after:bg-[#B7552E] after:transition-all after:duration-300
+                 after:h-[2px] after:bg-text2-200 after:transition-all after:duration-300
                   hover:after:w-full"
               >
                 Contact Us
@@ -99,9 +99,9 @@ function Landing() {
               <NavLink
                 to="/login"
                 className="flex items-center py-2 md:py-2 2xl:py-3.5 px-4 md:px-1 font-semibold
-                text-lg md:text-xl 2xl:text-3xl text-white relative 
+                text-md md:text-xl 2xl:text-3xl text-white relative 
                 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0
-                 after:h-[2px] after:bg-[#B7552E] after:transition-all after:duration-300
+                 after:h-[2px] after:bg-text2-200 after:transition-all after:duration-300
                   hover:after:w-full"
               >
                 Login

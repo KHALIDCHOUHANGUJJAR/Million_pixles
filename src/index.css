@@ -1,9 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?famiSly=Dancing+Script:wght@400..700&family=Danfo&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "tailwindcss";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+@theme {
+  --color-orange-500: #F1713D;
+  --color-blacke-400: #272727;
+  --color-body-400: #111111;
+  --color-body2-400: #171717;
+  --color-line-200: #F7F8FA;
+  --color-text2-200: #B7552E;
+  --color-text-200: #FFF;
+  --color-text-2: #E2E2E2;
+}
 
 body {
   background-color: #111111;
-  color: antiquewhite;
+  color: #FFF;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -21,7 +34,7 @@ body {
 }
 
 .selected-flag {
-  background: #111111 !important;
+  background: #272727 !important;
   border-right: none !important ;
 }
 .flag-dropdown {
@@ -30,13 +43,12 @@ body {
   border: 1px solid #4b5563 !important;
 }
 .country-list {
-  background-color: #111111 !important;
+  background-color: #272727 !important;
 }
 
 .country {
-  background-color: #111111 !important;
-
+  background-color: #272727 !important;
 }
-.dial-code{
+.dial-code {
   color: white !important;
 }

@@ -177,7 +177,7 @@ export const SelectPixels = () => {
     <div className="flex md:flex-row flex-col w-full h-screen">
       <div
         className={`h-screen ${
-          isCollapsed ? "w-[90%]  " : " md:w-[70%] w-[100%] bg-[#F1713D]"
+          isCollapsed ? "w-[90%]  " : " md:w-[70%] w-[100%] bg-orange-500"
         }  flex flex-col transition-all`}
       >
         <div
@@ -185,7 +185,7 @@ export const SelectPixels = () => {
             isCollapsed ? "hidden" : "block"
           }`}
         >
-          <div className="w-[3rem] 2xl:w-[3rem] h-[7vh] 2xl:h-[3rem]  bg-white rounded-full"></div>
+          <div className="w-[3rem] 2xl:w-[3rem] h-[7vh] 2xl:h-[3rem]  bg-text-200 rounded-full"></div>
         </div>
 
         <div className="flex flex-col flex-grow items-center justify-start p-">
@@ -200,8 +200,8 @@ export const SelectPixels = () => {
             </h1>
 
             <div
-              className="inline-flex items-center gap-[0.625rem] bg-[#B7552E]
-             text-white text-[0.85rem] 2xl:text-[1rem] 2xl:p-3 rounded p-[0.3rem]"
+              className="inline-flex items-center gap-[0.625rem] bg-text2-200
+             text-text-200 text-[0.85rem] 2xl:text-[1rem] 2xl:p-3 rounded p-[0.3rem]"
             >
               <IoIosInformationCircleOutline />
               Use Cursor To Select An Area
@@ -240,13 +240,13 @@ export const SelectPixels = () => {
             <div className="flex gap-2 px-8">
               <button
                 className="bg-[#272727] flex items-center
-               gap-1.5 text-white px-5 py-3 2xl:text-xl rounded-[1.34rem] text-sm"
+               gap-1.5 text-text-200 px-5 py-3 2xl:text-xl rounded-[1.34rem] text-sm"
               >
                 <FaCircleQuestion /> How It Works
               </button>
               <button
                 onClick={handleClick}
-                className="bg-[#272727] text-white 2xl:text-xl px-4 py-2 rounded-[1.34rem] text-sm"
+                className="bg-[#272727] text-text-200 2xl:text-xl px-4 py-2 rounded-[1.34rem] text-sm"
               >
                 View Whole Canvas
               </button>
@@ -256,7 +256,7 @@ export const SelectPixels = () => {
       </div>
       <BiCollapseHorizontal
         onClick={handleClick}
-        className={`absolute h-[4vh] w-[2vw] rounded-lg top-[9%] 2xl:top-[6%] bg-[#272727] z-10 text-4xl text-white ${
+        className={`absolute h-[4vh] w-[2vw] rounded-lg top-[9%] 2xl:top-[6%] bg-[#272727] z-10 text-4xl text-text-200 ${
           isCollapsed ? "left-[84.5%] top-[2%]" : "left-[68.9%]"
         }`}
       />
@@ -264,11 +264,11 @@ export const SelectPixels = () => {
       <div
         className={`h-screen ${
           isCollapsed ? "w-[15%]" : "w-[30%]"
-        } bg-[#272727] p-6 2xl:p-10 z-0 relative text-white flex flex-col transition-all`}
+        } bg-[#272727] p-6 2xl:p-10 z-0 relative text-text-200 flex flex-col transition-all`}
       >
         <h2
           className={`
-          text-2xl 2xl:text-3xl 2xl:p-3 font-bold border-b text-center border-[#D0CFCF] pb-2 ${
+          text-2xl 2xl:text-3xl 2xl:p-3 font-bold border-b text-center border-text-2 pb-2 ${
             isCollapsed ? "text-[20px] 2xl:text-xl mt-12 font-normal " : "text-2xl 2xl:text-3xl"
           }
           `}
@@ -284,26 +284,26 @@ export const SelectPixels = () => {
             className=" p-3 2xl:space-y-4  flex  flex-col justify-center
           rounded-[1.25rem] border-2 border-[#343434]"
           >
-            <p className="flex justify-between flex-col border-b gap-1 2xl:gap-6 border-[#D0CFCF] pb-2">
+            <p className="flex justify-between flex-col border-b gap-1 2xl:gap-6 border-text-2 pb-2">
               <span className="font-semibold">Selected Block</span>
               <span id="selectedBlock">0 x 0</span>
             </p>
-            <p className="flex justify-between flex-col border-b gap-1.5 2xl:gap-6 py-2 border-[#D0CFCF] pb-2">
+            <p className="flex justify-between flex-col border-b gap-1.5 2xl:gap-6 py-2 border-text-2 pb-2">
               <span className="font-semibold">Pixels Count</span>
               <span id="pixelsCount">0 Pixels</span>
             </p>
-            <p className="flex justify-between flex-col border-b gap-1.5 2xl:gap-6 py-2 border-[#D0CFCF] pb-2">
+            <p className="flex justify-between flex-col border-b gap-1.5 2xl:gap-6 py-2 border-text-2 pb-2">
               <span className="font-semibold">Pixels Location</span>
               <span id="pixelsLocation">Y. 0px X. 0px</span>
             </p>
-            <p className="flex justify-between border-b flex-col gap-1.5 2xl:gap-6 py-2 border-[#D0CFCF] pb-2">
+            <p className="flex justify-between border-b flex-col gap-1.5 2xl:gap-6 py-2 border-text-2 pb-2">
               <span className="font-semibold">Price Per</span>
               <span id="pricePerPixel">$0.00</span>
             </p>
             <button
               onClick={() => navigate("/review")}
-              className="w-full bg-[#F1713D] text-white font-bold 
-              py-2 2xl:p-4 2xl:text-xl mt-4 rounded-[1rem] hover:bg-[#d85c2b] transition"
+              className="w-full bg-orange-500 text-text-200 font-bold 
+              py-2 2xl:p-4 2xl:text-xl mt-4 rounded-[1rem] hover:bg-text2-200 transition"
             >
               Confirm Selection
             </button>

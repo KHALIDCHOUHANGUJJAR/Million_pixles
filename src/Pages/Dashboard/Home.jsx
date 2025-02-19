@@ -24,10 +24,10 @@ const Home = () => {
             <Canvas />
           </div>
         </div>
-        <div className="w-[30%] h-full  p-1 2xl:p-4 text-white">
+        <div className="w-[30%] h-full  p-1 2xl:p-4 text-text-200">
           <div className=" flex flex-col justify-between p-2 2xl:p-3">
             <div
-              className="bg-[#171717] p-4 space-y-4 flex flex-col items-center justify-between   2xl:p-4 rounded-lg
+              className="bg-body2-400 p-4 space-y-4 flex flex-col items-center justify-between   2xl:p-4 rounded-lg
              border-2 border-[#252323] "
             >
               <h2
@@ -36,7 +36,8 @@ const Home = () => {
               >
                 Here You Can <br /> Manage Your Pixels.
                 <RxArrowTopRight
-                  className=" rounded-full bg-[#272727]
+                  className=" rounded-full bg-blacke-400
+                  
                  xl:w-10 xl:h-10 2xl:w-11 2xl:h-11 2xl:p-2 p-1.5 text-center "
                 />
               </h2>
@@ -46,7 +47,8 @@ const Home = () => {
                     <div
                       key={index}
                       className="flex items-center justify-between
-                       border-2 border-[#4b4747] bg-[#272727]
+                       border-2 border-[#4b4747] bg-blacke-400
+                       
                         px-3 2xl:px-4  xl:py-0.5 2xl:p-1 rounded-3xl  "
                     >
                       <span className="xl:text-sm 2xl:text-md">
@@ -57,8 +59,8 @@ const Home = () => {
                        rounded-4xl gap-1 border-2 border-[#2C2C2C]"
                       >
                         <span
-                          className="bg-[#F1713D] flex items-stretch text-sm  px-2
-                          text-white  rounded-full"
+                          className="bg-orange-500 flex items-stretch text-sm  px-2
+                          text-text-200  rounded-full"
                         >
                           {i.textSubHeading}
                         </span>
@@ -71,14 +73,14 @@ const Home = () => {
             </div>
           </div>
           <div className="flex  items-center justify-center">
-            <div className="bg-[#F1713D] text-white p-4  text-center w-[94%] rounded-lg 2xl:mt-10 2xl:p-6 mt-2   ">
+            <div className="bg-orange-500 text-text-200 p-4  text-center w-[94%] rounded-lg 2xl:mt-10 2xl:p-6 mt-2   ">
               <h3 className="text-md font-poppins 2xl:p-2 font-semibold flex items-center gap-2 justify-center">
                 Here Is What You Can Do
                 <RiQuestionnaireLine className="text-xl " />{" "}
               </h3>
               <p
                 className="xl:text-xs 2xl:text-md italic font-poppins text-start 
-             bg-[#171717] rounded-2xl p-1  2xl:p-6 flex items-center"
+             bg-body2-400 rounded-2xl p-1  2xl:p-6 flex items-center"
               >
                 Order: Choose And Order New Pixels. <br /> Manage: Manage Pixels Owned
                 By You. View Your Order History <br /> Edit Your Personal Details,

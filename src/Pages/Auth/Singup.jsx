@@ -29,10 +29,13 @@ function Singup() {
           className="w-full h-full object-fill shadow-lg "
         />
       </div>
-      <div className="   w-full md:h-[100%] h-full md:w-[60%] flex flex-col items-center justify-center absolute right-0   ">
+      <div
+        className="   w-full md:h-[100%] h-full md:w-[60%] flex flex-col items-center bg-blacke-400
+       justify-center absolute right-0   "
+      >
         <div className="flex items-center  justify-center  ">
           <div
-            className="text-white md:w-[80%] w-[90%]  
+            className="text-text-200 md:w-[80%] w-[90%]  
            rounded-[1.5rem] border border-gray-400/50
            2xl:p-8 p-5 shadow-2xl  "
           >
@@ -47,7 +50,7 @@ function Singup() {
             >
               <div className="flex items-center  h-full justify-between mb-2 ">
                 <div className=" w-[48%] 2xl:space-y-2">
-                  <label className="block text-gray-200 text-sm  2xl:text-xl">
+                  <label className="block text-text-200 text-sm  2xl:text-xl">
                     Full Name
                   </label>
                   <input
@@ -56,7 +59,7 @@ function Singup() {
                     })}
                     type="text"
                     className="w-full p-1.5 px-4
-                     text-gray-200 rounded-[0.75rem] 2xl:py-2 border border-gray-400/50 focus:outline-none focus:border-orange-500"
+                     text-text-200 rounded-[0.75rem] bg-blacke-400 2xl:py-2 border border-gray-400/50 focus:outline-none focus:border-orange-500"
                   />
                   {errors.fullName && (
                     <p className="text-red-500 text-sm ">
@@ -65,7 +68,7 @@ function Singup() {
                   )}
                 </div>
                 <div className="mb-1 w-[48%] 2xl:space-y-2 ">
-                  <label className="block text-gray-200 text-sm 2xl:text-xl ">
+                  <label className="block text-text-200 text-sm 2xl:text-xl ">
                     User Name
                   </label>
                   <input
@@ -73,7 +76,7 @@ function Singup() {
                       required: "Username is required",
                     })}
                     type="text"
-                    className="w-full p-1.5 px-4 2xl:py-2 text-gray-200 rounded-[0.75rem] border border-gray-400/50 focus:outline-none focus:border-orange-500"
+                    className="w-full p-1.5 px-4 2xl:py-2 bg-blacke-400 text-text-200 rounded-[0.75rem] border border-gray-400/50 focus:outline-none focus:border-orange-500"
                   />
                   {errors.username && (
                     <p className="text-red-500 text-sm mt-1">
@@ -83,13 +86,13 @@ function Singup() {
                 </div>
               </div>
               <div className="mb-4 2xl:space-y-2">
-                <label className="block text-gray-200 text-sm 2xl:text-xl  ">
+                <label className="block text-text-200 text-sm 2xl:text-xl  ">
                   Email Address
                 </label>
                 <input
                   {...register("email", { required: "Email is required" })}
                   type="email"
-                  className="w-full p-1.5 px-4 2xl:py-2 text-gray-200 rounded-[0.75rem] border border-gray-400/50 focus:outline-none focus:border-orange-500"
+                  className="w-full p-1.5 px-4 2xl:py-2 bg-blacke-400 text-text-200 rounded-[0.75rem] border border-gray-400/50 focus:outline-none focus:border-orange-500"
                 />
                 {errors.email && (
                   <p className="text-red-500 text-sm mt-1">
@@ -98,7 +101,7 @@ function Singup() {
                 )}
               </div>
               <div>
-                <label className="text-gray-200">Phone Number</label>
+                <label className="text-text-200">Phone Number</label>
                 <Controller
                   name="phone"
                   control={control}
@@ -125,7 +128,7 @@ function Singup() {
               </div>
               <div className=" mt-5 2xl:space-y-2 ">
                 <div className="flex items-center justify-between ">
-                  <label htmlFor="refer" className="text-gray-200 2xl:text-xl">
+                  <label htmlFor="refer" className="text-text-200 2xl:text-xl">
                     Refer
                   </label>
                   <span className="text-xs text-gray-500">
@@ -138,7 +141,7 @@ function Singup() {
                     required: "Password is required",
                   })}
                   type="password"
-                  className="w-full p-1.5 px-4 2xl:py-2 text-gray-200 rounded-[0.75rem] border border-gray-400/50
+                  className="w-full p-1.5 px-4 2xl:py-2 bg-blacke-400 text-text-200 rounded-[0.75rem] border border-gray-400/50
                    focus:outline-none focus:border-orange-500"
                 />
                 {errors.ref && (
@@ -146,7 +149,7 @@ function Singup() {
                 )}
               </div>
               <div className="mt-3  2xl:space-y-2">
-                <label className="block text-gray-200 text-sm 2xl:text-xl ">
+                <label className="block text-text-200 text-sm 2xl:text-xl ">
                   Set Your Password
                 </label>
                 <input
@@ -154,7 +157,7 @@ function Singup() {
                     required: "Password is required",
                   })}
                   type="password"
-                  className="w-full p-1.5 px-4 2xl:py-2 text-gray-200 rounded-[0.75rem] border border-gray-400/50
+                  className="w-full p-1.5 px-4 2xl:py-2 bg-blacke-400 text-text-200 rounded-[0.75rem] border border-gray-400/50
                    focus:outline-none focus:border-orange-500"
                 />
                 {errors.password && (
@@ -170,7 +173,7 @@ function Singup() {
                     {...register("terms", {
                       required: "You must agree to continue",
                     })}
-                    className="mr-2 w-5 h-5 2xl:py-2 accent-orange-500"
+                    className="mr-2 w-5 h-5 2xl:py-2 accent-orange-500 rounded cursor-pointer"
                   />
                   By creating an account, you agree to our
                   <Link to="/terms" className=" underline p-1 ">
@@ -187,12 +190,12 @@ function Singup() {
                   </p>
                 )}
                 <p className="text-sm text-start  flex font-sans   text-gray-300 mb-3 2xl:text-xl">
-                  <input
+                <input
                     type="checkbox"
                     {...register("terms", {
                       required: "You must agree to continue",
                     })}
-                    className="mr-2 w-8 h-8 2xl:py-2 accent-orange-500"
+                    className="mr-2 w-5 h-5 2xl:py-2 accent-orange-500 rounded cursor-pointer"
                   />
                   By creating an account, I am also concenting to recive SMS{" "}
                   messages and email, including products, new features updates,{" "}
@@ -207,13 +210,13 @@ function Singup() {
               <div className="flex text-center md:flex-row flex-col items-center justify-between">
                 <button
                   type="submit"
-                  className="p-10 bg-[#F1713D] hover:bg-orange-700 text-white py-2 rounded-[1rem] font-semibold"
+                  className="p-10 bg-orange-500 hover:bg-text2-200 text-white py-2 rounded-[1rem] font-semibold"
                 >
                   Create an account
                 </button>
-                <p className=" text-sm text-center flex items-center h-full font-semibold 2xl:text-xl text-gray-200">
+                <p className=" text-sm text-center flex items-center h-full font-semibold 2xl:text-xl text-text-200">
                   Already have an account?
-                  <Link to="/login" className="text-[#F1713D] ml-1 underline">
+                  <Link to="/login" className="text-orange-500 ml-1 underline">
                     Login
                   </Link>
                 </p>
