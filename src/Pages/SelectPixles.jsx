@@ -13,6 +13,10 @@ export const SelectPixels = () => {
   const handleClick = () => {
     setIsCollapsed(!isCollapsed);
   };
+
+
+
+  
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
@@ -35,7 +39,7 @@ export const SelectPixels = () => {
       ctx.strokeStyle = "#ffff";
       ctx.lineWidth = 0.5;
 
-      const cellSize = 15;
+      const cellSize = 12;
       for (let x = 0; x <= canvas.width; x += cellSize) {
         ctx.beginPath();
         ctx.moveTo(x, 0);
@@ -51,11 +55,11 @@ export const SelectPixels = () => {
       }
 
       const restrictedX = canvas.width * 0.6;
-      const restrictedY = canvas.height * 0.12;
-      const restrictedWidth = 200;
-      const restrictedHeight = 150;
+      const restrictedY = canvas.height * 0.10;
+      const restrictedWidth = 250;
+      const restrictedHeight = 173;
 
-      ctx.fillStyle = "rgba(0, 255, 0, 0.2)";
+      ctx.fillStyle = "rgba(235, 250, 23, 0.10)";
       ctx.fillRect(restrictedX, restrictedY, restrictedWidth, restrictedHeight);
     };
 
@@ -83,7 +87,7 @@ export const SelectPixels = () => {
 
       startX = Math.floor(startX / 20) * 20;
       startY = Math.floor(startY / 20) * 20;
-
+      ctx.fillStyle = "rgba(235, 250, 23, 0.10)";
       endX = startX;
       endY = startY;
     };
@@ -100,9 +104,9 @@ export const SelectPixels = () => {
       endX = Math.floor(endX / 20) * 20;
       endY = Math.floor(endY / 20) * 20;
 
-      const restrictedX = canvas.width * 0.6;
+      const restrictedX = canvas.width * 0.61;
       const restrictedY = canvas.height * 0.12;
-      const restrictedWidth = 200;
+      const restrictedWidth = 240;
       const restrictedHeight = 150;
 
       const width = endX - startX;
@@ -129,7 +133,7 @@ export const SelectPixels = () => {
 
       drawGrid();
 
-      ctx.fillStyle = "rgba(241, 113, 61, 0.3)";
+      ctx.fillStyle = "rgba(69, 180, 69, 0.10)";
       ctx.fillRect(
         Math.min(startX, endX),
         Math.min(startY, endY),

@@ -200,7 +200,8 @@ export default function ReviewOrder() {
           <div className="flex items-center px-3 w-full gap-1 ">
             <input
               type="checkbox"
-              className="mr-2 w-5 h-5 accent-orange-500 rounded"
+              
+              className="mr-2 w-5 h-5 accent-orange-500 rounded input-check"
               required
               checked={isChecked}
               onChange={() => {
@@ -222,7 +223,7 @@ export default function ReviewOrder() {
             <div className="flex items-center gap-10 p- justify-end px-3 p-3 w-full">
               <button
                 onClick={handleNext}
-                className="text-orbg-orange-500 cursor-pointer"
+                className="text-orange-500 cursor-pointer"
               >
                 Cancel
               </button>

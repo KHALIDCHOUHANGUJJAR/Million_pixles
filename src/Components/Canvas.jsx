@@ -81,7 +81,7 @@ const Canvas = () => {
       const width = endX - startX;
       const height = endY - startY;
 
-      ctx.fillStyle = "rgba(241, 113, 61, 0.3)";
+      ctx.fillStyle = "rgba(69, 180, 69, 0.10)";
       ctx.fillRect(startX, startY, width, height);
       ctx.strokeStyle = "#EBFA171A";
       ctx.lineWidth = 2;

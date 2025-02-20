@@ -56,9 +56,9 @@ function Login() {
                     required: "User name is required",
                   })}
                   type="text"
-                  className="w-full px-4 py-2 2xl:py-6 text-text-200 bg-blacke-400 rounded-lg  border border-gray-400/50
-                  focus:outline-none focus:border-orange-900"
-                />
+                  className="w-full p-2 px-4 2xl:py-4 bg-blacke-400 text-text-200 rounded-[0.75rem] 
+                  border border-gray-400/50 outline-none focus:border-orange-500 focus:ring-0"
+                 />
                 {errors.name && (
                   <span className="text-red-500">{errors.name.message}</span>
                 )}
@@ -72,9 +72,9 @@ function Login() {
                     required: "Password is required",
                   })}
                   type="password"
-                  className="w-full px-4 py-2 2xl:py-6 text-text-200 bg-blacke-400 rounded-lg  border border-gray-400/50
- focus:outline-none focus:border-orange-900"
-                />
+                  className="w-full p-2 px-4 2xl:py-4 bg-blacke-400 text-text-200 rounded-[0.75rem] 
+                  border border-gray-400/50 outline-none focus:border-orange-500 focus:ring-0"
+                   />
                 {errors.name && (
                   <span className="text-red-500">{errors.name.message}</span>
                 )}
@@ -82,7 +82,7 @@ function Login() {
 
               <button
                 type="submit"
-                className="w-full bg-orange-500 2xl:py-6 hover:bg-text2-200 text-white py-2 rounded-lg font-semibold"
+                className="w-full bg-orange-500 2xl:py-4 hover:bg-text2-200 text-white py-2 rounded-[0.75rem] font-semibold"
               >
                 Login
               </button>

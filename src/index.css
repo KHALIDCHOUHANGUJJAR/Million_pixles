@@ -4,25 +4,30 @@
 @source "../node_modules/flowbite";
 
 @theme {
-  --color-orange-500: #F1713D;
+  --color-orange-500: #f1713d;
   --color-blacke-400: #272727;
   --color-body-400: #111111;
   --color-body2-400: #171717;
-  --color-line-200: #F7F8FA;
-  --color-text2-200: #B7552E;
-  --color-text-200: #FFF;
-  --color-text-2: #E2E2E2;
+  --color-line-200: #f7f8fa;
+  --color-text2-200: #b7552e;
+  --color-text-200: #fff;
+  --color-text-2: #e2e2e2;
 }
 
 body {
   background-color: #111111;
-  color: #FFF;
+  color: #fff;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
+.input-check {
+  accent-color: black !important;
+  color: #f1713d !important;
+  border: 1px #F1713D;
+}
 .wall {
   font-family: Nunito;
   font-weight: 400;

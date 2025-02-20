@@ -11,7 +11,7 @@ const About = () => {
         2xl:gap-[12vh] w-full lg:w-[50%]  rounded-xl overflow-hidden"
         >
           <h3
-            className="text-[#B7552E] font-nunito text-[2.625rem] font-normal 
+            className="text-text2-200 font-nunito text-[2.625rem] font-normal 
             not-even:not-first-of-type:leading-[6.25vh] tracking-[-0.005rem] z-10"
           >
             About Us
@@ -23,7 +23,7 @@ const About = () => {
            bg-[#6b3f2b] opacity-30 rounded-full blur-3xl animate-pulse"
             ></div>
             <div
-              className="absolute bottom-[50px] right-[50px] w-[20vw] h-[20vw]
+              className="absolute bottom-[50px] right-[50px] 2xl:right-[90px] w-[20vw] h-[20vw]
            bg-[#703a21] opacity-20 rounded-full blur-2xl animate-pulse"
             ></div>
             <h1
@@ -49,7 +49,7 @@ const About = () => {
 
         <div className=" grid grid-cols-2 items-center  w-[50%] ">
           <div className="p-4 flex flex-col gap-8 2xl:gap-8 w-[100%]   ">
-            <div className="w-full h-full bg-orange-500 rounded-2xl  py-2 2xl:py-6 2xl:p-4 flex items-center flex-col justify-center ">
+            <div className="w-full h-full bg-text2-200 rounded-2xl  py-2 2xl:py-6 2xl:p-4 flex items-center flex-col justify-center ">
               <div className="flex items-center justify-center p-2 2xl:p-2 gap-2  2xl:text-2xl">
                 <div className="text-black font-bold p-2 rounded-full bg-[#A86D5B] px-3 ">
                   Ui
@@ -86,7 +86,7 @@ const About = () => {
               <div className="flex flex-col gap-4 2xl:gap-10 bg-[#272727] p-4 2xl:p-10 rounded-xl">
                 <div className="flex items-center justify-between">
                   <h2 className="text-lg 2xl:text-2xl font-medium">Pixels</h2>
-                  <button className="bg-[#B7552E] text-white px-4 py-1 2xl:px-6 2xl:py-2 rounded-full hover:bg-[#A14422] transition-all 2xl:text-xl">
+                  <button className="bg-text2-200 text-white px-4 py-1 2xl:px-6 2xl:py-2 rounded-full hover:bg-[#A14422] transition-all 2xl:text-xl">
                     Buy
                   </button>
                 </div>
@@ -94,12 +94,12 @@ const About = () => {
 
                 <div className="w-full bg-[#443028] rounded-full h-2.5 dark:bg-[#724f41]">
                   <div
-                    className="bg-[#B7552E] h-2.5 rounded-full"
+                    className="bg-text2-200 h-2.5 rounded-full"
                     style={{ width: "57%" }}
                   ></div>
                 </div>
 
-                <button className="w-full border-2 border-[#B7552E] py-2 2xl:py-3 rounded-xl hover:bg-[#A14422] transition-all 2xl:text-xl">
+                <button className="w-full border-2 border-text2-200 py-2 2xl:py-3 rounded-xl hover:bg-[#A14422] transition-all 2xl:text-xl">
                   Send Feedback
                 </button>
               </div>
@@ -109,7 +109,7 @@ const About = () => {
           <img
             src={AboutImage}
             alt="aboutImage"
-            className="w-[100%]  object-fill h-[92%] 2xl:h-[95%] "
+            className="w-[100%]  object-fill h-[91%] 2xl:h-[95%] "
           />
         </div>
       </div>

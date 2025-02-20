@@ -58,8 +58,8 @@ function Singup() {
                       required: "Full Name is required",
                     })}
                     type="text"
-                    className="w-full p-1.5 px-4
-                     text-text-200 rounded-[0.75rem] bg-blacke-400 2xl:py-2 border border-gray-400/50 focus:outline-none focus:border-orange-500"
+                    className="w-full p-1.5 px-4 2xl:py-2 bg-blacke-400 text-text-200 rounded-[0.75rem] 
+             border border-gray-400/50 outline-none focus:border-orange-500 focus:ring-0"
                   />
                   {errors.fullName && (
                     <p className="text-red-500 text-sm ">
@@ -76,7 +76,8 @@ function Singup() {
                       required: "Username is required",
                     })}
                     type="text"
-                    className="w-full p-1.5 px-4 2xl:py-2 bg-blacke-400 text-text-200 rounded-[0.75rem] border border-gray-400/50 focus:outline-none focus:border-orange-500"
+                    className="w-full p-1.5 px-4 2xl:py-2 bg-blacke-400 text-text-200 rounded-[0.75rem] 
+                    border border-gray-400/50 outline-none focus:border-orange-500 focus:ring-0"
                   />
                   {errors.username && (
                     <p className="text-red-500 text-sm mt-1">
@@ -92,7 +93,8 @@ function Singup() {
                 <input
                   {...register("email", { required: "Email is required" })}
                   type="email"
-                  className="w-full p-1.5 px-4 2xl:py-2 bg-blacke-400 text-text-200 rounded-[0.75rem] border border-gray-400/50 focus:outline-none focus:border-orange-500"
+                  className="w-full p-1.5 px-4 2xl:py-2 bg-blacke-400 text-text-200 rounded-[0.75rem] 
+                  border border-gray-400/50 outline-none focus:border-orange-500 focus:ring-0"
                 />
                 {errors.email && (
                   <p className="text-red-500 text-sm mt-1">
@@ -108,18 +110,24 @@ function Singup() {
                   rules={{ required: "Phone number is required" }}
                   render={({ field }) => (
                     <PhoneInput
-                      {...field}
-                      country={"af"}
-                      inputStyle={{
-                        width: "100%",
-                        height: "40px",
-                        background: "transparent",
-                        color: "#fff",
-                        borderColor: "#374151",
-                        borderRadius: "12px",
-                      }}
-                      containerStyle={{ width: "100%" }}
-                    />
+                    {...field}
+                    country={"af"}
+                    inputStyle={{
+                      width: "100%",
+                      height: "40px",
+                      
+                      background: "transparent",
+                      color: "#fff",
+                      borderColor: "#374151",
+                      borderRadius: "12px",
+                      outline: "none",
+                      boxShadow: "none",
+                    }}
+                    containerStyle={{ width: "100%" }}
+                    onFocus={(e) => (e.target.style.borderColor = "#f1713d")}
+                    onBlur={(e) => (e.target.style.borderColor = "#374151")} 
+                  />
+                  
                   )}
                 />
                 {errors.phone && (
@@ -141,8 +149,8 @@ function Singup() {
                     required: "Password is required",
                   })}
                   type="password"
-                  className="w-full p-1.5 px-4 2xl:py-2 bg-blacke-400 text-text-200 rounded-[0.75rem] border border-gray-400/50
-                   focus:outline-none focus:border-orange-500"
+                  className="w-full p-1.5 px-4 2xl:py-2 bg-blacke-400 text-text-200 rounded-[0.75rem] 
+                  border border-gray-400/50 outline-none focus:border-orange-500 focus:ring-0"
                 />
                 {errors.ref && (
                   <p className="text-red-500 text-sm">{errors.ref.message}</p>
@@ -157,9 +165,10 @@ function Singup() {
                     required: "Password is required",
                   })}
                   type="password"
-                  className="w-full p-1.5 px-4 2xl:py-2 bg-blacke-400 text-text-200 rounded-[0.75rem] border border-gray-400/50
-                   focus:outline-none focus:border-orange-500"
+                  className="w-full p-1.5 px-4 2xl:py-2 bg-blacke-400 text-text-200 rounded-[0.75rem] 
+             border border-gray-400/50 outline-none focus:border-orange-500 focus:ring-0"
                 />
+
                 {errors.password && (
                   <p className="text-red-500 text-sm mt-1">
                     {errors.password.message}
@@ -173,7 +182,7 @@ function Singup() {
                     {...register("terms", {
                       required: "You must agree to continue",
                     })}
-                    className="mr-2 w-5 h-5 2xl:py-2 accent-orange-500 rounded cursor-pointer"
+                    className="mr-2 w-5 h-5 2xl:py-2 input-check rounded cursor-pointer outline-none focus:border-orange-500 focus:ring-0 accent-orange-500 "
                   />
                   By creating an account, you agree to our
                   <Link to="/terms" className=" underline p-1 ">
@@ -190,12 +199,12 @@ function Singup() {
                   </p>
                 )}
                 <p className="text-sm text-start  flex font-sans   text-gray-300 mb-3 2xl:text-xl">
-                <input
+                  <input
                     type="checkbox"
                     {...register("terms", {
                       required: "You must agree to continue",
                     })}
-                    className="mr-2 w-5 h-5 2xl:py-2 accent-orange-500 rounded cursor-pointer"
+                    className="mr-2 w-5 h-5 2xl:py-2 input-check rounded cursor-pointer outline-none focus:border-orange-500 focus:ring-0 accent-orange-500 "
                   />
                   By creating an account, I am also concenting to recive SMS{" "}
                   messages and email, including products, new features updates,{" "}

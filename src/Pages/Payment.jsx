@@ -29,12 +29,12 @@ export default function Payment() {
 
             <form
               onSubmit={handleSubmit(onSubmit)}
-              className="space-y-6 2xl:space-y-10 w-[100]"
+              className="space-y-6 2xl:space-y-10 w-[100%]"
             >
               <div>
                 <p className="mb-1 font-semibold 2xl:text-xl ">Name</p>
                 <input
-                  placeholder="Write here"
+                  placeholder="Enter name"
                   className="w-full rounded-[1.125rem] border-2 border-white/20 bg-transparent p-3 2xl:p-6 px-10 2xl:rounded-2xl
                    text-text-200 placeholder:text-text-200/50"
                   {...register("name", { required: true })}
@@ -44,7 +44,7 @@ export default function Payment() {
               <div>
                 <p className="mb-1 font-semibold 2xl:text-xl">Email Address</p>
                 <input
-                  placeholder="https://Example.com"
+                  placeholder="xyz@gmail.com"
                   className="w-full rounded-[1.125rem] border-2 border-white/20 bg-transparent p-3 2xl:p-6 px-10 2xl:rounded-2xl text-text-200 placeholder:text-text-200/50"
                   {...register("email", { required: true })}
                 />
@@ -64,7 +64,7 @@ export default function Payment() {
               <div>
                 <p className="mb-1 font-semibold 2xl:text-xl">Order ID</p>
                 <input
-                  placeholder="Order #12345"
+                  placeholder="12345"
                   className="w-full rounded-[1.125rem] border-2 border-white/20 bg-transparent p-3 2xl:p-6 px-10 2xl:rounded-2xl text-text-200"
                   {...register("orderId", { required: true })}
                 />
